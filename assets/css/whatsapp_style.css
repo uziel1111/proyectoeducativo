@@ -1,0 +1,25 @@
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+.btn-whatsapp img {
+    height: 50px;
+    width: 50px;
+    transition: all .3s ease;
+    }
+    
+.btn-whatsapp img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    height: 60px;
+    width: 60px;
+}
