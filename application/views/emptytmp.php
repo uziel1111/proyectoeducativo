@@ -21,7 +21,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Proyed SVG icon -->
-    <link href="../../assets/svg-icons/svg-icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('assets/svg-icons/svg-icon.css'); ?>">
 
     <!-- Custom styles for this template -->
     <link href="../../assets/css/main.css" rel="stylesheet">
