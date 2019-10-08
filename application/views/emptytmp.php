@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Proyecto Educativo, Proyed">
- 
+
     <title>Proyecto Educativo</title>
 
     <link rel="canonical" href="http://www.proyectoeducativo.org/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!-- Fontawesome 5 -->
     <script src="https://kit.fontawesome.com/62fb77aec5.js" crossorigin="anonymous"></script>
 
@@ -25,10 +25,47 @@
 
     <!-- Custom styles for this template -->
     <link href="../../assets/css/main.css" rel="stylesheet">
+
+    <style>
+    .btn-whatsapp {
+           display:block;
+           width:70px;
+           height:70px;
+           color:#fff;
+           position: fixed;
+           right:100px;
+           bottom:20px;
+           border-radius:50%;
+           line-height:80px;
+           text-align:center;
+           z-index:999;
+    }
+    .btn-whatsapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    }
+
+    .btn-whatsapp {
+           display:block;
+           width:70px;
+           height:70px;
+           color:#fff;
+           position: fixed;
+           right:100px;
+           bottom:20px;
+           border-radius:50%;
+           line-height:80px;
+           text-align:center;
+           z-index:999;
+    }
+    .btn-whatsapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    }
+    </style>
+
   </head>
 
   <body class="d-flex flex-column h-100">
-    <!-- Page header -->  
+    <!-- Page header -->
     <header>
       <!-- Fixed navbar -->
 
@@ -43,12 +80,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mx-0 mx-lg-1 dropdown">                   
+                  <li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <span class="fa-stack mx-0" style="vertical-align: top;">
                               <i class="far fa-circle fa-stack-2x"></i>
                               <i class="fas fa-users fa-stack-1x"></i>
-                            </span>  
+                            </span>
                         Nosotros
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -57,7 +94,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                       </div>
-                    </li>                
+                    </li>
                 <li class="nav-item mx-0 mx-lg-1">
 
                   <a class="nav-link px-0 px-lg-3 rounded" href="#">
@@ -71,12 +108,12 @@
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link rounded" href="#">
-                
+
                         <span class="fa-stack" style="vertical-align: top;">
                             <i class="far fa-circle fa-stack-2x"></i>
                             <i class="fas fa-flag fa-stack-1x"></i>
                             <i class="fas fa-circle fa-stack-2x holder"></i>
-                          </span>     
+                          </span>
                       Proyectosmas
                     </a>
                 </li>
@@ -85,7 +122,7 @@
                         <span class="fa-stack mx-0" style="vertical-align: top;">
                             <i class="far fa-circle fa-stack-2x"></i>
                             <i class="fas fa-paper-plane fa-stack-1x"></i>
-                          </span>  
+                          </span>
                       Contacto
                     </a>
                 </li>
@@ -95,7 +132,7 @@
         </nav>
       <!-- END Fixed navbar -->
     </header>
-    <!-- END Page header --> 
+    <!-- END Page header -->
     <!-- Main page content -->
     <main role="main" class="flex-shrink-0">
     <!-- Main Slider -->
@@ -138,7 +175,7 @@
         </a>
       </div>
     <!-- END Main Slider -->
-    
+
 
 
 
@@ -146,10 +183,10 @@
 
   <section class="page-section text-white mb-0" id="about">
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-  
+
         <!-- About Section Heading -->
         <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Somos</span></h2>
-   
+
         <!-- About Section Content -->
         <div class="row mt-5">
           <div class="col-lg-4 ml-auto">
@@ -159,7 +196,7 @@
             <p class="lead text-justify">Contribuimos a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional.</p>
           </div>
         </div>
-  
+
         <!-- About Section Button -->
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
@@ -167,13 +204,13 @@
             Leer más
           </a>
         </div>
-  
+
       </div>
-    </section>      
+    </section>
       <!-- END Some About -->
 
       <!-- We do... Boxes -->
- 
+
       <section id="services">
           <div class="container">
             <div class="row">
@@ -221,14 +258,14 @@
       <section class="showcase">
           <div class="container-fluid p-0">
               <div class="row no-gutters">
-                
+
                   <div class="col-lg-6 text-white showcase-parent">
                       <div class="showcase-child img-1"></div>
                   </div>
-                 
+
                   <div class="col-lg-6 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                     <h4 class="text-white font-weight-bold mb-3">¿Por qué trabajamos en la educación?</h4>
-                   
+
                     <ol class="fa-ul text-justify">
                       <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque creemos que una buena formación puede hacer que las personas vivan una vida más plena y feliz</span></li>
                       <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque pensamos que México y los países de América Latina tienen un enorme potencial que aún está lejos de ser plenamente aprovechado</span></li>
@@ -242,13 +279,13 @@
                       </a>
                     </div> -->
                   </div>
-                </div>            
+                </div>
             <div class="row no-gutters">
 
                 <div class="col-lg-6 order-lg-2 text-white showcase-parent">
                     <div class="showcase-child img-2"></div>
-                </div>              
-              
+                </div>
+
               <div class="col-lg-6 order-lg-1 my-auto showcase-text text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <h4 class="text-white font-weight-bold mb-3">Campos con mayor trayectoria</h4>
                 <ol class="fa-ul text-justify">
@@ -259,7 +296,7 @@
                   <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Sistemas de información para la gestión educativa.</span></li>
                   <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Descarga administrativa.</span></li>
                   <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Evaluación del aprendizaje.</span></li>
-                </ol>               
+                </ol>
                     <!-- <div class="text-center mt-4">
                       <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
                         <i class="fas fa-download mr-2"></i>
@@ -270,7 +307,7 @@
             </div>
 
           </div>
-        </section>      
+        </section>
       <!-- END Main Features -->
 
       <!-- News -->
@@ -281,7 +318,7 @@
                   <h2 class="section-heading text-uppercase line-behind"><span>Noticias</span></h2>
                   <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-              </div>          
+              </div>
         <div class="row mt-5">
           <div class="col">
               <div class="card">
@@ -291,7 +328,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                </div>          
+                </div>
           </div>
           <div class="col">
               <div class="card">
@@ -301,7 +338,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                </div>          
+                </div>
           </div>
           <div class="col">
               <div class="card">
@@ -311,8 +348,8 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-                </div>          
-          </div>                    
+                </div>
+          </div>
 
         </div>
       </div>
@@ -332,9 +369,9 @@
               </div>
           </div>
 
-          </div> 
+          </div>
         </div>
-      </div>   
+      </div>
       <div class="row bg-primary mx-0 py-5 mid-footer">
         <div class="col">
             <div class="container">
@@ -346,7 +383,7 @@
                     <li><span class="fa-li fc-1"><i class="fas fa-map-pin"></i></span>Puebla, México.</li>
                     <li><span class="fa-li fc-1"><i class="fas fa-phone-alt"></i></span>+52 222 241 9257</li>
                     <li><span class="fa-li fc-1"><i class="far fa-envelope"></i></span>info@proyectoeducativo.org</li>
-                    
+
                   </ul>
                 </div>
                 <div class="col-md-auto my-auto">
@@ -367,23 +404,29 @@
                       <span class="fa-stack fa-lg icon">
                         <i class="fas fa-circle fa-stack-2x fc-1"></i>
                         <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                      </span>                                
+                      </span>
                     </div>
-                  </div> 
+                  </div>
                 </div>
               </div>
-              </div> 
+              </div>
       </div>
     </div>
     <div class="row bg-dark mx-0 my-0 py-3">
         <div class="col">
             <div class="container text-center">
                 <span class="text-muted"><i class="fas fa-copyright mr-3"></i> Algunos derechos reservados <i class="fas fa-ellipsis-v mx-3"></i> 2019. </span>
-              </div> 
+              </div>
       </div>
-    </div>     
+    </div>
     </footer>
-    <!-- END Footer content -->
+    <div class="btn-whatsapp">
+    <!--<a href="https://api.whatsapp.com/send?phone=522221576243" target="_blank">-->
+    <a href="https://web.whatsapp.com/send?phone=522222419257" target="_blank" id="url">
+    <!--<img src="https://png.pngtree.com/element_our/sm/20180506/sm_5aeee502caf7f.png" alt=""> -->
+    <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+    </a>
+    </div>
   </body>
 <!-- Bootstrap core JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
