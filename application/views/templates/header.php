@@ -15,9 +15,6 @@
   <meta charset="UTF-8">
   <!-- Site Title -->
     <title>PROEYECTOEDUCATIVO</title>
-
-
-    
   </head>
     <body>
         <div id="top"></div>
