@@ -26,7 +26,7 @@ class Index extends CI_Controller {
 	public function index()
 	{
 		$data = array();
-		Utilerias::pagina_basica($this, "emptytmp", $data);
+		Utilerias::pagina_basica($this, "index", $data);
 
 	}
 
