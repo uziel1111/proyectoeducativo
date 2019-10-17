@@ -8,20 +8,34 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block h-100 w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-1.jpg'); ?>" alt="First slide">
+            <img class="d-block h-100 w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
             <div class="carousel-caption d-none d-md-block cc-light" >
-              <h2 class="font-weight-bold">Portal escuelaporblana.org</h2>
-              <h4>Reúne contenidos para directores y supervisores escolares, así como estadísticas que apoya la gestión escolar</h4>
+              <h2 class="font-weight-bold">Queremos que todos los niños y jóvenes asistan a buenas escuelas.</h2>
+              <!-- <h4>Reúne contenidos para directores y supervisores escolares, así como estadísticas que apoya la gestión escolar</h4> -->
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-2.jpg'); ?>" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block cc-dark">
-              <h2 class="font-weight-bold">Inscripciones anticipadas en educación básica</h2>
-              <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4>
+            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-3.jpg'); ?>" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block cc-light">
+              <h2 class="font-weight-bold">Sabemos cómo se puede avanzar en este propósito.</h2>
+              <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
->
+          <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-5.jpg'); ?>" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block cc-light">
+              <h2 class="font-weight-bold">Podemos lograrlo haciendo equipo.</h2>
+              <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-6.jpg'); ?>" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block cc-light">
+              <h2 class="font-weight-bold">Creemos que México y América Latina pueden lograr que sus </h2>
+              <h4>sistemas educativos aseguren aprendizajes, formen personas y detonen un desarrollo más equitativo.</h4>
+            </div>
+          </div>  
+
           </div>
         </div>
         <a class="carousel-control-prev mt-5" href="#carouselhome" role="button" data-slide="prev">
@@ -139,7 +153,7 @@
                     </div> -->
                   </div>
                 </div>
-            <div class="row no-gutters">
+            <!-- <div class="row no-gutters">
 
                 <div class="col-lg-6 order-lg-2 text-white showcase-parent">
                     <div class="showcase-child img-2"></div>
@@ -156,18 +170,77 @@
                   <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Descarga administrativa.</span></li>
                   <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Evaluación del aprendizaje.</span></li>
                 </ol>
-                    <!-- <div class="text-center mt-4">
+                    <div class="text-center mt-4">
                       <a class="btn btn-xl btn-outline-light" href="#">
                         <i class="fas fa-download mr-2"></i>
                         Leer más
                       </a>
-                    </div> -->
+                    </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
         </section>
       <!-- END Main Features -->
+
+
+    <!-- Campos Slider -->
+    <div id="carouselcampos" class="carousel slide" data-ride="carousel">
+
+    <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+              <!-- About Section Heading -->
+              <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Trayectoria</span></h2>
+              </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+        <div class="col-6 cc-light">
+        <h2>Política educativa y Modelo Asistencia, Permanencia, Aprendizaje (APA)</h2>
+        <p>El Modelo APA, un referente de la gestión educativa nacional.</p>
+        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>  
+    </div>
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-6 cc-light">
+        <h2>Asistencia y permanencia escolares</h2>
+        <p>Cada alumno es el más importante: todos a la escuela.</p>
+        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div> 
+    </div>
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-6 cc-light">
+        <h2>Formación docente</h2>
+        <p>Con capacitación de calidad construimos y avanzamos.</p>
+        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div> 
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselcampos" role="button" data-slide="prev">
+    <span class="arrow" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselcampos" role="button" data-slide="next">
+    <span class="arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+    <!-- END Main Slider -->
+
 
       <!-- News -->
       <section class="page-section mb-0" id="news">

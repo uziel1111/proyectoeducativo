@@ -47,49 +47,58 @@
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="fa-stack mx-0" style="vertical-align: top;">
-                              <i class="far fa-circle fa-stack-2x"></i>
-                              <i class="fas fa-users fa-stack-1x"></i>
-                            </span>
+                      <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-users fa-stack-1x icon"></i>
+                      
+                    </span>
                         Nosotros
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Organización</a>
+                        <a class="dropdown-item" href="#">Equipo</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
                     </li>
                 <li class="nav-item mx-0 mx-lg-1">
 
-                  <a class="nav-link px-0 px-lg-3 rounded" href="#">
-                      <span class="fa-stack mx-0 circle" style="vertical-align: top;">
-                          <i class="far fa-circle fa-stack-2x"></i>
-                          <i class="fas fa-magic fa-stack-1x"></i>
-                        </span>
+                <a class="nav-link rounded" href="#">
+
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-briefcase fa-stack-1x icon"></i>
+                      
+                    </span>
                     Servicios
                   </a>
 
                 </li>
-                <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link rounded" href="#">
+                <li class="nav-item">
+                <a class="nav-link rounded" href="#">
 
-                        <span class="fa-stack" style="vertical-align: top;">
-                            <i class="far fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-flag fa-stack-1x"></i>
-                            <i class="fas fa-circle fa-stack-2x holder"></i>
-                          </span>
-                      Proyectosmas
-                    </a>
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-flag fa-stack-1x icon"></i>
+                      
+                    </span>
+                    Proyectos
+                  </a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link px-0 px-lg-3 rounded" href="#">
-                        <span class="fa-stack mx-0" style="vertical-align: top;">
-                            <i class="far fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-paper-plane fa-stack-1x"></i>
-                          </span>
-                      Contacto
-                    </a>
+                <a class="nav-link rounded" href="#">
+
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-paper-plane fa-stack-1x icon"></i>
+                      
+                    </span>
+                    Contacto
+                  </a>
                 </li>
               </ul>
             </div>
