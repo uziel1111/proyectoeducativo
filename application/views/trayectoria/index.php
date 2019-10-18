@@ -3,11 +3,11 @@
 
       <!-- Subpage Header -->
 
-  <section class="page-section sh-nosotros text-white mb-0" id="subpage-head">
+  <section class="page-section sh-trayectoria text-white mb-0" id="subpage-head">
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
 
         <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Nuestra Organización</span></h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Trayectoria</span></h2>
 
 
       </div>

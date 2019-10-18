@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Nosotros extends CI_Controller {
+class Trayectoria extends CI_Controller {
 
 		function __construct() {
 			parent::__construct();
@@ -23,19 +23,11 @@ class Nosotros extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function nosotros()
+	public function index()
 	{
 		$data = array();
-		Utilerias::pagina_basica($this, "nosotros/nosotros", $data);
+		Utilerias::pagina_basica($this, "trayectoria/index", $data);
 
 	}
-	public function Equipo()
-{
-	$data = array();
-	Utilerias::pagina_basica($this, "nosotros/equipo", $data);
 
 }
-
-
-}
-

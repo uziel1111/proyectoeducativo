@@ -42,7 +42,7 @@
 
       <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
           <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="mainLogo">
+            <a class="navbar-brand js-scroll-trigger" href="<?= base_url('/'); ?>" id="mainLogo">
               <img src="<?= base_url('assets/img/template/Logo-Proyed-500-x-134.png'); ?>" class="img-fluid" alt="Proyecto Educativo Logo">
             </a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,8 +62,8 @@
                         Nosotros
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Organización</a>
-                        <a class="dropdown-item" href="#">Equipo</a>
+                        <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">Organización</a>
+                        <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">Equipo</a>
                         <!-- <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
@@ -83,7 +83,7 @@
 
                 </li>
                 <li class="nav-item">
-                <a class="nav-link rounded" href="#">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Trayectoria/'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -91,7 +91,7 @@
                       <i class="fas fa-flag fa-stack-1x icon"></i>
                       
                     </span>
-                    Proyectos
+                    Trayectoria
                   </a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
