@@ -153,31 +153,6 @@
                     </div> -->
                   </div>
                 </div>
-            <!-- <div class="row no-gutters">
-
-                <div class="col-lg-6 order-lg-2 text-white showcase-parent">
-                    <div class="showcase-child img-2"></div>
-                </div>
-
-              <div class="col-lg-6 order-lg-1 my-auto showcase-text text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <h4 class="text-white font-weight-bold mb-3">Campos con mayor trayectoria</h4>
-                <ol class="fa-ul text-justify">
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Política educativa y Modelo Asistencia, Permanencia, Aprendizaje (APA).</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Asistencia y permanencia escolares.</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Formación docente.</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Gestión escolar y liderazgo educativo.</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Sistemas de información para la gestión educativa.</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Descarga administrativa.</span></li>
-                  <li class="mb-3"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Evaluación del aprendizaje.</span></li>
-                </ol>
-                    <div class="text-center mt-4">
-                      <a class="btn btn-xl btn-outline-light" href="#">
-                        <i class="fas fa-download mr-2"></i>
-                        Leer más
-                      </a>
-                    </div>
-              </div>
-            </div> -->
 
           </div>
         </section>
@@ -198,7 +173,7 @@
         <div class="col-6 cc-light">
         <h2>Política educativa y Modelo Asistencia, Permanencia, Aprendizaje (APA)</h2>
         <p>El Modelo APA, un referente de la gestión educativa nacional.</p>
-        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <a href="<?= base_url('index.php/Trayectoria/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
         <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
