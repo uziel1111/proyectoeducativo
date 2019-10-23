@@ -30,4 +30,11 @@ class Trayectoria extends CI_Controller {
 
 	}
 
+	public function modelo_apa()
+	{
+		$data = array();
+		Utilerias::pagina_basica($this, "trayectoria/modelo_apa", $data);
+
+	}	
+
 }

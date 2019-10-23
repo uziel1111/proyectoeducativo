@@ -374,9 +374,10 @@ main > .container {
 #services .box {
     margin: 20px 30px;
     padding: 40px 20px;
-    border-radius: 19px 19px 19px 19px;
-    -moz-border-radius: 19px 19px 19px 19px;
-    -webkit-border-radius: 19px 19px 19px 19px;    
+    border-radius: 19px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px; 
+       
     -webkit-box-shadow: 0px 23px 28px -17px rgba(0,0,0,0.32);
     -moz-box-shadow: 0px 23px 28px -17px rgba(0,0,0,0.32);
     box-shadow: 0px 23px 28px -17px rgba(0,0,0,0.32);
@@ -519,7 +520,7 @@ main > .container {
     background-color: rgba(52, 73, 94, 0.30);
 
   }
-  
+
   .showcase .showcase-parent:hover .showcase-child:before,
   .showcase .showcase-parent:focus .showcase-child:before {
     display: block;
