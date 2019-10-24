@@ -185,7 +185,7 @@
       <div class="col-6 cc-light">
         <h2>Asistencia y permanencia escolares</h2>
         <p>Cada alumno es el más importante: todos a la escuela.</p>
-        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <a href="<?= base_url('index.php/Trayectoria/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
         <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>

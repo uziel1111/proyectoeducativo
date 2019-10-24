@@ -37,4 +37,11 @@ class Trayectoria extends CI_Controller {
 
 	}	
 
+	public function Asistencia_Permanencia()
+	{
+		$data = array();
+		Utilerias::pagina_basica($this, "trayectoria/asistencia_permanencia", $data);
+
+	}		
+
 }
