@@ -8,44 +8,45 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block h-100 w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
-            <div class="carousel-caption d-none d-md-block cc-light" >
+            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
+            <div class="carousel-caption d-md-block cc-light" >
               <h2 class="font-weight-bold">Queremos que todos los niños y jóvenes asistan a buenas escuelas.</h2>
               <!-- <h4>Reúne contenidos para directores y supervisores escolares, así como estadísticas que apoya la gestión escolar</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-3.jpg'); ?>" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block cc-light">
+            <div class="carousel-caption d-md-block cc-light">
               <h2 class="font-weight-bold">Sabemos cómo se puede avanzar en este propósito.</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-5.jpg'); ?>" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block cc-light">
+            <div class="carousel-caption d-md-block cc-light">
               <h2 class="font-weight-bold">Podemos lograrlo haciendo equipo.</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-6.jpg'); ?>" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block cc-light">
+            <div class="carousel-caption d-md-block cc-light">
               <h2 class="font-weight-bold">Creemos que México y América Latina pueden lograr que sus </h2>
               <h4>sistemas educativos aseguren aprendizajes, formen personas y detonen un desarrollo más equitativo.</h4>
             </div>
-          </div>  
+          </div>
 
           </div>
+          <a class="carousel-control-prev mt-5" href="#carouselhome" role="button" data-slide="prev" style="color:black;">
+            <span class=" fa-stack-2x"><i class="fas fa-arrow-left fa-pull-left fa-border ml-3"></i></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next mt-5" href="#carouselhome" role="button" data-slide="next" style="color:black;">
+            <span class=" fa-stack-2x"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev mt-5" href="#carouselhome" role="button" data-slide="prev">
-          <span class=" fa-stack-2x"><i class="fas fa-arrow-left fa-pull-left fa-border ml-3"></i></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next mt-5" href="#carouselhome" role="button" data-slide="next">
-          <span class=" fa-stack-2x"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span>
-          <span class="sr-only">Next</span>
-        </a>
+
       </div>
     <!-- END Main Slider -->
 
@@ -177,7 +178,7 @@
         </div>
         <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
-    </div>  
+    </div>
     </div>
     <div class="carousel-item">
     <div class="container">
@@ -189,7 +190,7 @@
         </div>
         <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
-    </div> 
+    </div>
     </div>
     <div class="carousel-item">
     <div class="container">
@@ -201,7 +202,7 @@
         </div>
         <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
-    </div> 
+    </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselcampos" role="button" data-slide="prev">
@@ -266,7 +267,7 @@
               <div class="card tweets">
 
 
-			  <a class="twitter-timeline" data-lang="es" data-height="435" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/Proyed?ref_src=twsrc%5Etfw">Tweets by Proyed</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>		  
+			  <a class="twitter-timeline" data-lang="es" data-height="435" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/Proyed?ref_src=twsrc%5Etfw">Tweets by Proyed</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 				</div>
           </div>

@@ -57,7 +57,7 @@
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-users fa-stack-1x icon"></i>
-                      
+
                     </span>
                         Nosotros
                       </a>
@@ -76,7 +76,7 @@
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-briefcase fa-stack-1x icon"></i>
-                      
+
                     </span>
                     Servicios
                   </a>
@@ -89,7 +89,7 @@
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-flag fa-stack-1x icon"></i>
-                      
+
                     </span>
                     Trayectoria
                   </a>
@@ -101,7 +101,7 @@
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-paper-plane fa-stack-1x icon"></i>
-                      
+
                     </span>
                     Contacto
                   </a>
