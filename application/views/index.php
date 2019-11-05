@@ -270,7 +270,7 @@
               <div class="row no-gutters">
 
                   <div class="col-lg-6 text-white showcase-parent">
-                      <div class="showcase-child img-1"></div>
+                      <div class="showcase-child img-2"></div>
                   </div>
 
                   <div class="col-lg-6 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -364,40 +364,12 @@
                 </div>
               </div>
         <div class="row mt-5">
-          <div class="col news-box">
-
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="<?= base_url('assets/img/home/news/news-3-vertical.jpg'); ?>" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title fc-2 font-weight-bold">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="<?= base_url('assets/img/home/news/news-4-vertical.jpg'); ?>" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title fc-2 font-weight-bold">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+        <div class="col-md-4">
+              <div class="card tweets">
+              <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
+<div class="fb-page" data-href="https://es-la.facebook.com/proyectoeducativosc" data-tabs="timeline" data-width="" data-height="435" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://es-la.facebook.com/proyectoeducativosc" class="fb-xfbml-parse-ignore"><a href="https://es-la.facebook.com/proyectoeducativosc">Proyecto Educativo SC</a></blockquote></div>            
+				</div>
           </div>
           <div class="col">
               <div class="card tweets">

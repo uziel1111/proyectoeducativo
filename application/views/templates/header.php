@@ -75,7 +75,7 @@
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
-                      <i class="fas fa-briefcase fa-stack-1x icon"></i>
+                      <i class="fas fa-users fa-stack-1x icon"></i>
                       
                     </span>
                     Somos
