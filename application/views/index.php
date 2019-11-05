@@ -89,7 +89,7 @@
 
               <div class="col-lg-12 text-center" data-aos="zoom-in">
                 <h2 class="section-heading text-uppercase line-behind"><span>Que hacemos</span></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
               </div>
             </div>
 
@@ -125,7 +125,7 @@
                     <i class="fas fa-square fa-stack-2x"></i>
                     <i class="far fa-square fa-stack-2x square"></i>
                     <i class="fas fa-chalkboard-teacher fa-stack-1x"></i>
-                  </span>                    
+                  </span>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -136,7 +136,7 @@
               </div>
 
               </div>
-              
+
               <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
@@ -156,7 +156,7 @@
                 </div>
               </div>
 
-              </div>              
+              </div>
 
             </div>
 
@@ -192,7 +192,7 @@
                     <i class="fas fa-square fa-stack-2x"></i>
                     <i class="far fa-square fa-stack-2x square"></i>
                     <i class="fas fa-layer-group fa-stack-1x"></i>
-                  </span>                    
+                  </span>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -203,7 +203,7 @@
               </div>
 
               </div>
-              
+
               <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
@@ -213,7 +213,7 @@
                     <i class="fas fa-square fa-stack-2x"></i>
                     <i class="far fa-square fa-stack-2x square"></i>
                     <i class="fas fa-business-time fa-stack-1x"></i>
-                  </span>                     
+                  </span>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -223,7 +223,7 @@
                 </div>
               </div>
 
-              </div>              
+              </div>
 
             </div>
 
@@ -360,7 +360,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center" data-aos="zoom-in">
                   <h2 class="section-heading text-uppercase line-behind"><span>Noticias</span></h2>
-                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
               </div>
         <div class="row mt-5">

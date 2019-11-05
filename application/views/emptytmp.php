@@ -217,7 +217,7 @@
 
               <div class="col-lg-12 text-center" data-aos="zoom-in">
                 <h2 class="section-heading text-uppercase line-behind"><span>Que hacemos</span></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
               </div>
             </div>
             <div class="row justify-content-center text-center mt-5">
@@ -316,7 +316,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center" data-aos="zoom-in">
                   <h2 class="section-heading text-uppercase line-behind"><span>Noticias</span></h2>
-                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
               </div>
         <div class="row mt-5">
