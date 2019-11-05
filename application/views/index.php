@@ -62,11 +62,9 @@
         <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Somos</span></h2>
 
         <!-- About Section Content -->
-        <div class="row mt-5">
-          <div class="col-lg-4 ml-auto">
+        <div class="row mt-5 justify-content-md-center">
+          <div class="col-lg-8">
             <p class="lead text-justify">Una institución especializada en elevar la calidad y la equidad de la educación mediante la asesoría, el diseño y el acompañamiento de acciones innovadoras en la educación básica y media superior.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
             <p class="lead text-justify">Contribuimos a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional.</p>
           </div>
         </div>
@@ -87,14 +85,152 @@
 
       <section id="services">
           <div class="container">
-            <div class="row">
+            <div class="row mb-3">
 
               <div class="col-lg-12 text-center" data-aos="zoom-in">
                 <h2 class="section-heading text-uppercase line-behind"><span>Que hacemos</span></h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
               </div>
             </div>
-            <div class="row justify-content-center text-center mt-5">
+
+            <div class="row justify-content-center text-center">
+
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-1">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-puzzle-piece fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Política educativa - Modelo APA</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-2">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-chalkboard-teacher fa-stack-1x"></i>
+                  </span>                    
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Formación continua para docentes</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-3">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-user-tie fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Capacitación de directores y supervisores</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>              
+
+            </div>
+
+            <div class="row justify-content-center text-center">
+
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-4">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-clipboard-list fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Impulso a la asistencia y permanencia</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-5">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-layer-group fa-stack-1x"></i>
+                  </span>                    
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Sistemas de información educativa</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x fc-6">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-business-time fa-stack-1x"></i>
+                  </span>                     
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Descarga administrativa</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>              
+
+            </div>
+
+
+
+
+            <!-- <div class="row justify-content-center text-center mt-5">
               <div class="col-md-3 box" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
                 <span class="fa-stack fa-4x icon">
                   <i class="fas fa-circle fa-stack-2x text-info"></i>
@@ -122,7 +258,7 @@
                 <p class="text-muted px-4">El centro de las acciones tiene que ser siempre el mejoramiento de la calidad y equidad del aprendizaje.</p>
                 <a class="btn btn-warning text-white" href="#" role="button">Leer mas</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
           <!-- END We do... Boxes -->

@@ -51,7 +51,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mx-0 mx-lg-1 dropdown">
+                  <!--<li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -59,18 +59,32 @@
                       <i class="fas fa-users fa-stack-1x icon"></i>
 
                     </span>
-                        Nosotros
+                        Somos
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">Organización</a>
                         <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">Equipo</a>
-                        <!-- <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a> -->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> 
                       </div>
-                    </li>
+                    </li>-->
+                    <li class="nav-item mx-0 mx-lg-1">
+
+                <a class="nav-link rounded" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">
+
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-briefcase fa-stack-1x icon"></i>
+                      
+                    </span>
+                    Somos
+                  </a>
+
+                </li>                    
                 <li class="nav-item mx-0 mx-lg-1">
 
-                <a class="nav-link rounded" href="#">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -78,7 +92,7 @@
                       <i class="fas fa-briefcase fa-stack-1x icon"></i>
 
                     </span>
-                    Servicios
+                    Hacemos
                   </a>
 
                 </li>
@@ -91,7 +105,7 @@
                       <i class="fas fa-flag fa-stack-1x icon"></i>
 
                     </span>
-                    Trayectoria
+                    Logramos
                   </a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
@@ -103,7 +117,7 @@
                       <i class="fas fa-paper-plane fa-stack-1x icon"></i>
 
                     </span>
-                    Contacto
+                    Contáctanos
                   </a>
                 </li>
               </ul>

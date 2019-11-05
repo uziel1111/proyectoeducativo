@@ -7,7 +7,7 @@
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
 
         <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Equipo de Trabajo</span></h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Somos</span></h2>
 
 
       </div>

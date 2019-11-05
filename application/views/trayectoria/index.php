@@ -7,7 +7,7 @@
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
 
         <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Trayectoria</span></h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Logramos</span></h2>
 
 
       </div>
@@ -17,94 +17,15 @@
       <!-- We do... Boxes -->
 
       <section id="subpage_cont1">
-          <div class="container">
-            <div class="row px-5 mb-4">
+          <div class="container pt-0">
+            <!-- <div class="row px-5 mb-4">
 
               <div class="col-lg-12 text-justify" data-aos="zoom-in">
-                <h2 class="section-heading text-uppercase line-behind"><span>SOMOS</span></h2>
+                <h2 class="section-heading text-uppercase line-behind"><span>HEMOS LOGRADO</span></h2>
                 <p>Una organización especializada en elevar la calidad y la equidad de la educación mediante la asesoría, el diseño y el acompañamiento de acciones innovadoras en la educación básica y media superior. <strong>Nuestro compromiso es contribuir a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional</strong>, como ya lo hemos logrado con diversas entidades federativas en temas concretos:</p>
               </div>
-            </div>
+            </div> -->
 
-            <div class="row" id="rowdark1">
-
-              <div class="col-lg-6 text-justify" data-aos="zoom-in">
-
-          
-              <ul class="list-group list-boxed-1">
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Política educativa </h5>
-      <small><i class="fas fa-puzzle-piece fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para diseñar e implementar estrategias que apunten a los aspectos más importantes de la educación; logren resultados tangibles; sean sustentables financiera y operativamente; y abonen a la imagen de la administración estatal.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Formación continua para docentes</h5>
-      <small><i class="fas fa-chalkboard-teacher fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Focalizada, relevante, cercana, sustentable y de alta calidad, para estar en posición de impulsar procesos de mejora.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Capacitación de directores y supervisores</h5>
-      <small><i class="fas fa-user-tie fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para formar a cuadros que deben tener una muy alta prioridad en el proceso de fortalecimiento de la escuela como unidad básica para la mejora del sistema educativo.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Impulso a la asistencia y permanencia</h5>
-      <small><i class="fas fa-clipboard-list fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para dar prioridad a los problemas más sensibles de un sistema educativo que también debe elevar su calidad por la vía de la equidad.</p>
-  </li>
-
-  </ul>
-
-
-              </div>
-
-
-              <div class="col-lg-6 text-justify" data-aos="zoom-in">
-
-              <ul class="list-group list-boxed-1">
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Sistemas de información educativa</h5>
-      <small><i class="fas fa-layer-group fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para impulsar el aprovechamiento de los datos con que ya cuentan las instancias estatales mediante una integración más intuitiva, un análisis más práctico y una redistribución más amplia y oportuna información.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Descarga administrativa</h5>
-      <small><i class="fas fa-business-time fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para simplificar la gestión escolar, ahorrar recursos e incrementar el tiempo disponible para los aspectos académicos en escuelas, zonas escolares y oficinas estatales.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Optimización de recursos</h5>
-      <small><i class="fas fa-hand-holding-usd fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Financieros y humanos, para asegurar el mayor provecho de los recursos del FONE y de las plazas disponibles tanto federales como estatales.</p>
-  </li>
-  <li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mt-2">Evaluación del aprendizaje</h5>
-      <small><i class="fas fa-book-reader fa-2x fc-2"></i></small>
-    </div>
-    <p class="mb-1">Para contar con herramientas oportunas de diagnóstico que sirvan de sustento a las tareas de planeación y seguimiento de escuelas, zonas escolares y autoridades estatales.</p>
-  </li>
-
-  </ul>
-              </div>
-              
-
-
-            </div>
 
             <div class="row no-gutters img-panel-txt" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 

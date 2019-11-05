@@ -7,7 +7,7 @@
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
 
         <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Nuestra Organización</span></h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Hacemos</span></h2>
 
 
       </div>
@@ -21,8 +21,8 @@
             <div class="row px-5 mb-4">
 
               <div class="col-lg-12 text-justify" data-aos="zoom-in">
-                <h2 class="section-heading text-uppercase line-behind"><span>SOMOS</span></h2>
-                <p>Una organización especializada en elevar la calidad y la equidad de la educación mediante la asesoría, el diseño y el acompañamiento de acciones innovadoras en la educación básica y media superior. <strong>Nuestro compromiso es contribuir a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional</strong>, como ya lo hemos logrado con diversas entidades federativas en temas concretos:</p>
+                <h2 class="section-heading text-uppercase line-behind"><span>NUESTRO QUEHACER</span></h2>
+                <p>Es el elevar la calidad y la equidad de la educación mediante la asesoría, el diseño y el acompañamiento de acciones innovadoras en la educación básica y media superior. <strong>Nuestro compromiso es contribuir a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional</strong>, como ya lo hemos logrado con diversas entidades federativas en temas concretos:</p>
               </div>
             </div>
 
