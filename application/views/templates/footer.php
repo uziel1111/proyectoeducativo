@@ -33,18 +33,24 @@
                   <div class="row text-right">
                     <div class="col">
                       <h5 class="text-muted font-weight-bold mb-3">Síguenos</h5>
+                      <a href="https://www.facebook.com/proyectoeducativosc/" target="_blank" style="color:none;">
                       <span class="fa-stack fa-lg icon">
                         <i class="fas fa-circle fa-stack-2x fc-1"></i>
                         <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                       </span>
+                      </a>
+                      <a href="https://www.facebook.com/proyectoeducativosc/" target="_blank">
                       <span class="fa-stack fa-lg icon">
                         <i class="fas fa-circle fa-stack-2x fc-1"></i>
                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                       </span>
+                      </a>
+                      <a href="https://www.facebook.com/proyectoeducativosc/" target="_blank">
                       <span class="fa-stack fa-lg icon">
                         <i class="fas fa-circle fa-stack-2x fc-1"></i>
                         <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                       </span>
+                      </a>
                     </div>
                   </div>
                 </div>

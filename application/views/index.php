@@ -38,11 +38,11 @@
 
           </div>
           <a class="carousel-control-prev mt-5" href="#carouselhome" role="button" data-slide="prev" style="color:black;">
-            <span class=" fa-stack-2x"><i class="fas fa-arrow-left fa-pull-left fa-border ml-3"></i></span>
+            <span class="fa-stack-2x"><i class="fas fa-arrow-left fa-pull-left fa-border ml-3"></i></span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next mt-5" href="#carouselhome" role="button" data-slide="next" style="color:black;">
-            <span class=" fa-stack-2x"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span>
+            <span class="fa-stack-2x"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span>
             <span class="sr-only">Next</span>
           </a>
         </div>
@@ -93,9 +93,9 @@
               </div>
             </div>
 
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-center text-center no-gutters">
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -116,7 +116,7 @@
 
               </div>
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -137,7 +137,7 @@
 
               </div>
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -158,11 +158,9 @@
 
               </div>
 
-            </div>
 
-            <div class="row justify-content-center text-center">
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -183,7 +181,7 @@
 
               </div>
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -204,7 +202,7 @@
 
               </div>
 
-              <div class="col-md-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
@@ -269,11 +267,11 @@
           <div class="container-fluid p-0">
               <div class="row no-gutters">
 
-                  <div class="col-lg-6 text-white showcase-parent">
+                  <div class="col-12 col-lg-6 text-white showcase-parent">
                       <div class="showcase-child img-2"></div>
                   </div>
 
-                  <div class="col-lg-6 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <div class="col-12 col-lg-6 p-5 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                     <h4 class="text-white font-weight-bold mb-3">¿Por qué trabajamos en la educación?</h4>
 
                     <ol class="fa-ul text-justify">
@@ -301,42 +299,42 @@
 
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
               <!-- About Section Heading -->
-              <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Trayectoria</span></h2>
+              <h2 class="page-section-heading text-center text-uppercase text-white line-behind mb-5"><span>Trayectoria</span></h2>
               </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
     <div class="container">
       <div class="row align-items-center no-gutters">
-        <div class="col-6 cc-light">
-        <h2>Política educativa y Modelo Asistencia, Permanencia, Aprendizaje (APA)</h2>
-        <p>El Modelo APA, un referente de la gestión educativa nacional.</p>
+        <div class="col-lg-6 cc-light">
+        <h2>Política educativa y Modelo APA</h2>
+        <p>El Modelo de Asistencia, Permanencia, Aprendizaje (APA), un referente de la gestión educativa nacional.</p>
         <a href="<?= base_url('index.php/Trayectoria/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
-        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
     </div>
     </div>
     <div class="carousel-item">
     <div class="container">
       <div class="row align-items-center no-gutters">
-      <div class="col-6 cc-light">
+      <div class="col-lg-6 cc-light">
         <h2>Asistencia y permanencia escolares</h2>
         <p>Cada alumno es el más importante: todos a la escuela.</p>
         <a href="<?= base_url('index.php/Trayectoria/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
-        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
     </div>
     </div>
     <div class="carousel-item">
     <div class="container">
       <div class="row align-items-center no-gutters">
-      <div class="col-6 cc-light">
+      <div class="col-lg-6 cc-light">
         <h2>Formación docente</h2>
         <p>Con capacitación de calidad construimos y avanzamos.</p>
         <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
-        <div class="col-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
     </div>
     </div>
@@ -364,7 +362,7 @@
                 </div>
               </div>
         <div class="row mt-5">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-5">
               <div class="card tweets">
               <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
