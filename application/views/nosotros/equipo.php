@@ -33,11 +33,11 @@
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/3.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/3.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Bernardo H. Naranjo Piñera</h2>
@@ -56,11 +56,11 @@
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/2.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/2.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Luis Vidal Martínez</h2>
@@ -70,19 +70,19 @@
 
               </div>
 
-            </div>   
-            
+            </div>
+
             <div class="row" id="row-secondary-1">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/8.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/8.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Adriana Ordóñez Peñaloza</h2>
@@ -101,11 +101,11 @@
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/4.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/4.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Francisco Castro Benítez</h2>
@@ -115,19 +115,19 @@
 
               </div>
 
-            </div>             
-   
+            </div>
+
             <div class="row" id="row-secondary-1">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/2.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/2.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Arturo Mendoza Ayala</h2>
@@ -146,34 +146,34 @@
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/3.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/3.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Juan Arturo Pérez Rodríguez</h2>
-                        Licenciado en Ciencias Computacionales (UABC) con más de 20 años de experiencia en el desarrollo de sistemas de información educativa y en el diseño de infraestructura tecnológica para escuelas y autoridades educativas. Ha participado en acciones de innovación tecnológica en varios estados de la República y ha coordinado proyectos que fueron pioneros en México, como la emisión del primer certificado digital de educación básica en el país y el primer proceso estatal de inscripción en línea. 
+                        Licenciado en Ciencias Computacionales (UABC) con más de 20 años de experiencia en el desarrollo de sistemas de información educativa y en el diseño de infraestructura tecnológica para escuelas y autoridades educativas. Ha participado en acciones de innovación tecnológica en varios estados de la República y ha coordinado proyectos que fueron pioneros en México, como la emisión del primer certificado digital de educación básica en el país y el primer proceso estatal de inscripción en línea.
                   </div>
                 </div>
 
               </div>
 
-            </div>   
-            
-            
+            </div>
+
+
             <div class="row" id="row-secondary-1">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
                 <div class="row justify-content-md-center no-gutters">
                   <div class="col-sm-3 team-img">
-                  <img src="<?= base_url('assets/img/general/team/4.jpg'); ?>" class="img-fluid" alt="Responsive image">
+                  <!-- <img src="<?= base_url('assets/img/general/team/4.jpg'); ?>" class="img-fluid" alt="Responsive image"> -->
                   <div class="team-btns">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
-                  </div>    
+                  </div>
                 </div>
                   <div class="col-sm-6 team-text">
                         <h2>Sebastían Guevara Cota</h2>
@@ -183,7 +183,7 @@
 
               </div>
 
-            </div>            
+            </div>
 
           </div>
         </section>
