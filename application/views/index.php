@@ -268,7 +268,7 @@
               <div class="row no-gutters">
 
                   <div class="col-12 col-lg-6 text-white showcase-parent">
-                      <div class="showcase-child img-2"></div>
+                      <div class="showcase-child img-1"></div>
                   </div>
 
                   <div class="col-12 col-lg-6 p-5 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -366,7 +366,7 @@
               <div class="card tweets">
               <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
-<div class="fb-page" data-href="https://es-la.facebook.com/proyectoeducativosc" data-tabs="timeline" data-width="" data-height="435" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://es-la.facebook.com/proyectoeducativosc" class="fb-xfbml-parse-ignore"><a href="https://es-la.facebook.com/proyectoeducativosc">Proyecto Educativo SC</a></blockquote></div>            
+<div class="fb-page" data-href="https://es-la.facebook.com/proyectoeducativosc" data-tabs="timeline" data-width="" data-height="435" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://es-la.facebook.com/proyectoeducativosc" class="fb-xfbml-parse-ignore"><a href="https://es-la.facebook.com/proyectoeducativosc">Proyecto Educativo SC</a></blockquote></div>
 				</div>
           </div>
           <div class="col">

@@ -42,7 +42,7 @@ main > .container {
     .footer .float-footer {
         width: 100%;
     }
-      }  
+      }
  /* Blockquote */
 .footer .blockquote {
     font-size: 23px;
@@ -281,13 +281,13 @@ main > .container {
         transition: all 0.5s ease;
         background: rgba(0,0,0,0.0);
     }
-    
+
     #mainNav .navbar-nav li.nav-item a.nav-link span{
-    
+
         padding: 0 50%;
         display: block;
     }
-    
+
       #mainNav a.nav-link .holder {
         content: "";
         display: block;
@@ -302,7 +302,7 @@ main > .container {
         color: rgba(252,127,63,1);
         top: -5px;
       }
-    
+
       #mainNav a.nav-link span .icon {
         z-index: 10;
         color: rgba(0,0,0,0.40);
@@ -322,7 +322,7 @@ main > .container {
        color: rgba(255, 255, 255, 0);
        top: -5px;
       }
-    
+
     #mainNav.scrolled .navbar-nav li.nav-item a.nav-link span{
         display: none;
     }
@@ -332,7 +332,7 @@ main > .container {
     #mainNav .navbar-nav li.nav-item a.nav-link:hover {
         color: rgba(252,127,63,1);
     }
-    
+
     #mainNav .navbar-nav li.nav-item a.nav-link:active {
         color: rgba(252,127,63,1);
     }
@@ -477,7 +477,7 @@ main > .container {
   #carouselhome a.carousel-control-next .fa-border {
     border: .08em solid #fc7f3f;
     border-radius: .3em;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
   }
 
   #carouselhome a.carousel-control-prev:hover .fa-border,
@@ -489,15 +489,15 @@ color: rgba(254,254,254,1);
   #carouselhome a.carousel-control-prev:active .fa-border,
   #carouselhome a.carousel-control-next:active .fa-border {
     background: rgb(230, 107, 46);
-    color: rgba(254,254,254,0.8);      
+    color: rgba(254,254,254,0.8);
 transform: scale(0.9);
 
-  }  
- 
-@media (max-width:992px) {  
+  }
+
+@media (max-width:992px) {
     #carouselhome {
         margin-top: 77px;
-      }   
+      }
 }
 /*** END CAROUSEL HOME ***/
 
@@ -568,24 +568,24 @@ transform: scale(0.9);
 #services .sm-box-1 span i:last-child {
     color: #ffffff;
     transition: all 0.5s ease;
-} 
+}
 #services .sm-box-1 span i:first-child {
     transition: all 0.5s ease;
-} 
+}
 #services .sm-box-1:hover span i:last-child {
     color: unset;
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-} 
+}
 
 #services .sm-box-1:hover span i:first-child {
     color: #ffffff;
     -webkit-transform: scale(0.4);
     transform: scale(0.4);
-} 
+}
 #services .sm-box-1 span i.square {
     transition: transform .3s ease;
-} 
+}
 #services .sm-box-1:hover span i.square {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -681,6 +681,7 @@ transform: scale(0.9);
   }
   .showcase .img-1 {
     background-image: url("../img/home/box/arbol.jpg");
+    background-size: auto;
   }
   .showcase .img-2 {
     background-image: url("../img/home/box/ninos-1.jpg");
