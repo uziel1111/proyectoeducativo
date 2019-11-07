@@ -71,7 +71,7 @@
 
         <!-- About Section Button -->
         <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="#">
+          <a class="btn btn-xl btn-outline-light" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">
             <i class="fas fa-plus-square"></i>
             Leer más
           </a>
