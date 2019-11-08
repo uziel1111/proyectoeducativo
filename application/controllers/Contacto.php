@@ -124,9 +124,11 @@ class Contacto extends CI_Controller {
 			$result_send = $this->email->send();
 			// $result_send = TRUE;
 			$respueta = ($result_send)?'Gracias por escribirnos, nos pondremos en contacto con usted a la brevedad posible.':'Estamos experimentando problemas, contactenos por whatsapp y le responderemos de inmediato.';
-			$this->session->set_flashdata('respuesta_envio', $respueta);
+			// $this->session->set_flashdata('respuesta_envio', $respueta);
 			// redirect(base_url('contacto', 'refresh'));
-			redirect(base_url('index.php/Contacto'), 'refresh');
+			// redirect(base_url('index.php/Contacto'), 'refresh');
+			$data['respuesta_envio'] = $respueta;
+			Utilerias::pagina_basica($this, "contacto/index", $data);
 	}// enviar_correo()
 
 

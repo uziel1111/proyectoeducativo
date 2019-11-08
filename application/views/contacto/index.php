@@ -26,11 +26,11 @@
             </div><!-- .row -->
 
             <?php
-            if( $this->session->flashdata('respuesta_envio') != NULL){ ?>
+            if( (isset($respuesta_envio)) && (strlen($respuesta_envio)>0) ){ ?>
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-2">
-                  <div class="alert alert-success text-center" role="alert">                  
-                    <?= $this->session->flashdata('respuesta_envio') ?>
+                  <div class="alert alert-success text-center" role="alert">
+                    <?= $respuesta_envio ?>
                   </div>
                 </div><!-- .col-12 col-sm-12 col-md-12 col-lg-12 -->
               </div><!-- .row -->
