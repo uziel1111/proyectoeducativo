@@ -46,7 +46,7 @@
               <img src="<?= base_url('assets/img/template/Logo-Proyed-500-x-134.png'); ?>" class="img-fluid" alt="Proyecto Educativo Logo">
             </a>
             <div class="toggle">
-              <span>Menú</span>  
+              <span>Menú</span>
               <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
               </button>
@@ -67,7 +67,7 @@
                         <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">Organización</a>
                         <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">Equipo</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a> 
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </div>
                     </li>-->
                     <li class="nav-item mx-0 mx-lg-1">
@@ -78,12 +78,12 @@
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-users fa-stack-1x icon"></i>
-                      
+
                     </span>
                     Somos
                   </a>
 
-                </li>                    
+                </li>
                 <li class="nav-item mx-0 mx-lg-1">
 
                 <a class="nav-link rounded" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">
@@ -111,7 +111,7 @@
                   </a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link rounded" href="#">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Contacto') ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
