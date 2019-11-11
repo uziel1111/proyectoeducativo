@@ -87,8 +87,8 @@
             <div class="row mb-3">
 
               <div class="col-lg-12 text-center" data-aos="zoom-in">
-                <h2 class="section-heading text-uppercase line-behind"><span>Que hacemos</span></h2>
-                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+              <!--  <h2 class="section-heading text-uppercase line-behind"><span>Que hacemos</span></h2>
+                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
               </div>
             </div>
 
@@ -298,7 +298,7 @@
 
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
               <!-- About Section Heading -->
-              <h2 class="page-section-heading text-center text-uppercase text-white line-behind mb-5"><span>Trayectoria</span></h2>
+              <h2 class="page-section-heading text-center text-uppercase text-white line-behind mb-5"><span>Hacemos</span></h2>
               </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
