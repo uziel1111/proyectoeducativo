@@ -145,13 +145,11 @@
                 </p>
             </div>
             <div class="col-lg-6">
-            <figure class="figure text-center mt-3">
-              <figcaption class="figure-caption text-center  text-white mb-2"><strong>Mensaje de la Gobernadora de Sonora, Claudia Pavlovich, anunciando las preinscripciones en línea</strong></figcaption>
-              <img src="<?= base_url('assets/img/trayectoria/sistemas_informacion/figura-3.jpg'); ?>" class="figure-img img-fluid rounded shadow" alt="...">
-              <p>
-              <a class="btn bc-1 text-white shadow" href="https://www.facebook.com/ClaudiaPavlovich/videos/1737458659689409/" role="button" target="_blank"><i class="fas fa-video"></i> Ir a video</a>
-              </p>
-            </figure> 
+            <p class="figure-caption text-center  text-white mb-2"><strong>Mensaje de la Gobernadora de Sonora, Claudia Pavlovich, anunciando las preinscripciones en línea</strong></p> 
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FOXXZ4ivKys" frameborder="0" allowfullscreen></iframe>
+
+</div>
             </div>
           </div>
 

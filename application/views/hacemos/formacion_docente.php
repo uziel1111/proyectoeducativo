@@ -68,12 +68,26 @@ Como puede observarse, <strong>la capacitación docente busca sustentarse siempr
 </p>
    </div>
 
-
-
-
 </div>
 
-
+<div class="row justify-content-center" id="row-lowgray-1" data-aos="zoom-in">
+            <div class="col-12 text-center">
+            <p class="text-justify">
+            Para tener un carácter formativo, toda evaluación del aprendizaje deseablemente debe ofrecer elementos para ser aprovechados en el aula. Por ello hemos diseñado e/o implementado diversas acciones para que las evaluaciones estandarizadas puedan cumplir con este objetivo. Primeramente, <strong>desde las primeras ediciones de la prueba ENLACE invitamos en los talleres nacionales a los docentes a conservar los cuadernillos de respuesta para resolver el examen frente a grupo y resolver las dudas que hubiesen surgido</strong>, pues sus resultados siempre llegaron después de concluido el ciclo escolar, cuando los maestros ya no podían hacer nada para atender las insuficiencias detectadas por la evaluación.
+                </p>
+                <p class="text-justify">
+                <strong>  En 2014 pusimos en marcha en Puebla una evaluación a estudiantes de 2º y 5º grados, con la intención de ofrecer a los docentes información oportuna sobre el avance de sus estudiantes</strong>. La de 2º se realizó a medio ciclo escolar, a efecto de que identificara a los alumnos que aún no hubiesen adquirido los elementos básicos de la lectura, la escritura y la aritmética: con medio ciclo escolar por delante, fue posible avanzar en la intención de que todos los alumnos que accedieran al 3er grado supieran al menos leer, escribir, sumar y restar. La evaluación de 5º grado permitía a las escuelas contar con un diagnóstico de cada alumno con un año de antelación a su egreso del nivel. Los resultados de esa evaluación constituyeron una guía de los temas a reforzar durante el último grado de primaria. 
+                </p>
+                <p class="text-justify">
+                Finalmente, durante la gestión en el INEE de nuestro Director General, se elaboró en <strong> coordinación con SEP el curso en línea “Como evaluar en el aula” diseñado por un equipo coordinado por Pedro Ravela, especialista internacional y referente latinoamericano en el tema. Dicho curso, que enfatiza en la necesidad de proponer situaciones auténticas para la evaluación y ofrecer al estudiante una retroalimentación de calidad, representó un punto de acuerdo esencial entre SEP e INEE en cuanto a la definición de principios y estrategias para el diseño y uso de la evaluación a cargo de los docentes</strong>. Con una duración aproximada de 40 horas en 10 lecciones, el curso está disponible en los portales de internet de la SEP y del INEE. Hasta el otoño del 2019, unos 150 mil docentes del todo el país se habían inscrito al curso.         
+                </p>
+                <figure class="figure">
+              <figcaption class="figure-caption text-center mb-2"><strong>Curso en línea ¿Cómo mejorar la evaluación en el aula? </strong></figcaption>
+              <img src="<?= base_url('assets/img/trayectoria/evaluacion_aprendizaje/figura-10.jpg'); ?>" class="figure-img img-fluid rounded shadow" alt="...">
+             
+            </figure> 
+            </div>
+          </div>
 
 
 

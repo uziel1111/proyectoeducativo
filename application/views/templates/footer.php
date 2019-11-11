@@ -19,8 +19,8 @@
                 <div class="col col-lg-4 align-self-start">
                   <h5 class="text-muted font-weight-bold">Contacto</h5>
                   <ul class="fa-ul text-white">
-                    <li><span class="fa-li fc-1"><i class="far fa-building"></i></span>Torre Natyvo #6431 int. 701</li>
-                    <li><span class="fa-li fc-1"><i class="fas fa-map-pin"></i></span>C.P. 72820, Puebla, México.</li>
+                    <li><span class="fa-li fc-1"><i class="far fa-building"></i></span>Blvd. De los Reyes #6431 int. 701</li>
+                    <li><span class="fa-li fc-1"><i class="fas fa-map-pin"></i></span>San Bernardino Tlaxcalancingo, Puebla, México.</li>
                     <li><span class="fa-li fc-1"><i class="fas fa-phone-alt"></i></span>+52 222 241 9257</li>
                     <li><span class="fa-li fc-1"><i class="far fa-envelope"></i></span>contacto@proyectoeducativo.org</li>
 

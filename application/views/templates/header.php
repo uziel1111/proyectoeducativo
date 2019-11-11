@@ -119,7 +119,7 @@
                       <i class="fas fa-paper-plane fa-stack-1x icon"></i>
 
                     </span>
-                    Contáctanos
+                    Contáctenos
                   </a>
                 </li>
               </ul>

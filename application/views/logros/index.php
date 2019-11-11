@@ -127,9 +127,9 @@
 </div>
 <div class="col-lg-4" id="logos-1">             
 <div class="logobox">
-<img src="<?= base_url('assets/img/logros/logo-mex-primero.png'); ?>" class="figure-img img-fluid image" alt="...">
+<img src="<?= base_url('assets/img/logros/logo-stanford.png'); ?>" class="figure-img img-fluid image" alt="...">
   <div class="overlay">
-    <a href="https://www.mexicanosprimero.org/" class="icon" target="_blank">
+    <a href="https://www.stanford.edu/" class="icon" target="_blank">
     <i class="fas fa-link"></i>
     </a>
   </div>
@@ -165,7 +165,16 @@
   </div>
 </div>
 </div>
-
+<div class="col-lg-4" id="logos-1">             
+<div class="logobox">
+<img src="<?= base_url('assets/img/logros/logo-mex-primero.png'); ?>" class="figure-img img-fluid image" alt="...">
+  <div class="overlay">
+    <a href="https://www.mexicanosprimero.org/" class="icon" target="_blank">
+    <i class="fas fa-link"></i>
+    </a>
+  </div>
+</div>
+</div>
 </div>
              
 

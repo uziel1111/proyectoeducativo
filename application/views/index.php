@@ -201,12 +201,14 @@
 
               </div>
 
+              <div class="d-none d-lg-block d-xl-block w-100"></div>
+
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                  <span class="fa-stack fa-3x fc-6">
+                  <span class="fa-stack fa-3x text-info">
                     <i class="fas fa-square fa-stack-2x"></i>
                     <i class="far fa-square fa-stack-2x square"></i>
                     <i class="fas fa-business-time fa-stack-1x"></i>
@@ -222,6 +224,47 @@
 
               </div>
 
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x text-success">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-hand-holding-usd fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Optimización de recursos</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x text-warning">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-book-reader fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Evaluación del aprendizaje</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>              
             </div>
 
 
@@ -271,7 +314,7 @@
                   </div>
 
                   <div class="col-12 col-lg-6 p-5 my-auto showcase-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                    <h4 class="text-white font-weight-bold mb-3">¿Por qué trabajamos en la educación?</h4>
+                    <h4 class="text-white font-weight-bold mb-3">¿Cómo lo logramos?</h4>
 
                     <ol class="fa-ul text-justify">
                       <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque creemos que una buena formación puede hacer que las personas vivan una vida más plena y feliz</span></li>

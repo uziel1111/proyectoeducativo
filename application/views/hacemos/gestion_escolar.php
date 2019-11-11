@@ -22,7 +22,7 @@
 
             <div class="row px-5 mb-4">
             <div class="col-lg-12 text-justify" data-aos="zoom-in">
-                <h2 class="section-heading text-uppercase line-behind"><span>FORMACIÓN DOCENTE</span></h2>
+                <h2 class="section-heading text-uppercase line-behind"><span>GESTIÓN ESCOLAR Y LIDERAZGO EDUCATIVO</span></h2>
                 <p>El apoyo a la gestión escolar es esencial en toda estrategia que aspire a la mejora educativa. <strong>Nuestra propuesta para lograrlo es fortalecer los conocimientos y habilidades de directores y supervisores; ofrecerles información y herramientas de apoyo a su trabajo; y llevar a cabo procesos de descarga administrativa que liberen tiempo para dedicarlo a las actividades académicas y aporten racionalidad al funcionamiento del sistema</strong>.  En ello hemos tenido logros importantes con el apoyo de autoridades estatales y la participación del magisterio. </p>
               </div>             
             </div>

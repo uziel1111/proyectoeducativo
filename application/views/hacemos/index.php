@@ -26,7 +26,95 @@
               </div>
             </div>
 
-            <div class="row" id="rowdark1" data-aos="zoom-in">
+
+            <div class="row" id="row-bright-1" data-aos="zoom-in">
+
+            <div class="row justify-content-center text-center mt-5" id="hacemos">
+            <div class="col-12 text-left ml-5" data-aos="flip-left" data-aos-delay="0" data-aos-duration="1000">
+                  <h4 class="font-weight-bold mb-3">Campos con mayor trayectoria</h4>
+              </div>
+            
+              <div class="col box" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x fc-1"></i>
+                  <i class="fas fa-puzzle-piece fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading fc-1">Política educativa Modelo APA</h4>
+                <p class="text-muted px-4">Para diseñar e implementar estrategias que apunten a los aspectos más importantes de la educación; logren resultados tangibles; sean sustentables financiera y operativamente; y abonen a la imagen de la administración estatal.</p>
+                <a class="btn bc-1 text-white" href="#" role="button">Leer mas</a>
+              </div>
+              <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x fc-2"></i>
+                  <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading fc-2">Formación continua para docentes</h4>
+                <p class="text-muted px-4">Focalizada, relevante, cercana, sustentable y de alta calidad, para estar en posición de impulsar procesos de mejora.</p>
+                <a class="btn bc-2 text-white" href="#" role="button">Leer mas</a>
+              </div>
+              <div class="col box" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x fc-3"></i>
+                  <i class="fas fa-user-tie fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading fc-3">Capacitación de directores y supervisores</h4>
+                <p class="text-muted px-4">Para formar a cuadros que deben tener una muy alta prioridad en el proceso de fortalecimiento de la escuela como unidad básica para la mejora del sistema educativo.</p>
+                <a class="btn bc-3 text-white" href="#" role="button">Leer mas</a>
+              </div>
+              <div class="col box" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x fc-4"></i>
+                  <i class="fas fa-clipboard-list fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading fc-4">Impulso a la asistencia y permanencia</h4>
+                <p class="text-muted px-4">Para dar prioridad a los problemas más sensibles de un sistema educativo que también debe elevar su calidad por la vía de la equidad.</p>
+                <a class="btn bc-4 text-white" href="#" role="button">Leer mas</a>
+              </div>
+
+              <div class="d-none d-lg-block d-xl-block w-100"></div>
+
+              <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x fc-5"></i>
+                  <i class="fas fa-layer-group fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading fc-5">Sistemas de información educativa</h4>
+                <p class="text-muted px-4">Para impulsar el aprovechamiento de los datos con que ya cuentan las instancias estatales mediante una integración más intuitiva, un análisis más práctico y una redistribución más amplia y oportuna información.</p>
+                <a class="btn bc-5 text-white" href="#" role="button">Leer mas</a>
+              </div>
+              <div class="col box" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x text-info"></i>
+                  <i class="fas fa-business-time fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading text-info">Descarga administrativa</h4>
+                <p class="text-muted px-4">Para simplificar la gestión escolar, ahorrar recursos e incrementar el tiempo disponible para los aspectos académicos en escuelas, zonas escolares y oficinas estatales.</p>
+                <a class="btn btn-info text-white" href="#" role="button">Leer mas</a>
+              </div>  
+              <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x text-success"></i>
+                  <i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading text-success">Optimización de recursos</h4>
+                <p class="text-muted px-4">Financieros y humanos, para asegurar el mayor provecho de los recursos del FONE y de las plazas disponibles tanto federales como estatales.</p>
+                <a class="btn btn-success" href="#" role="button">Leer mas</a>
+              </div>
+              <div class="col box" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
+                <span class="fa-stack fa-3x icon">
+                  <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                  <i class="fas fa-book-reader fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading text-warning">Evaluación del aprendizaje</h4>
+                <p class="text-muted px-4">Para contar con herramientas oportunas de diagnóstico que sirvan de sustento a las tareas de planeación y seguimiento de escuelas, zonas escolares y autoridades estatales.</p>
+                <a class="btn btn-warning text-white" href="#" role="button">Leer mas</a>
+              </div>                           
+            </div>
+            </div>
+
+
+
+            <!-- <div class="row" id="rowdark1" data-aos="zoom-in">
 
               <div class="col-lg-6 text-justify">
 
@@ -104,7 +192,7 @@
               
 
 
-            </div>
+            </div> -->
  
               
 

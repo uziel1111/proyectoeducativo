@@ -6,7 +6,7 @@
   <section class="page-section sh-trayectoria text-white mb-0" id="subpage-head">
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
       <!-- Subpage Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Contáctanos</span></h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span>Contáctenos</span></h2>
     </div>
   </section>
   <!-- END Some About -->
