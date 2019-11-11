@@ -681,7 +681,7 @@ transform: scale(0.9);
   }
   .showcase .img-1 {
     background-image: url("../img/home/box/arbol.jpg");
-    background-size: auto;
+    background-size: cover;
   }
   .showcase .img-2 {
     background-image: url("../img/home/box/ninos-1.jpg");
@@ -1227,11 +1227,11 @@ border-radius: 0;
 
   }
 
-@media (min-width:768px){
+/* @media (min-width:768px){ */
     .img-panel-txt .showcase-text{
         padding:3rem;
     }
-}
+/* } */
 /*** END IMG PANEL WITH TEXT ***/
 /***  LIST BOXED 1  ***/
 .list-boxed-1 .list-group-item {
@@ -1307,3 +1307,69 @@ transition: all 0.3s ease;
     font-weight: 700;
     color: rgba(252,127,63,1);
 }
+/****  LOGRAMOS  ****/
+ 
+/*** Clients logo  ***/
+/* Container needed to position the overlay. Adjust the width as needed */
+#logos-1 .logobox {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: #FFFFFF;
+    padding: 20px;
+    -webkit-box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.39);
+    box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.39);
+    margin-bottom: 25px;
+  }
+  
+  /* Make the image to responsive */
+  #logos-1 .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  #logos-1 .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0,0,0,0.80);
+  }
+  
+  /* When you mouse over the container, fade in the overlay icon*/
+  #logos-1 .logobox:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+  #logos-1 .icon {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background: #d36731;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 10px 16px;
+    -webkit-box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.90);
+    -moz-box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.90);
+    box-shadow: 0px 9px 29px -11px rgba(0,0,0,0.90);
+  }
+  
+  /* When you move the mouse over the icon, change color */
+  #logos-1 .fa-user:hover {
+    color: #eee;
+  }
+/*** END Clients logo  ***/

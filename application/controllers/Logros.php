@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Trayectoria extends CI_Controller {
+class Logros extends CI_Controller {
 
 		function __construct() {
 			parent::__construct();
@@ -26,22 +26,9 @@ class Trayectoria extends CI_Controller {
 	public function index()
 	{
 		$data = array();
-		Utilerias::pagina_basica($this, "trayectoria/index", $data);
+		Utilerias::pagina_basica($this, "logros/index", $data);
 
 	}
 
-	public function modelo_apa()
-	{
-		$data = array();
-		Utilerias::pagina_basica($this, "trayectoria/modelo_apa", $data);
-
-	}	
-
-	public function Asistencia_Permanencia()
-	{
-		$data = array();
-		Utilerias::pagina_basica($this, "trayectoria/asistencia_permanencia", $data);
-
-	}		
-
 }
+

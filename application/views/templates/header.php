@@ -72,7 +72,7 @@
                     </li>-->
                     <li class="nav-item mx-0 mx-lg-1">
 
-                <a class="nav-link rounded" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Somos'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -86,7 +86,7 @@
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
 
-                <a class="nav-link rounded" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Hacemos'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -99,7 +99,7 @@
 
                 </li>
                 <li class="nav-item">
-                <a class="nav-link rounded" href="<?= base_url('index.php/Trayectoria/'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('index.php/Logros/'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>

@@ -10,29 +10,28 @@
           <div class="carousel-item active">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
             <div class="carousel-caption d-md-block cc-light" >
-              <h2 class="font-weight-bold">Queremos que todos los niños y jóvenes asistan a buenas escuelas.</h2>
+              <h2 class="font-weight-bold">QUEREMOS que todos los niños y jóvenes asistan a buenas escuelas.</h2>
               <!-- <h4>Reúne contenidos para directores y supervisores escolares, así como estadísticas que apoya la gestión escolar</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-3.jpg'); ?>" alt="Second slide">
             <div class="carousel-caption d-md-block cc-light">
-              <h2 class="font-weight-bold">Sabemos cómo se puede avanzar en este propósito.</h2>
+              <h2 class="font-weight-bold">SABEMOS cómo se puede avanzar en este propósito.</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-5.jpg'); ?>" alt="Second slide">
             <div class="carousel-caption d-md-block cc-light">
-              <h2 class="font-weight-bold">Podemos lograrlo haciendo equipo.</h2>
+              <h2 class="font-weight-bold">PODEMOS lograrlo haciendo equipo.</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-6.jpg'); ?>" alt="Second slide">
             <div class="carousel-caption d-md-block cc-light">
-              <h2 class="font-weight-bold">Creemos que México y América Latina pueden lograr que sus </h2>
-              <h4>sistemas educativos aseguren aprendizajes, formen personas y detonen un desarrollo más equitativo.</h4>
+              <h2 class="font-weight-bold">CREEMOS que México y América Latina pueden mejorar sus sistemas educativos</h2>
             </div>
           </div>
 
@@ -71,7 +70,7 @@
 
         <!-- About Section Button -->
         <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">
+          <a class="btn btn-xl btn-outline-light" href="<?= base_url('index.php/Somos'); ?>">
             <i class="fas fa-plus-square"></i>
             Leer más
           </a>
@@ -308,7 +307,7 @@
         <div class="col-lg-6 cc-light">
         <h2>Política educativa y Modelo APA</h2>
         <p>El Modelo de Asistencia, Permanencia, Aprendizaje (APA), un referente de la gestión educativa nacional.</p>
-        <a href="<?= base_url('index.php/Trayectoria/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <a href="<?= base_url('index.php/Hacemos/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
         <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
@@ -320,7 +319,7 @@
       <div class="col-lg-6 cc-light">
         <h2>Asistencia y permanencia escolares</h2>
         <p>Cada alumno es el más importante: todos a la escuela.</p>
-        <a href="<?= base_url('index.php/Trayectoria/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <a href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
         <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
@@ -332,12 +331,60 @@
       <div class="col-lg-6 cc-light">
         <h2>Formación docente</h2>
         <p>Con capacitación de calidad construimos y avanzamos.</p>
-        <a href="#" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
         <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
     </div>
     </div>
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
+        <h2>Gestión escolar y liderazgo educativo</h2>
+        <p>Esencial en toda estrategia que aspire a la mejora educativa.</p>
+        <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-4.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div> 
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
+        <h2>Sistemas de información para la gestión educativa</h2>
+        <p>Que favorezcan los procesos de toma de decisión.</p>
+        <a href="<?= base_url('index.php/Hacemos/Sistemas_Informacion'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-5.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div> 
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
+        <h2>Descarga administrativa</h2>
+        <p>Reducir la carga administrativa del personal de las escuelas.</p>
+        <a href="<?= base_url('index.php/Hacemos/Descarga_Administrativa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-6.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div> 
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
+        <h2>Evaluación del aprendizaje</h2>
+        <p>La evaluación educativa aún está por mostrar sus mayores beneficios.</p>
+        <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-7.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div>                
   </div>
   <a class="carousel-control-prev" href="#carouselcampos" role="button" data-slide="prev">
     <span class="arrow" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>

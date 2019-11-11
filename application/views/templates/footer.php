@@ -30,7 +30,7 @@
                   <span class="icon-Iso-Proyed-01 f-icon"></span>
                 </div>
                 <div class="col col-lg-4 text-right align-self-start">
-                  <div class="row text-right">
+                  <div class="row text-right footer-icons">
                     <div class="col">
                       <h5 class="text-muted font-weight-bold mb-3">Síguenos</h5>
                       <a href="https://www.facebook.com/proyectoeducativosc/" target="_blank" style="color:none;">

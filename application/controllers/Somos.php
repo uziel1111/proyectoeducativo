@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Nosotros extends CI_Controller {
+class Somos extends CI_Controller {
 
 		function __construct() {
 			parent::__construct();
@@ -26,13 +26,13 @@ class Nosotros extends CI_Controller {
 	public function nosotros()
 	{
 		$data = array();
-		Utilerias::pagina_basica($this, "nosotros/nosotros", $data);
+		Utilerias::pagina_basica($this, "somos/nosotros", $data);
 
 	}
-	public function Equipo()
+	public function index()
 {
 	$data = array();
-	Utilerias::pagina_basica($this, "nosotros/equipo", $data);
+	Utilerias::pagina_basica($this, "somos/index", $data);
 
 }
 

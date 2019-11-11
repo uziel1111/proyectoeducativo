@@ -12,18 +12,30 @@
   <!-- END Some About -->
   <!-- We do... Boxes -->
 
-  <section id="">
-    <div class="container pb-4">
+  <section id="subpage_cont1">
+          <div class="container pt-0">
 
-      <div class="card card-body mt-4 border-info">
-        <form action="<?= base_url('index.php/Contacto/enviar_correo') ?>" method="POST">
-          <div class="form-group">
+          <div class="row" id="row-secondary-1">
 
-            <div class="row">
+<div class="col-lg-12 text-justify" data-aos="zoom-in">
+<div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-3">
-                <h4 class="text-secondary ml-0 pl-0 text-center">Use el siguiente formulario para ponerse en contacto con nosotros</h4>
+                <h4 class=" ml-0 pl-0 text-center text-white">Use el siguiente formulario para ponerse en contacto con nosotros</h4>
               </div><!-- .col-12 col-xs-12 col-md-12 col-lg-12 -->
             </div><!-- .row -->
+
+</div>
+</div> 
+          
+
+
+          <div class="row" id="row-lowgray-1">
+
+<div class="col-lg-12 text-justify" data-aos="zoom-in">
+<form action="<?= base_url('index.php/Contacto/enviar_correo') ?>" method="POST">
+          <div class="form-group">
+
+
 
             <?php
             if( (isset($respuesta_envio)) && (strlen($respuesta_envio)>0) ){ ?>
@@ -69,26 +81,35 @@
               </div><!-- .col-12 col-sm-12 col-md-12 col-lg-12 -->
             </div><!-- .row -->
 
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-10 col-lg-10"></div>
+            <div class="row justify-content-md-center">
               <div class="col-12 col-sm-12 col-md-2 col-lg-2 mt-3">
-                <button type="submit" name="button" class="btn btn-info btn-block">Enviar</button>
+                <button type="submit" name="button" class="btn btn-lg bc-1 btn-block text-white"><i class="fas fa-paper-plane"></i> Enviar</button>
               </div><!-- .col-12 col-sm-12 col-md-2 col-lg-2 -->
             </div><!-- .row -->
 
           </div><!-- .form-grou -->
         </form>
 
-      </div><!-- .card card-body mt-4 -->
+</div>
+</div> 
 
-    </div><!-- .container pb-4 -->
+
+
+
+
+
+
+
+
+
+    
 
 
 
 
   </div><!-- .container pt-0 -->
 
-</div>
+
 </section>
 <!-- END We do... Boxes -->
 
