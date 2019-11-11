@@ -39,7 +39,7 @@ class Contacto extends CI_Controller {
 			define('EMAIL_TO', 'contacto@proyectoeducativo.org');
 			// define('EMAIL_TO', 'qualedu.developers@gmail.com');
 			define('EMAIL_CC', 'bnaranjo@proyectoeducativo.org');
-			// define('EMAIL_CC', 'qualedu.developers@gmail.com');
+			define('EMAIL_CC', 'adrianaop10@hotmail.com');
 			define('EMAIL_CCO', 'uzielcap123@gmail.com, miguellhdez@gmail.com');
 
 			$correo_electronico = $this->input->post('correo_electronico');
