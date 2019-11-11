@@ -10,21 +10,21 @@
           <div class="carousel-item active">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
             <div class="carousel-caption d-md-block cc-light" >
-              <h2 class="font-weight-bold">QUEREMOS que todos los niños y jóvenes asistan a buenas escuelas.</h2>
+              <h2 class="font-weight-bold">QUEREMOS que todos los niños y jóvenes asistan a buenas escuelas</h2>
               <!-- <h4>Reúne contenidos para directores y supervisores escolares, así como estadísticas que apoya la gestión escolar</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-3.jpg'); ?>" alt="Second slide">
             <div class="carousel-caption d-md-block cc-light">
-              <h2 class="font-weight-bold">SABEMOS cómo se puede avanzar en este propósito.</h2>
+              <h2 class="font-weight-bold">SABEMOS cómo se puede avanzar en este propósito</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-5.jpg'); ?>" alt="Second slide">
             <div class="carousel-caption d-md-block cc-light">
-              <h2 class="font-weight-bold">PODEMOS lograrlo haciendo equipo.</h2>
+              <h2 class="font-weight-bold">PODEMOS lograrlo haciendo equipo</h2>
               <!-- <h4>Registro desde una computadora o un dispositivo móvil para mejorar el servicio de preinscripción en Sonora</h4> -->
             </div>
           </div>
