@@ -17,10 +17,8 @@
       <!-- We do... Boxes -->
 
       <section id="subpage_cont1">
-          <div class="container">
-
-
-            <div class="row px-5 mb-4">
+      <div class="container p-0">
+          <div class="row px-5 py-4 no-gutters">
 
               <div class="col-lg-12 text-justify" data-aos="zoom-in">
                 <h2 class="section-heading text-uppercase line-behind"><span>POLÍTICA EDUCATIVA Y EL MODELO APA</span></h2>

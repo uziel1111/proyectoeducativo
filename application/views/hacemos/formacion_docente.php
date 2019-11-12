@@ -17,17 +17,19 @@
       <!-- We do... Boxes -->
 
       <section id="subpage_cont1">
-          <div class="container">
+      <div class="container p-0">
+          <div class="row px-5 py-4 no-gutters">
 
-
-            <div class="row px-5 mb-4">
-
-              <div class="col-lg-12 text-justify" data-aos="zoom-in">
-                <h2 class="section-heading text-uppercase line-behind"><span>FORMACIÓN DOCENTE</span></h2>
-                <p>Todo proceso de mejora de la calidad educativa debe sustentarse en la formación y perfeccionamiento de los conocimientos y habilidades de nuestros maestros. De ahí que <strong>ProyEdu siempre enfatiza en la necesidad de ofrecer esquemas de capacitación con calidad: con contenidos menos teóricos y más útiles; preponderantemente presenciales; con facilitadores que tengan autoridad académica; en grupos de no más de 25 personas y con esquemas de acompañamiento posterior</strong>. Con estos principios, sustentados en nuestra investigación y experiencia, ha sido posible elevar la calidad educativa en México, pues en Puebla y Sonora contamos con resultados medibles y testimonios claros. </p>
-              <p>En 2010, <strong>ProyEdu fue seleccionado por Microsoft Partners in Learning y la SEP para coordinar en México el Innovative Teaching and Learning Research Project</strong>, estudio internacional multianual en el que comparamos, en coordinación con renombradas instituciones educativas y de investigación de cada país participante, métodos de enseñanza y aprendizaje en Australia, Estados Unidos, Finlandia, Gran Bretaña, Indonesia, México, Rusia y Senegal. Ahí se identificaron habilidades que la educación del Siglo XXI debe impulsar para transformar el proceso de enseñanza independientemente del contexto nacional, las cuales es posible complementar en los docentes por la vía de la capacitación (los materiales y reportes pueden <a href="https://education.microsoft.com/GetTrained/ITL-Research" target="_blank">consultarse aquí</a>). El Taller de Enseñanza y Aprendizaje Innovadores (ITL por sus siglas en inglés) producto de esa investigación ha sido impartido por ProyEdu a docentes de varios estados. </p>
-              </div>
-            </div>
+<div class="col-lg-12 text-justify" data-aos="zoom-in">
+  <h2 class="section-heading text-uppercase line-behind"><span>FORMACIÓN DOCENTE</span></h2>
+  <p>
+    Todo proceso de mejora de la calidad educativa debe sustentarse en la formación y perfeccionamiento de los conocimientos y habilidades de nuestros maestros. De ahí que <strong>ProyEdu siempre enfatiza en la necesidad de ofrecer esquemas de capacitación con calidad: con contenidos menos teóricos y más útiles; preponderantemente presenciales; con facilitadores que tengan autoridad académica; en grupos de no más de 25 personas y con esquemas de acompañamiento posterior</strong>. Con estos principios, sustentados en nuestra investigación y experiencia, ha sido posible elevar la calidad educativa en México, pues en Puebla y Sonora contamos con resultados medibles y testimonios claros.
+ </p>
+<p
+>En 2010, <strong>ProyEdu fue seleccionado por Microsoft Partners in Learning y la SEP para coordinar en México el Innovative Teaching and Learning Research Project</strong>, estudio internacional multianual en el que comparamos, en coordinación con renombradas instituciones educativas y de investigación de cada país participante, métodos de enseñanza y aprendizaje en Australia, Estados Unidos, Finlandia, Gran Bretaña, Indonesia, México, Rusia y Senegal. Ahí se identificaron habilidades que la educación del Siglo XXI debe impulsar para transformar el proceso de enseñanza independientemente del contexto nacional, las cuales es posible complementar en los docentes por la vía de la capacitación (los materiales y reportes pueden <a href="https://education.microsoft.com/GetTrained/ITL-Research" target="_blank">consultarse aquí</a>). El Taller de Enseñanza y Aprendizaje Innovadores (ITL por sus siglas en inglés) producto de esa investigación ha sido impartido por ProyEdu a docentes de varios estados. 
+</p>
+</div>
+</div>
 
             <div class="row" id="row-primary-1">
 

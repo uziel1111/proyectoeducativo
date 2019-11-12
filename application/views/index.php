@@ -180,6 +180,30 @@
 
               </div>
 
+
+              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
+
+              <div class="card mb-3 sm-box-1">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <span class="fa-stack fa-3x text-warning">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="far fa-square fa-stack-2x square"></i>
+                    <i class="fas fa-book-reader fa-stack-1x"></i>
+                  </span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Evaluación del aprendizaje</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>               
+              
+              <div class="d-none d-lg-block d-xl-block w-100"></div>
+
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
               <div class="card mb-3 sm-box-1">
@@ -201,7 +225,6 @@
 
               </div>
 
-              <div class="d-none d-lg-block d-xl-block w-100"></div>
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
@@ -245,26 +268,7 @@
 
               </div>
 
-              <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
-
-              <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                  <span class="fa-stack fa-3x text-warning">
-                    <i class="fas fa-square fa-stack-2x"></i>
-                    <i class="far fa-square fa-stack-2x square"></i>
-                    <i class="fas fa-book-reader fa-stack-1x"></i>
-                  </span>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">Evaluación del aprendizaje</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              </div>              
+             
             </div>
 
 
@@ -317,10 +321,13 @@
                     <h4 class="text-white font-weight-bold mb-3">¿Cómo lo logramos?</h4>
 
                     <ol class="fa-ul text-justify">
-                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque creemos que una buena formación puede hacer que las personas vivan una vida más plena y feliz</span></li>
-                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque pensamos que México y los países de América Latina tienen un enorme potencial que aún está lejos de ser plenamente aprovechado</span></li>
-                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque sabemos que en nuestras escuelas contamos con una enorme cantidad de maestras y maestros con la vocación y el talento para lograr lo que nos propongamos</span></li>
-                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Porque en la educación convergen nuestra misión, nuestra vocación, nuestra profesión, nuestra ocupación y nuestra pasión. Y siempre aspiramos a que se note</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Enfatizamos en los temas que puedan tener un efecto mayor para la mejora educativa y que además tengan viabilidad legal, presupuestal, operativa y política.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Partimos del principio de que lo más importante son las personas, de manera que la mejora debe sustentarse en el desarrollo de las capacidades.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Sustentamos nuestras recomendaciones en la investigación aplicada para combinar rigor técnico y metodológico con sentido práctico.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Focalizamos nuestras acciones en aquellas escuelas, modalidades y regiones en donde sus efectos pueden ser mayores, con lo que atendemos equidad y calidad a la vez.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Buscamos siempre la sustentabilidad al corto, mediano y largo plazos. Por ello nos orientamos a acciones que requieren muy pocos o nulos recursos financieros adicionales.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Llevamos a cabo un acompañamiento muy cercano a la implementación, que incluye el contacto directo y continuo con la comunidad escolar y los padres de familia.</span></li>
+                      <li class="mb-2"><span class="fa-li fa-lg my-2"><i class="fas fa-arrow-right fa-pull-right fa-border mr-3"></i></span><span class="text-white">Nos ponemos la camiseta de nuestros clientes, pues nos sentimos corresponsables de las acciones como parte de un equipo del que queremos contribuir a desarrollar.</span></li>
                     </ol>
                     <!-- <div class="text-center mt-4">
                       <a class="btn btn-xl btn-outline-light" href="#">
@@ -360,6 +367,30 @@
     <div class="container">
       <div class="row align-items-center no-gutters">
       <div class="col-lg-6 cc-light">
+        <h2>Formación continua para docentes</h2>
+        <p>Con capacitación de calidad construimos y avanzamos.</p>
+        <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div>  
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
+        <h2>Capacitación de directores y supervisores</h2>
+        <p>Esencial en toda estrategia que aspire a la mejora educativa.</p>
+        <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        </div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-4.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+    </div>       
+    <div class="carousel-item">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+      <div class="col-lg-6 cc-light">
         <h2>Asistencia y permanencia escolares</h2>
         <p>Cada alumno es el más importante: todos a la escuela.</p>
         <a href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
@@ -372,23 +403,11 @@
     <div class="container">
       <div class="row align-items-center no-gutters">
       <div class="col-lg-6 cc-light">
-        <h2>Formación docente</h2>
-        <p>Con capacitación de calidad construimos y avanzamos.</p>
-        <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+        <h2>Evaluación del aprendizaje</h2>
+        <p>La evaluación educativa aún está por mostrar sus mayores beneficios.</p>
+        <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
         </div>
-        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
-      </div>
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="container">
-      <div class="row align-items-center no-gutters">
-      <div class="col-lg-6 cc-light">
-        <h2>Gestión escolar y liderazgo educativo</h2>
-        <p>Esencial en toda estrategia que aspire a la mejora educativa.</p>
-        <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
-        </div>
-        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-4.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
+        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-7.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
       </div>
     </div>
     </div> 
@@ -416,18 +435,7 @@
       </div>
     </div>
     </div> 
-    <div class="carousel-item">
-    <div class="container">
-      <div class="row align-items-center no-gutters">
-      <div class="col-lg-6 cc-light">
-        <h2>Evaluación del aprendizaje</h2>
-        <p>La evaluación educativa aún está por mostrar sus mayores beneficios.</p>
-        <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
-        </div>
-        <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-7.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
-      </div>
-    </div>
-    </div>                
+               
   </div>
   <a class="carousel-control-prev" href="#carouselcampos" role="button" data-slide="prev">
     <span class="arrow" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>

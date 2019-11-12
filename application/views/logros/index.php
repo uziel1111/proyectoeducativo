@@ -31,6 +31,7 @@
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2017. Primer lugar nacional PLANEA en Educación Media Superior, Puebla.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2017. Primer lugar nacional PLANEA en Secundaria, Puebla.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2017. Estado con mayor avance PLANEA 2015 – 2017 en Secundaria, Sonora.</span></li>
+                    <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2016. Primer lugar nacional de la categoría académica del Reconocimiento a la Mejora de la Gestión, otorgado por la Secretaría de Educación Pública del Gobierno Federal al Reporte APA. Puebla.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2016. Primer lugar en la Evaluación de desempeño docente, Sonora.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2015. Primer lugar nacional PLANEA en Educación Media Superior, Puebla.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2015. Primer lugar nacional PLANEA en Secundaria, Puebla.</span></li>
@@ -45,7 +46,7 @@
                 </div>
 
                 <div class="col-lg-4 text-white showcase-parent">
-                    <div class="showcase-child img-1"></div>
+                    <div class="showcase-child img-2"></div>
                 </div>
               </div>   
               

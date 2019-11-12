@@ -17,8 +17,35 @@
       <!-- We do... Boxes -->
 
       <section id="subpage_cont1">
-          <div class="container">
-            <div class="row px-5 mb-4">
+          <div class="container p-0">
+
+          <div class="row no-gutters img-panel-txt" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  
+                <div class="col-lg-8 my-auto showcase-text">
+                  <h4 class="font-weight-bold mb-3">¿Por qué trabajamos en la educación?</h4>
+                 
+                  <ol class="fa-ul text-justify">
+                    <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>Porque creemos que una buena formación puede hacer que las personas vivan una vida más plena y feliz.</span></li>
+                    <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>Porque pensamos que México y los países de América Latina tienen un enorme potencial que aún está lejos de ser plenamente aprovechado.</span></li>
+                    <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>Porque sabemos que en nuestras escuelas contamos con una enorme cantidad de maestras y maestros con la vocación y el talento para lograr lo que nos propongamos.</span></li>
+                    <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>Porque en la educación convergen nuestra misión, nuestra vocación, nuestra profesión, nuestra ocupación y nuestra pasión. Y siempre aspiramos a que se note.</span></li>
+                  </ol>
+                  <!-- <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="#">
+                      <i class="fas fa-download mr-2"></i>
+                      Leer más
+                    </a>
+                  </div> -->
+                </div>
+
+                <div class="col-lg-4 text-white showcase-parent">
+                    <div class="showcase-child img-1"></div>
+                </div>
+              </div>  
+
+
+          
+            <div class="row px-5 pt-5" id="row-bright-1">
 
               <div class="col-lg-12 text-justify" data-aos="zoom-in">
                 <h2 class="section-heading text-uppercase line-behind"><span>Nuestro Equipo</span></h2>
@@ -27,7 +54,7 @@
               </div>
             </div>
 
-            <div class="row" id="row-secondary-1">
+            <div class="row" id="row-secondary-2">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
@@ -72,7 +99,7 @@
 
             </div>
 
-            <div class="row" id="row-secondary-1">
+            <div class="row" id="row-secondary-2">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
@@ -117,7 +144,7 @@
 
             </div>
 
-            <div class="row" id="row-secondary-1">
+            <div class="row" id="row-secondary-2">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
@@ -163,7 +190,7 @@
             </div>
 
 
-            <div class="row" id="row-secondary-1">
+            <div class="row" id="row-secondary-2">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
