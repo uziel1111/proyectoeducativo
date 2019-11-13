@@ -96,8 +96,9 @@
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/modelo_apa'); ?>" class="text-decoration-none" role="button" aria-pressed="true">  
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x fc-1">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -108,17 +109,24 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title font-weight-bold">Política educativa - Modelo APA</h5>
+                      <!-- <div class="badge bc-1 text-wrap text-white" style="width: 6rem;">
+                        Leer más
+                      </div> -->
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
 
+
+              
               </div>
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="text-decoration-none" role="button" aria-pressed="true">  
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x fc-2">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -133,13 +141,15 @@
                   </div>
                 </div>
               </div>
+              </a>
 
               </div>
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="text-decoration-none" role="button" aria-pressed="true">                
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x fc-3">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -154,15 +164,17 @@
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>
 
 
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" class="text-decoration-none" role="button" aria-pressed="true"> 
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x fc-4">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -177,14 +189,16 @@
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>
 
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="text-decoration-none" role="button" aria-pressed="true"> 
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x text-warning">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -199,15 +213,17 @@
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>               
               
               <div class="d-none d-lg-block d-xl-block w-100"></div>
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Sistemas_Informacion'); ?>" class="text-decoration-none" role="button" aria-pressed="true"> 
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x fc-5">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -217,19 +233,21 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title font-weight-bold">Sistemas de información educativa</h5>
+                      <h5 class="card-title font-weight-bold mb-0">Sistemas de información educativa</h5>
                     </div>
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>
 
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="<?= base_url('index.php/Hacemos/Descarga_Administrativa'); ?>" class="text-decoration-none" role="button" aria-pressed="true"> 
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
                   <span class="fa-stack fa-3x text-info">
                     <i class="fas fa-square fa-stack-2x"></i>
@@ -244,15 +262,17 @@
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>
 
               <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
+              <a href="#" class="text-decoration-none" role="button" aria-pressed="true"> 
               <div class="card mb-3 sm-box-1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                   <div class="col-md-4">
-                  <span class="fa-stack fa-3x text-success">
+                  <span class="fa-stack fa-3x text-success m-0 p-0">
                     <i class="fas fa-square fa-stack-2x"></i>
                     <i class="far fa-square fa-stack-2x square"></i>
                     <i class="fas fa-hand-holding-usd fa-stack-1x"></i>
@@ -265,7 +285,8 @@
                   </div>
                 </div>
               </div>
-
+              </a>
+              
               </div>
 
              
