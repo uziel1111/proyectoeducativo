@@ -26,6 +26,7 @@
                 <div class="col-lg-8 my-auto showcase-text">
                   <h4 class="font-weight-bold mb-3">Logros recientes</h4>
                  
+                  <p class="mb-3">Hemos hecho equipo con maestros, directores escolares, supervisores y funcionarios de diferentes estados para alcanzar lo siguientes resultados:</p>
                   <ol class="fa-ul text-justify">
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2019. Descarga administrativa de más de 1.5 millones de horas para escuelas de educación básica en el ciclo escolar 2018-19, Coahuila.</span></li>
                     <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-check-circle fa-lg fc-2"></i></span><span>2017. Primer lugar nacional PLANEA en Educación Media Superior, Puebla.</span></li>
