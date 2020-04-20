@@ -22,7 +22,7 @@
     <title>Proyecto Educativo</title>
     
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="canonical" href="http://www.proyectoeducativo.org/">
 
@@ -43,6 +43,15 @@
 
     <!-- Custom Whatsapp for this template -->
     <link href="<?= base_url('assets/css/whatsapp_style.css'); ?>" rel="stylesheet">
+    
+    <!-- dataTable -->
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.css" />
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.js"></script>
+  
+   <script>
+    var base_url = "<?= base_url() ?>";
+  </script>
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -63,6 +72,22 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
+                <!-- Prueba para links -->
+                 <li class="nav-item mx-0 mx-lg-1">
+
+                <a class="nav-link rounded" href="<?= base_url('index.php/Informacion_apoyo/?nivel=3&grado=3'); ?>">
+
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-edit fa-stack-1x icon"></i>
+
+                    </span>
+                    Información de apoyo
+                  </a>
+
+                </li>
+                <!-- Prueba para links -->
                   <!--<li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="fa-layers fa-stack">
