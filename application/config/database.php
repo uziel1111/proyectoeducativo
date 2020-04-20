@@ -75,11 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => '208.91.198.53',
+	'username' => 'proye7nb_proye7n',
+	'password' => 'proye7n.123',
+	'database' => 'proye7nb_proyectoeducativo',
 	'dbdriver' => 'mysqli',
+	'port' => '3306',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
