@@ -71,23 +71,7 @@
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <!-- Prueba para links -->
-                 <li class="nav-item mx-0 mx-lg-1">
-
-                <a class="nav-link rounded" href="<?= base_url('index.php/Informacion_apoyo/?nivel=3&grado=3'); ?>">
-
-                  <span class="fa-layers fa-stack">
-                      <i class="fas fa-circle fa-stack-2x holder"></i>
-                      <i class="far fa-circle fa-stack-2x circle"></i>
-                      <i class="fas fa-edit fa-stack-1x icon"></i>
-
-                    </span>
-                    Información de apoyo
-                  </a>
-
-                </li>
-                <!-- Prueba para links -->
+              <ul class="navbar-nav ml-auto"> 
                   <!--<li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="fa-layers fa-stack">
