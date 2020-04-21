@@ -6,6 +6,7 @@ class Index extends CI_Controller {
 		function __construct() {
 			parent::__construct();
 			$this->load->library('Utilerias');
+			$this->load->model( 'Informacion_apoyo_model' );
 		}
 
 	/**
@@ -25,7 +26,9 @@ class Index extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data = array();
+		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
+		$data['c_area'] = $c_area;
+		$data['area'] = '';
 		Utilerias::pagina_basica($this, "index", $data);
 
 	}

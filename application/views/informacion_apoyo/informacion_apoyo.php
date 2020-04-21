@@ -20,7 +20,13 @@
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-3">
-              <h4 class=" ml-0 pl-0 text-center text-white">Ponemos a su disposición material de apoyo educativo de distintos sitios educativos oficiales.</h4>
+              <h4 class=" ml-0 pl-0 text-center text-white">Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas. <br><br>
+ 
+Selecciona el área del conocimiento, nivel educativo y grado que deseas en el buscador siguiente. Puedes consultar varios niveles y grados a la vez.  <br><br>
+ 
+Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a>  <br>
+ 
+Vamos a cuidarnos <strong>todos</strong>.</h4>
             </div><!-- .col-12 col-xs-12 col-md-12 col-lg-12 -->
           </div><!-- .row -->
 

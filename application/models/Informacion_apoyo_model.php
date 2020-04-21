@@ -75,6 +75,8 @@ class Informacion_apoyo_model extends CI_Model {
 
 	public function obtener_c_grado($nivel)
 	{
+		$where = '';
+		$data = array();
 		if ($nivel != 0) {
 			$where = " AND n.idnivel = ?";
 			$data = array($nivel);
@@ -90,6 +92,7 @@ class Informacion_apoyo_model extends CI_Model {
 
 	public function obtener_nivel($area)
 	{	
+		$where = '';
 		if ($area != 0) {
 			$where = " where ra.idarea = ? ";
 			$data = array($area);

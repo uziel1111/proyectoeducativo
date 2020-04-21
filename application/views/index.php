@@ -494,11 +494,11 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-md-4 mb-5">
+            <div class="col-md-6 mb-8">
               <div class="card tweets">
                 <div id="fb-root"></div>
                 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
-                <div class="fb-page" data-href="https://es-la.facebook.com/proyectoeducativosc" data-tabs="timeline" data-width="" data-height="435" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+                <div class="fb-page" data-href="https://es-la.facebook.com/proyectoeducativosc" data-tabs="timeline" data-width="2500" data-height="435" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
                   <blockquote cite="https://es-la.facebook.com/proyectoeducativosc" class="fb-xfbml-parse-ignore"><a href="https://es-la.facebook.com/proyectoeducativosc">Proyecto Educativo SC</a></blockquote>
                 </div>
               </div>
@@ -520,3 +520,4 @@
 
     </main>
     <!-- END Main page content -->
+    <script src="<?= base_url('assets/js/informacion_apoyo.js'); ?>"></script>
