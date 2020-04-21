@@ -17,7 +17,7 @@
 
       <div class="row" id="row-secondary-1" id="info_apoyo">
 
-        <div class="col-lg-12 text-justify" data-aos="zoom-in">
+        <!-- <div class="col-lg-12 text-justify" data-aos="zoom-in">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-3">
               <h4 class=" ml-0 pl-0 text-center text-white">Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas. <br><br>
@@ -26,11 +26,11 @@ Selecciona el área del conocimiento, nivel educativo y grado que deseas en el b
  
 Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a>  <br>
  
-Vamos a cuidarnos <strong>todos</strong>.</h4>
-            </div><!-- .col-12 col-xs-12 col-md-12 col-lg-12 -->
-          </div><!-- .row -->
+Vamos a cuidarnos <strong>todos</strong>.</h4> -->
+            <!--</div> .col-12 col-xs-12 col-md-12 col-lg-12 -->
+          <!-- </div>.row -->
 
-        </div>
+        <!-- </div> -->
       </div> 
 
 
@@ -55,7 +55,7 @@ Vamos a cuidarnos <strong>todos</strong>.</h4>
 
             <div class="col-3">
               <label for="slc_nivel">Nivel</label>
-              <select id="slc_nivel" disabled class="form-control">
+              <select id="slc_nivel" class="form-control">
                 <option value='0'>TODOS</option>
                 <?php foreach ($c_nivel as $key => $value) { ?>
                   
@@ -67,8 +67,8 @@ Vamos a cuidarnos <strong>todos</strong>.</h4>
               
             
              <div class="col-3">
-                <label for="slc_grado">Grado</label>
-               <select id="slc_grado" disabled class="form-control">
+                <label for="slc_grado">Grado / Semestre</label>
+               <select id="slc_grado" class="form-control">
                  <option value='0'>TODOS</option>
                <?php foreach ($c_grado as $key => $value) { ?>
                  
@@ -95,7 +95,7 @@ Vamos a cuidarnos <strong>todos</strong>.</h4>
               <tbody>
                <?php foreach ($datos_tabla as $key => $v) { ?>
                  <tr>
-                  <td><a href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
+                  <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
                   <td><?=$v['fuente']?></td>
                   <td><?=$v['tipo_recurso']?></td>
                   <td><?=$v['publico_objetivo']?></td>

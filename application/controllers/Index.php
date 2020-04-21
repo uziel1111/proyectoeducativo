@@ -27,6 +27,9 @@ class Index extends CI_Controller {
 	public function index()
 	{
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
+		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
+		$data['c_nivel'] = $c_nivel;
+		$data['nivel'] = '';
 		$data['c_area'] = $c_area;
 		$data['area'] = '';
 		Utilerias::pagina_basica($this, "index", $data);

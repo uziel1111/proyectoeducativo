@@ -7,7 +7,13 @@
             <div class="col">
               <div class="cc-light">
                 <i class="fas fa-search"></i>
-                <h2 class="font-weight-bold">Ponemos a su disposición material de apoyo educativo de distintos sitios educativos oficiales.</h2>
+                <h6 class="font-weight-bold">Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas. <br><br>
+ 
+Selecciona el área del conocimiento, nivel educativo y grado que deseas en el buscador siguiente. Puedes consultar varios niveles y grados a la vez.  <br><br>
+ 
+Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a>  <br>
+ 
+Vamos a cuidarnos <strong>todos</strong>.</h6>
               </div>
             </div>
           </div>
@@ -28,7 +34,7 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
                   <label for="slc_nivel">Nivel</label>
-                  <select id="slc_nivel" disabled class="form-control">
+                  <select id="slc_nivel" class="form-control">
                     <option value='0'>TODOS</option>
                     <?php foreach ($c_nivel as $key => $value) { ?>
 
@@ -40,8 +46,8 @@
 
 
                 <div class="col-12 col-md-6 col-lg-3">
-                  <label for="slc_grado">Grado</label>
-                  <select id="slc_grado" disabled class="form-control">
+                  <label for="slc_grado">Grado / Semestre</label>
+                  <select id="slc_grado" class="form-control">
                     <option value='0'>TODOS</option>
                     <?php foreach ($c_grado as $key => $value) { ?>
 

@@ -11,7 +11,6 @@ $(document).ready(function() {
 });
 
 $("#slc_area").change(function() {
-	$("#slc_nivel").attr('disabled');
 	area = $("#slc_area option:selected").val();
 
 	ruta = base_url + 'index.php/Informacion_apoyo/obtener_nivel';
@@ -22,23 +21,21 @@ $("#slc_area").change(function() {
 		dataType: 'json',
 		data: {area: area},
 		beforeSend: function(){
-			Mensaje.cargando('Cargando...');
+			Mensaje.cargando('Cargando niveles...');
 		},
 		success: function(data){
 			Mensaje.cerrar();
 			nivel = '<option value=0>TODOS</option>';
-			for (i=1; i<data.length; i++) {
+			for (i=0; i<data.length; i++) {
 				nivel += '<option value='+data[i].idnivel+'>'+data[i].nivel+'</option>';
 			}
 				$("#slc_nivel").html(nivel);
-				$("#slc_nivel").removeAttr('disabled');
 		}
 	});
 	
 });
 
 $("#slc_nivel").change(function() {
-	$("#slc_grado").attr('disabled');
 	nivel = $("#slc_nivel option:selected").val();
 	
 	ruta = base_url + 'index.php/Informacion_apoyo/obtener_grado';
@@ -49,17 +46,16 @@ $("#slc_nivel").change(function() {
 		dataType: 'json',
 		data: {nivel: nivel},
 		beforeSend: function(){
-			Mensaje.cargando('Cargando...');
+			Mensaje.cargando('Cargando grados...');
 		},
 		success: function(data){
 			Mensaje.cerrar();
 			
 			grado = '<option value=0>TODOS</option>';
-			for (i=1; i<data.length; i++) {
+			for (i=0; i<data.length; i++) {
 				grado += '<option value='+data[i].grado+'>'+data[i].grado+'°</option>';
 			}
 				$("#slc_grado").html(grado);
-				$("#slc_grado").removeAttr('disabled');
 		}
 	});
 

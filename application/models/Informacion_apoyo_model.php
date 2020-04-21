@@ -81,11 +81,15 @@ class Informacion_apoyo_model extends CI_Model {
 			$where = " AND n.idnivel = ?";
 			$data = array($nivel);
 		}
+		if ($nivel == 5) {
+			$where = " AND rpl.nivel_educativo = ?";
+			$data = array('EMS');
+		}
 		$query = "SELECT DISTINCT
 		rpl.grado
 		FROM
 		recursos_online_py_propueta_layout rpl
-		inner join c_nivel n on n.nivel = rpl.nivel_educativo
+		left join c_nivel n on n.nivel = rpl.nivel_educativo
 		WHERE rpl.grado != '' {$where} order by rpl.grado";
 		return $this->db->query($query,$data)->result_array();
 	}//obtener_c_grado
@@ -93,6 +97,7 @@ class Informacion_apoyo_model extends CI_Model {
 	public function obtener_nivel($area)
 	{	
 		$where = '';
+		$data = array();
 		if ($area != 0) {
 			$where = " where ra.idarea = ? ";
 			$data = array($area);
