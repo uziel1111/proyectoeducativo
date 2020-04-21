@@ -20,11 +20,11 @@
     <meta name="author" content="Proyecto Educativo, Proyed">
 
     <title>Proyecto Educativo</title>
-    
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="canonical" href="http://www.proyectoeducativo.org/">
+    <link rel="canonical" href="https://www.proyectoeducativo.org/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -43,12 +43,12 @@
 
     <!-- Custom Whatsapp for this template -->
     <link href="<?= base_url('assets/css/whatsapp_style.css'); ?>" rel="stylesheet">
-    
+
     <!-- dataTable -->
 
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.css" />
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.js"></script>
-  
+
    <script>
     var base_url = "<?= base_url() ?>";
   </script>
@@ -71,7 +71,7 @@
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto"> 
+              <ul class="navbar-nav ml-auto">
                   <!--<li class="nav-item mx-0 mx-lg-1 dropdown">
                       <a class="nav-link px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="fa-layers fa-stack">
