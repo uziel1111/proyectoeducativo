@@ -69,7 +69,7 @@
     <div class="btn-whatsapp">
     <!--<a href="https://api.whatsapp.com/send?phone=522221576243" target="_blank">-->
     <a href="https://web.whatsapp.com/send?phone=522222419257" target="_blank" id="url">
-    <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+    <img src="https://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
     </a>
     </div>
   </body>
