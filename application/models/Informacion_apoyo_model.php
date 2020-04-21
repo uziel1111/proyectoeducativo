@@ -45,19 +45,23 @@ class Informacion_apoyo_model extends CI_Model {
 		$query = "SELECT
 		rpl.nombre,
 		rpl.fuente,
-		rpl.tipo_recurso,
-		rpl.publico_objetivo,
+		t.tipo_recurso,
+		p.publico_objetivo,
 		rpl.link
 		FROM
-		recursos_online_py_propueta_layout rpl
+		c_material rpl
 		INNER JOIN
-		recurso_apoyo ra ON ra.idrecurso = rpl.id
+		recurso_apoyo ra ON ra.idrecurso = rpl.idmaterial
+        INNER JOIN
+		c_tipo_recurso t ON t.idtipo_recurso = ra.idtipo_recurso
+        INNER JOIN
+		c_publico p ON p.idpublico_obj = ra.idpublico_obj
 		INNER JOIN
 		c_nivel n ON n.idnivel = ra.idnivel
 		INNER JOIN
 		c_area a ON a.idarea = ra.idarea
 		{$where}
-		GROUP BY rpl.id
+		GROUP BY rpl.idmaterial
 		";
 
 		return $this->db->query($query, $data)->result_array();
@@ -78,18 +82,13 @@ class Informacion_apoyo_model extends CI_Model {
 		$where = '';
 		$data = array();
 		if ($nivel != 0) {
-			$where = " AND n.idnivel = ?";
+			$where = " AND rpl.idnivel = ?";
 			$data = array($nivel);
-		}
-		if ($nivel == 5) {
-			$where = " AND rpl.nivel_educativo = ?";
-			$data = array('EMS');
 		}
 		$query = "SELECT DISTINCT
 		rpl.grado
 		FROM
-		recursos_online_py_propueta_layout rpl
-		left join c_nivel n on n.nivel = rpl.nivel_educativo
+		recurso_apoyo rpl
 		WHERE rpl.grado != '' {$where} order by rpl.grado";
 		return $this->db->query($query,$data)->result_array();
 	}//obtener_c_grado
