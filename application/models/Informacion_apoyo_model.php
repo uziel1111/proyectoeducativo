@@ -16,12 +16,12 @@ class Informacion_apoyo_model extends CI_Model {
 					$where .= ' AND a.idarea = ? ';
 					array_push($data,$area);
 					if ($grado != 0) {
-						$where .= ' AND rpl.grado = ?';
+						$where .= ' AND ra.grado = ?';
 						array_push($data,$grado);
 					}
 				}else {
 					if ($grado != 0) {
-						$where .= ' AND rpl.grado = ? ';
+						$where .= ' AND ra.grado = ? ';
 						array_push($data,$grado);
 					}
 				}
@@ -30,12 +30,12 @@ class Informacion_apoyo_model extends CI_Model {
 					$where .= ' a.idarea = ? ';
 					array_push($data,$area);
 					if ($grado != 0) {
-						$where .= ' AND rpl.grado = ?';
+						$where .= ' AND ra.grado = ?';
 						array_push($data,$grado);
 					}
 				}else{
 					if ($grado != 0) {
-						$where .= ' rpl.grado = ?';
+						$where .= ' ra.grado = ?';
 						array_push($data,$grado);
 					}
 				}
