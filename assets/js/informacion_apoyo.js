@@ -69,6 +69,6 @@ $("#btn_buscar_filtro").click(function(e) {
 	slc_grado = $("#slc_grado option:selected").val();
 
 	ruta = base_url + 'index.php/Informacion_apoyo/';
-	Mensaje.cargando('Cargando...');
+	Mensaje.cargando('Buscando datos...');
 	window.location = ruta+'?nivel='+slc_nivel+'&area='+slc_area+'&grado='+slc_grado;	
 });

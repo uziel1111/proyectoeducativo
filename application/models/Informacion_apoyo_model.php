@@ -51,7 +51,7 @@ class Informacion_apoyo_model extends CI_Model {
 		FROM
 		c_material rpl
 		INNER JOIN
-		recurso_apoyo ra ON ra.idrecurso = rpl.idmaterial
+		recurso_apoyo ra ON ra.idmaterial = rpl.idmaterial
         INNER JOIN
 		c_tipo_recurso t ON t.idtipo_recurso = ra.idtipo_recurso
         INNER JOIN
@@ -61,7 +61,7 @@ class Informacion_apoyo_model extends CI_Model {
 		INNER JOIN
 		c_area a ON a.idarea = ra.idarea
 		{$where}
-		GROUP BY rpl.idmaterial
+		GROUP BY ra.idrecurso
 		";
 
 		return $this->db->query($query, $data)->result_array();
