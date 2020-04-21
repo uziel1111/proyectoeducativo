@@ -81,28 +81,37 @@ Vamos a cuidarnos <strong>todos</strong>.</h4> -->
                 <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro">Buscar</button>
               </div>
           </div>
+          <div class="row">
+            <div class="col-lg-12"><h1>  </h1></div>
+            <div class="col-lg-12"><h1>  </h1></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12"><h1>  </h1></div>
+            <div class="col-lg-12"><h1>  </h1></div>
+          </div>
             <div class="row">
-              <br><br>
-              <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
-               <thead>
-                <tr>
-                  <th>Nombre del recurso</th>
-                  <th>Fuente</th>
-                  <th>Tipo de recurso</th>
-                  <th>Público objetivo</th>
-                </tr>
-              </thead>
-              <tbody>
-               <?php foreach ($datos_tabla as $key => $v) { ?>
+             <div class="col-12">
+                <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
+                <thead>
                  <tr>
-                  <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
-                  <td><?=$v['fuente']?></td>
-                  <td><?=$v['tipo_recurso']?></td>
-                  <td><?=$v['publico_objetivo']?></td>
-                </tr>
-              <?php } ?>
-                        </tbody>
-                      </table>
+                   <th style="width:60% !important">Nombre del recurso</th>
+                   <th style="width:15% !important">Fuente</th>
+                   <th style="width:15% !important">Tipo de recurso</th>
+                   <th style="width:10% !important">Público objetivo</th>
+                 </tr>
+               </thead>
+               <tbody>
+                <?php foreach ($datos_tabla as $key => $v) { ?>
+                  <tr>
+                   <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
+                   <td><?=$v['fuente']?></td>
+                   <td><?=$v['tipo_recurso']?></td>
+                   <td><?=$v['publico_objetivo']?></td>
+                 </tr>
+               <?php } ?>
+                         </tbody>
+                       </table>
+             </div>
             </div>
       </div>
     </div> 
