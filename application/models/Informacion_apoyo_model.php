@@ -42,7 +42,7 @@ class Informacion_apoyo_model extends CI_Model {
 			}
 		}
 
-		$query = "SELECT 
+		$query = "SELECT
 		rpl.nombre,
 		rpl.fuente,
 		rpl.tipo_recurso,
@@ -95,7 +95,7 @@ class Informacion_apoyo_model extends CI_Model {
 	}//obtener_c_grado
 
 	public function obtener_nivel($area)
-	{	
+	{
 		$where = '';
 		$data = array();
 		if ($area != 0) {
@@ -108,5 +108,21 @@ class Informacion_apoyo_model extends CI_Model {
 
 		return $this->db->query($query,$data)->result_array();
 	}
-	
+
+	public function insertar_contador($filtros, $pagina_anterior){
+			date_default_timezone_set('America/Mexico_City');
+			setlocale(LC_TIME, 'es_MX.UTF-8');
+			$fecha = date("Y-m-d H:i:s");
+			// echo $doc; die();
+			$this->db->trans_start();
+			$query = "INSERT INTO contador (busqueda,origen,f_crea) VALUES (?,?,?);";
+		$this->db->query($query, [$filtros, $pagina_anterior,$fecha]);
+		$this->db->trans_complete();
+		if ($this->db->trans_status() === FALSE) {
+			return FALSE;
+		} else {
+			return TRUE;
+		}
+	}//insertar_contador
+
 }//class

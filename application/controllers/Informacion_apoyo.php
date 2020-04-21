@@ -18,7 +18,7 @@ class Informacion_apoyo extends CI_Controller {
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
-		
+
 
 
 		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado);
@@ -29,7 +29,10 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['c_nivel'] = $c_nivel;
 		 $data['c_area'] = $c_area;
 		 $data['c_grado'] = $c_grado;
-		 
+		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado;
+		 $pagina_anterior=$_SERVER['HTTP_REFERER'];
+		 // echo "<pre>";print_r($pagina_anterior);die();
+		 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
 		 if ($this->input->get('ajax') !== null) {
 		 	$vista = $this->load->view( 'informacion_apoyo/info_ajax', $data, TRUE );
                 $respuesta = array( 'vista' => $vista );
