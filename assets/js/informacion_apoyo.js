@@ -30,6 +30,7 @@ $("#slc_area").change(function() {
 				nivel += '<option value='+data[i].idnivel+'>'+data[i].nivel+'</option>';
 			}
 				$("#slc_nivel").html(nivel);
+				$("#slc_grado").val(0);
 		}
 	});
 	
