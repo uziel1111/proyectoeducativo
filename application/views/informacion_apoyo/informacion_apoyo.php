@@ -31,6 +31,9 @@ Vamos a cuidarnos <strong>todos</strong>.</h4> -->
           <!-- </div>.row -->
 
         <!-- </div> -->
+        <div class="row">
+            <h4 class=" ml-0 pl-0 text-center text-white">Seleccione la opción deseada:</h4>
+          </div>
       </div> 
 
 
@@ -38,9 +41,6 @@ Vamos a cuidarnos <strong>todos</strong>.</h4> -->
       <div class="row" id="row-lowgray-1">
 
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
-          <div class="row">
-            <label for="">Seleccione la opción deseada:</label>
-          </div>
           <div class="row">
             
             <div class="col-3">
