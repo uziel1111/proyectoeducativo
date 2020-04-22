@@ -31,7 +31,7 @@
                   </select>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-2">
                   <label for="slc_nivel">Nivel</label>
                   <select id="slc_nivel" class="form-control">
                     <option value='0'>TODOS</option>
@@ -44,7 +44,7 @@
 
 
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-2">
                   <label for="slc_grado">Grado / Semestre</label>
                   <select id="slc_grado" class="form-control">
                     <option value='0'>TODOS</option>
@@ -55,6 +55,14 @@
                   </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
+                   <label for="inp_pclave">Palabras clave</label>
+                   <form autocomplete="off" action="">
+                    <div class="autocomplete" >
+                      <input id="inp_pclave" type="text" name="inp_pclave" placeholder="Escriba palabras clave" class="form-control">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
                   <label for="btn_buscar_filtro"></label><br>
                   <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro">Buscar</button>
                 </div>
@@ -525,4 +533,5 @@
 
     </main>
     <!-- END Main page content -->
+    <script src="<?= base_url('assets/js/autocomplete.js'); ?>"></script>
     <script src="<?= base_url('assets/js/informacion_apoyo.js'); ?>"></script>
