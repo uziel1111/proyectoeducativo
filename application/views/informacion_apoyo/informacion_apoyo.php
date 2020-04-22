@@ -23,14 +23,14 @@
           <div class="row">
 
             <div class="col-3">
-                <label for="slc_area">Área / tema</label>
-                <select id="slc_area" class="form-control">
-                  <option value='0'>TODOS</option>
+              <label for="slc_area">Área / tema</label>
+              <select id="slc_area" class="form-control">
+                <option value='0'>TODOS</option>
                 <?php foreach ($c_area as $key => $value) { ?>
-                    <option value="<?=$value['idarea']?>" <?=$selected = ($value['idarea'] == $area)? 'selected':''?>><?=$value['area']?></option>
-                    <?php } ?>
-                </select>
-              </div>
+                  <option value="<?=$value['idarea']?>" <?=$selected = ($value['idarea'] == $area)? 'selected':''?>><?=$value['area']?></option>
+                <?php } ?>
+              </select>
+            </div>
 
             <div class="col-3">
               <label for="slc_nivel">Nivel</label>
@@ -38,63 +38,63 @@
                 <option value='0'>TODOS</option>
                 <?php foreach ($c_nivel as $key => $value) { ?>
 
-                    <option value="<?=$value['idnivel']?>" <?=$selected = ($value['idnivel'] == $nivel)? 'selected':''?> ><?=$value['nivel']?></option>
-                    <?php } ?>
-                </select>
+                  <option value="<?=$value['idnivel']?>" <?=$selected = ($value['idnivel'] == $nivel)? 'selected':''?> ><?=$value['nivel']?></option>
+                <?php } ?>
+              </select>
             </div>
 
 
 
-             <div class="col-3">
-                <label for="slc_grado">Grado / Semestre</label>
-               <select id="slc_grado" class="form-control">
-                 <option value='0'>TODOS</option>
+            <div class="col-3">
+              <label for="slc_grado">Grado / Semestre</label>
+              <select id="slc_grado" class="form-control">
+               <option value='0'>TODOS</option>
                <?php foreach ($c_grado as $key => $value) { ?>
 
-                   <option value="<?=$value['grado']?>" <?=$selected = ($value['grado'] == $grado)? 'selected':''?>><?=$value['grado']?>°</option>
-                   <?php } ?>
-               </select>
-             </div>
-              <div class="col-3">
-                <label for="btn_buscar_filtro"></label><br>
-                <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro">Buscar</button>
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12"><h1>  </h1></div>
-            <div class="col-lg-12"><h1>  </h1></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12"><h1>  </h1></div>
-            <div class="col-lg-12"><h1>  </h1></div>
-          </div>
-            <div class="row">
-             <div class="col-12">
-                <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
-                <thead>
-                 <tr>
-                   <th style="width:60% !important">Nombre del recurso</th>
-                   <th style="width:15% !important">Fuente</th>
-                   <th style="width:15% !important">Tipo de recurso</th>
-                   <th style="width:10% !important">Público objetivo</th>
-                 </tr>
-               </thead>
-               <tbody>
-                <?php foreach ($datos_tabla as $key => $v) { ?>
-                  <tr>
-                   <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
-                   <td><?=$v['fuente']?></td>
-                   <td><?=$v['tipo_recurso']?></td>
-                   <td><?=$v['publico_objetivo']?></td>
-                 </tr>
+                 <option value="<?=$value['grado']?>" <?=$selected = ($value['grado'] == $grado)? 'selected':''?>><?=$value['grado']?>°</option>
                <?php } ?>
-                         </tbody>
-                       </table>
-             </div>
-            </div>
-      </div>
-    </div>
-  </div><!-- .container pt-0 -->
+             </select>
+           </div>
+           <div class="col-3">
+            <label for="btn_buscar_filtro"></label><br>
+            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro">Buscar</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><h1>  </h1></div>
+          <div class="col-lg-12"><h1>  </h1></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><h1>  </h1></div>
+          <div class="col-lg-12"><h1>  </h1></div>
+        </div>
+        <div class="row">
+         <div class="col-12">
+          <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
+            <thead>
+             <tr>
+               <th style="width:60% !important">Nombre del recurso</th>
+               <th style="width:15% !important">Fuente</th>
+               <th style="width:15% !important">Tipo de recurso</th>
+               <th style="width:10% !important">Público objetivo</th>
+             </tr>
+           </thead>
+           <tbody>
+            <?php foreach ($datos_tabla as $key => $v) { ?>
+              <tr>
+               <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
+               <td><?=$v['fuente']?></td>
+               <td><?=$v['tipo_recurso']?></td>
+               <td><?=$v['publico_objetivo']?></td>
+             </tr>
+           <?php } ?>
+         </tbody>
+       </table>
+     </div>
+   </div>
+ </div>
+</div>
+</div><!-- .container pt-0 -->
 </section>
 <!-- END We do... Boxes -->
 </main>
