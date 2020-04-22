@@ -3,8 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Informacion_apoyo_model extends CI_Model {
 
-	function obtener_datos_tabla($nivel, $area, $grado)
+	function obtener_datos_tabla($nivel, $area, $grado, $pclave)
 	{
+		if ($pclave=='undefined') {
+			$pclave='';
+		}
 		$data = array();
 		$where = '';
 		if ($nivel != 0 || $area != 0 || $grado != 0) {
@@ -60,7 +63,7 @@ class Informacion_apoyo_model extends CI_Model {
 		c_nivel n ON n.idnivel = ra.idnivel
 		INNER JOIN
 		c_area a ON a.idarea = ra.idarea
-		{$where}
+		{$where} AND rpl.nombre like '%{$pclave}%'
 		GROUP BY ra.idrecurso
 		";
 
@@ -123,5 +126,25 @@ class Informacion_apoyo_model extends CI_Model {
 			return TRUE;
 		}
 	}//insertar_contador
+
+	public function obtener_nombres_recursos($slc_nivel,$slc_area,$slc_grado){
+		$where='';
+		if ($slc_area!=0) {
+			$where.=" AND ra.idarea={$slc_area}";
+		}
+		if ($slc_nivel!=0) {
+			$where.=" AND ra.idnivel={$slc_nivel}";
+		}
+
+		if ($slc_grado!=0) {
+			$where.=" AND ra.grado={$slc_grado}";
+		}
+		$query = "SELECT nombre
+							FROM c_material m
+							INNER JOIN recurso_apoyo ra ON m.idmaterial= ra.idmaterial
+							WHERE 1=1  {$where}
+							GROUP BY m.nombre";
+		return $this->db->query($query)->result_array();
+	}
 
 }//class

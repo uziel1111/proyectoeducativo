@@ -14,6 +14,8 @@ class Informacion_apoyo extends CI_Controller {
 		$nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
 		$area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
 		$grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
+		$pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
@@ -21,7 +23,7 @@ class Informacion_apoyo extends CI_Controller {
 
 
 
-		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado);
+		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave);
 		 $data['datos_tabla'] = $datos_tabla;
 		 $data['nivel'] = $nivel;
 		 $data['area'] = $area;
@@ -29,8 +31,8 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['c_nivel'] = $c_nivel;
 		 $data['c_area'] = $c_area;
 		 $data['c_grado'] = $c_grado;
-		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado;
-		 $pagina_anterior=$_SERVER['HTTP_REFERER'];
+		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
+		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 // echo "<pre>";print_r($pagina_anterior);die();
 		 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
 		 if ($this->input->get('ajax') !== null) {
@@ -57,4 +59,21 @@ class Informacion_apoyo extends CI_Controller {
 		Utilerias::enviaDataJson(200, $grado_datos,$this);
         exit();
 	}//obtener_grado
+
+	function obtener_nombres_recursos()
+	{
+		$slc_nivel = $this->input->post('slc_nivel');
+		$slc_area = $this->input->post('slc_area');
+		$slc_grado = $this->input->post('slc_grado');
+
+		$arr_info = $this->Informacion_apoyo_model->obtener_nombres_recursos($slc_nivel,$slc_area,$slc_grado);
+		$arr_aux= [];
+		foreach ($arr_info as $key => $value) {
+			array_push($arr_aux, $value['nombre']);
+		}
+		// echo "<pre>";print_r($arr_aux);die();
+		Utilerias::enviaDataJson(200, $arr_aux,$this);
+        exit();
+	}//obtener_nombres_recursos
+
 }//class
