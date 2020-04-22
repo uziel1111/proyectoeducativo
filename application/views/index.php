@@ -25,7 +25,7 @@
                   <select id="slc_area" class="form-control">
                     <option value='0'>TODOS</option>
                     <?php foreach ($c_area as $key => $value) { ?>
-                        <option value="<?=$v = ($value['sub_area'] != 'sub_area') ? $value['idsubarea'] : $value['idarea']?>"<?=$selected = (($tipo_slctd == $value['tipo_a']))? 'selected':''?>
+                        <option value="<?=$v = ($value['sub_area'] != 'sub_area') ? $value['idsubarea'] : $value['idarea']?>"
                   style="<?=$style = ($value['sub_area'] == 'sub_area')?'font-weight: bold':''?>"
                   data-tipo="<?=$tipo = ($value['sub_area'] == 'sub_area')?'P':'H'?>">
                   <?=$area = ($value['sub_area'] != 'sub_area')?'&nbsp; &nbsp;'.$value['sub_area']:$value['area']?></option>
