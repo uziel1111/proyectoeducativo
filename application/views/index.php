@@ -10,7 +10,6 @@
                 <center><h4 class="font-weight-bold">Recursos de apoyo para el aprendizaje</h4></center>
                 <p>Ponemos a tu alcance una selección con más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas.</p>
                 <p>Selecciona el área de conocimiento, nivel educativo y grado que deseas en el buscador siguiente. Puedes consultar varios niveles y grados a la vez.</p>
-                <p>Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas.</p>
                 <p>Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a></p>
                 <center><p><strong>VAMOS A CUIDARNOS TODOS.</strong></p></center>
               </div>
