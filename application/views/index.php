@@ -6,14 +6,13 @@
           <div class="row">
             <div class="col">
               <div class="cc-light">
-                <i class="fas fa-search"></i>
-                <h6 class="font-weight-bold">Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas. <br><br>
- 
-Selecciona el área del conocimiento, nivel educativo y grado que deseas en el buscador siguiente. Puedes consultar varios niveles y grados a la vez.  <br><br>
- 
-Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a>  <br>
- 
-Vamos a cuidarnos <strong>todos</strong>.</h6>
+                <i class="fas fa-info"></i>
+                <center><h4 class="font-weight-bold">Recursos de apoyo para el aprendizaje</h4></center>
+                <p>Ponemos a tu alcance una selección con más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas.</p>
+                <p>Selecciona el área de conocimiento, nivel educativo y grado que deseas en el buscador siguiente. Puedes consultar varios niveles y grados a la vez.</p>
+                <p>Ponemos a tu alcance una selección de más de 1,300 recursos de fuentes confiables, para apoyar a estudiantes, docentes y familias en sus actividades académicas.</p>
+                <p>Si deseas proponer un recurso o tienes una sugerencia, escribe por favor a <a href="mailto:contacto@proyectoeducativo.org">contacto@proyectoeducativo.org</a></p>
+                <center><p><strong>VAMOS A CUIDARNOS TODOS.</strong></p></center>
               </div>
             </div>
           </div>
@@ -23,7 +22,7 @@ Vamos a cuidarnos <strong>todos</strong>.</h6>
               <div class="row">
 
                 <div class="col-12 col-md-6 col-lg-3">
-                  <label for="slc_area">Área</label>
+                  <label for="slc_area">Área / tema</label>
                   <select id="slc_area" class="form-control">
                     <option value='0'>TODOS</option>
                     <?php foreach ($c_area as $key => $value) { ?>

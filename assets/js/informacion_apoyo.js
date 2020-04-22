@@ -33,12 +33,12 @@ $("#slc_area").change(function() {
 				$("#slc_grado").val(0);
 		}
 	});
-	
+
 });
 
 $("#slc_nivel").change(function() {
 	nivel = $("#slc_nivel option:selected").val();
-	
+
 	ruta = base_url + 'index.php/Informacion_apoyo/obtener_grado';
 
 	$.ajax({
@@ -51,7 +51,7 @@ $("#slc_nivel").change(function() {
 		},
 		success: function(data){
 			Mensaje.cerrar();
-			
+
 			grado = '<option value=0>TODOS</option>';
 			for (i=0; i<data.length; i++) {
 				grado += '<option value='+data[i].grado+'>'+data[i].grado+'°</option>';
@@ -64,17 +64,17 @@ $("#slc_nivel").change(function() {
 
 
 $("#btn_buscar_filtro").click(function(e) {
-	
+
 	slc_nivel = $("#slc_nivel option:selected").val();
 	slc_area = $("#slc_area option:selected").val();
 	slc_grado = $("#slc_grado option:selected").val();
 	if (slc_nivel == 0 && slc_area == 0 && slc_grado == 0) {
-		
+
 		Mensaje.alerta('warning','Seleccione al menos una opción','');
 	}else{
 
-	ruta = base_url + 'index.php/Informacion_apoyo/';
+	ruta = base_url + 'index.php/Recursos_de_apoyo_para_el_aprendizaje/';
 	Mensaje.cargando('Buscando datos...');
-	window.location = ruta+'?nivel='+slc_nivel+'&area='+slc_area+'&grado='+slc_grado;	
+	window.location = ruta+'?nivel='+slc_nivel+'&area='+slc_area+'&grado='+slc_grado;
 	}
 });
