@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Informacion_apoyo_model extends CI_Model {
 
-	function obtener_datos_tabla($nivel, $area, $grado, $pclave)
+	function obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo)
 	{
 		if ($pclave=='undefined') {
 			$pclave='';
@@ -16,8 +16,13 @@ class Informacion_apoyo_model extends CI_Model {
 				$where .= ' n.idnivel = ? ';
 				array_push($data,$nivel);
 				if ($area != 0) {
-					$where .= ' AND a.idarea = ? ';
-					array_push($data,$area);
+					if ($tipo == 'P') {
+						$where .= ' AND a.idarea = ? ';
+						array_push($data,$area);
+					}else{
+						$where .= ' AND ra.idsubarea = ? ';
+						array_push($data,$area);	
+					}
 					if ($grado != 0) {
 						$where .= ' AND ra.grado = ?';
 						array_push($data,$grado);
@@ -30,8 +35,13 @@ class Informacion_apoyo_model extends CI_Model {
 				}
 			}else{
 				if ($area != 0) {
-					$where .= ' a.idarea = ? ';
-					array_push($data,$area);
+					if ($tipo == 'P') {
+						$where .= ' a.idarea = ? ';
+						array_push($data,$area);
+					}else{
+						$where .= ' ra.idsubarea = ? ';
+						array_push($data,$area);
+					}
 					if ($grado != 0) {
 						$where .= ' AND ra.grado = ?';
 						array_push($data,$grado);
@@ -55,9 +65,9 @@ class Informacion_apoyo_model extends CI_Model {
 		c_material rpl
 		INNER JOIN
 		recurso_apoyo ra ON ra.idmaterial = rpl.idmaterial
-        INNER JOIN
+		INNER JOIN
 		c_tipo_recurso t ON t.idtipo_recurso = ra.idtipo_recurso
-        INNER JOIN
+		INNER JOIN
 		c_publico p ON p.idpublico_obj = ra.idpublico_obj
 		INNER JOIN
 		c_nivel n ON n.idnivel = ra.idnivel
@@ -76,8 +86,12 @@ class Informacion_apoyo_model extends CI_Model {
 	}//obtener_c_nivel
 	public function obtener_c_area()
 	{
-		$query = "SELECT * FROM c_area";
-		return $this->db->query($query)->result_array();
+		$query = "SELECT * from (
+		select idarea,area,'sub_area','idsubarea', concat(idarea,'P') as tipo_a from c_area
+	) as A
+	union all
+	(select idarea,'area',sub_area,idsubarea, concat(idsubarea,'H') as tipo_a from c_sub_area) order by idarea,area desc,sub_area asc";
+	return $this->db->query($query)->result_array();
 	}//obtener_c_area
 
 	public function obtener_c_grado($nivel)
@@ -96,13 +110,18 @@ class Informacion_apoyo_model extends CI_Model {
 		return $this->db->query($query,$data)->result_array();
 	}//obtener_c_grado
 
-	public function obtener_nivel($area)
+	public function obtener_nivel($area,$tipo)
 	{
 		$where = '';
 		$data = array();
 		if ($area != 0) {
-			$where = " where ra.idarea = ? ";
-			$data = array($area);
+			if ($tipo == 'H') {
+				$where = " where ra.idsubarea = ? ";
+				$data = array($area);
+			}else{
+				$where = " where ra.idarea = ? ";
+				$data = array($area);
+			}
 		}
 		$query = "SELECT n.nivel, n.idnivel from recurso_apoyo ra
 		inner join c_nivel n on n.idnivel = ra.idnivel
@@ -112,12 +131,12 @@ class Informacion_apoyo_model extends CI_Model {
 	}
 
 	public function insertar_contador($filtros, $pagina_anterior){
-			date_default_timezone_set('America/Mexico_City');
-			setlocale(LC_TIME, 'es_MX.UTF-8');
-			$fecha = date("Y-m-d H:i:s");
+		date_default_timezone_set('America/Mexico_City');
+		setlocale(LC_TIME, 'es_MX.UTF-8');
+		$fecha = date("Y-m-d H:i:s");
 			// echo $doc; die();
-			$this->db->trans_start();
-			$query = "INSERT INTO contador (busqueda,origen,f_crea) VALUES (?,?,?);";
+		$this->db->trans_start();
+		$query = "INSERT INTO contador (busqueda,origen,f_crea) VALUES (?,?,?);";
 		$this->db->query($query, [$filtros, $pagina_anterior,$fecha]);
 		$this->db->trans_complete();
 		if ($this->db->trans_status() === FALSE) {
@@ -140,10 +159,10 @@ class Informacion_apoyo_model extends CI_Model {
 			$where.=" AND ra.grado={$slc_grado}";
 		}
 		$query = "SELECT nombre
-							FROM c_material m
-							INNER JOIN recurso_apoyo ra ON m.idmaterial= ra.idmaterial
-							WHERE 1=1  {$where}
-							GROUP BY m.nombre";
+		FROM c_material m
+		INNER JOIN recurso_apoyo ra ON m.idmaterial= ra.idmaterial
+		WHERE 1=1  {$where}
+		GROUP BY m.nombre";
 		return $this->db->query($query)->result_array();
 	}
 

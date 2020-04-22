@@ -27,7 +27,10 @@
               <select id="slc_area" class="form-control">
                 <option value='0'>TODOS</option>
                 <?php foreach ($c_area as $key => $value) { ?>
-                  <option value="<?=$value['idarea']?>" <?=$selected = ($value['idarea'] == $area)? 'selected':''?>><?=$value['area']?></option>
+                  <option value="<?=$v = ($value['sub_area'] != 'sub_area') ? $value['idsubarea'] : $value['idarea']?>"<?=$selected = (($tipo_slctd == $value['tipo_a']))? 'selected':''?>
+                  style="<?=$style = ($value['sub_area'] == 'sub_area')?'font-weight: bold':''?>"
+                  data-tipo="<?=$tipo = ($value['sub_area'] == 'sub_area')?'P':'H'?>">
+                  <?=$area = ($value['sub_area'] != 'sub_area')?'&nbsp; &nbsp;'.$value['sub_area']:$value['area']?></option>
                 <?php } ?>
               </select>
             </div>
@@ -57,7 +60,7 @@
            </div>
            <div class="col-3">
             <label for="btn_buscar_filtro"></label><br>
-            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro">Buscar</button>
+            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro"><i class="fas fa-search"></i> Buscar</button>
           </div>
         </div>
         <div class="row">

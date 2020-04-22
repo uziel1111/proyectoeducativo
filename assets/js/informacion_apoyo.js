@@ -32,14 +32,15 @@ $(document).ready(function() {
 
 $("#slc_area").change(function() {
 	area = $("#slc_area option:selected").val();
-
+	tipo = $("#slc_area option:selected").data('tipo');
+	
 	ruta = base_url + 'index.php/Informacion_apoyo/obtener_nivel';
 
 	$.ajax({
 		url: ruta,
 		type: 'POST',
 		dataType: 'json',
-		data: {area: area},
+		data: {area: area, tipo:tipo},
 		beforeSend: function(){
 			Mensaje.cargando('Cargando niveles...');
 		},
@@ -95,6 +96,7 @@ $("#btn_buscar_filtro").click(function(e) {
 	slc_area = $("#slc_area option:selected").val();
 	slc_grado = $("#slc_grado option:selected").val();
 	inp_pclave = $("#inp_pclave").val();
+	tipo = $("#slc_area option:selected").data('tipo');
 
 	if (slc_nivel == 0 && slc_area == 0 && slc_grado == 0) {
 
@@ -103,6 +105,6 @@ $("#btn_buscar_filtro").click(function(e) {
 
 	ruta = base_url + 'index.php/Recursos_de_apoyo_para_el_aprendizaje/';
 	Mensaje.cargando('Buscando datos...');
-	window.location = ruta+'?nivel='+slc_nivel+'&area='+slc_area+'&grado='+slc_grado+'&pclave='+inp_pclave;
+	window.location = ruta+'?nivel='+slc_nivel+'&area='+slc_area+'&grado='+slc_grado+'&pclave='+inp_pclave+'&tipo='+tipo;
 	}
 });

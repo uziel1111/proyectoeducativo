@@ -15,6 +15,7 @@ class Informacion_apoyo extends CI_Controller {
 		$area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
 		$grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
 		$pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+		$tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
 
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
@@ -23,7 +24,7 @@ class Informacion_apoyo extends CI_Controller {
 
 
 
-		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave);
+		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
 		 $data['datos_tabla'] = $datos_tabla;
 		 $data['nivel'] = $nivel;
 		 $data['area'] = $area;
@@ -31,6 +32,7 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['c_nivel'] = $c_nivel;
 		 $data['c_area'] = $c_area;
 		 $data['c_grado'] = $c_grado;
+		 $data['tipo_slctd'] = $area.$tipo;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 // echo "<pre>";print_r($pagina_anterior);die();
@@ -47,7 +49,8 @@ class Informacion_apoyo extends CI_Controller {
 	function obtener_nivel()
 	{
 		$area = $this->input->post('area');
-		$area_datos = $this->Informacion_apoyo_model->obtener_nivel($area);
+		$tipo = $this->input->post('tipo');
+		$area_datos = $this->Informacion_apoyo_model->obtener_nivel($area,$tipo);
 		Utilerias::enviaDataJson(200, $area_datos,$this);
         exit();
 	}//obtener_nivel
