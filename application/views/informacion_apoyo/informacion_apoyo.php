@@ -22,7 +22,7 @@
           </div>
           <div class="row">
 
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <label for="slc_area">Área / tema</label>
               <select id="slc_area" class="form-control">
                 <option value='0'>TODOS</option>
@@ -35,7 +35,7 @@
               </select>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <label for="slc_nivel">Nivel</label>
               <select id="slc_nivel" class="form-control">
                 <option value='0'>TODOS</option>
@@ -48,7 +48,7 @@
 
 
 
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <label for="slc_grado">Grado / Semestre</label>
               <select id="slc_grado" class="form-control">
                <option value='0'>TODOS</option>
@@ -58,7 +58,7 @@
                <?php } ?>
              </select>
            </div>
-           <div class="col-3">
+           <div class="col-12 col-md-6 col-lg-3">
             <label for="btn_buscar_filtro"></label><br>
             <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro"><i class="fas fa-search"></i> Buscar</button>
           </div>
@@ -72,7 +72,7 @@
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
         <div class="row">
-         <div class="col-12">
+         <div class="col-12" style="overflow-x:auto;">
           <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
             <thead>
              <tr>
