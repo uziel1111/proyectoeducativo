@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 // define("JSON_PRETTY_PRINT", 128);
@@ -38,6 +39,7 @@ define('ERRORMESSAGE', '2');
 	    Funcion para retornar datos a peticiones ajax
 	     */
 	    public static function enviaDataJson($status, $data, $contexto){
+				// header("Access-Control-Allow-Origin: *");
 	    	return $contexto->output
 	                    ->set_status_header($status)
 	                    ->set_content_type('application/json', 'utf-8')
