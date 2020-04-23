@@ -21,7 +21,7 @@ class Informacion_apoyo_model extends CI_Model {
 						array_push($data,$area);
 					}else{
 						$where .= ' AND ra.idsubarea = ? ';
-						array_push($data,$area);	
+						array_push($data,$area);
 					}
 					if ($grado != 0) {
 						$where .= ' AND ra.grado = ?';
@@ -54,6 +54,13 @@ class Informacion_apoyo_model extends CI_Model {
 				}
 			}
 		}
+		$aux_group="";
+		if ($nivel == 0 || $grado == 0) {
+			$aux_group="GROUP BY rpl.nombre,rpl.link";
+		}
+		else {
+			$aux_group="GROUP BY ra.idrecurso";
+		}
 
 		$query = "SELECT
 		rpl.nombre,
@@ -74,7 +81,7 @@ class Informacion_apoyo_model extends CI_Model {
 		INNER JOIN
 		c_area a ON a.idarea = ra.idarea
 		{$where} AND rpl.nombre like '%{$pclave}%'
-		GROUP BY ra.idrecurso
+		{$aux_group}
 		";
 
 		return $this->db->query($query, $data)->result_array();
