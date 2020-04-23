@@ -31,6 +31,7 @@ $(document).ready(function() {
 });
 
 $("#slc_area").change(function() {
+	$("#div_tabla").empty();
 	area = $("#slc_area option:selected").val();
 	tipo = $("#slc_area option:selected").data('tipo');
 	
@@ -59,6 +60,7 @@ $("#slc_area").change(function() {
 });
 
 $("#slc_nivel").change(function() {
+	$("#div_tabla").empty();
 	nivel = $("#slc_nivel option:selected").val();
 
 	ruta = base_url + 'index.php/Informacion_apoyo/obtener_grado';
@@ -86,6 +88,7 @@ $("#slc_nivel").change(function() {
 });
 
 $("#slc_grado").change(function() {
+	$("#div_tabla").empty();
 	$("#inp_pclave").val('');
 });
 
