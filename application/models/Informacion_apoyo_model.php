@@ -56,7 +56,7 @@ class Informacion_apoyo_model extends CI_Model {
 		}
 		$aux_group="";
 		if ($nivel == 0 || $grado == 0) {
-			$aux_group="GROUP BY rpl.nombre,rpl.link";
+			$aux_group="GROUP BY rpl.nombre,rpl.link,p.publico_objetivo";
 		}
 		else {
 			$aux_group="GROUP BY ra.idrecurso";
