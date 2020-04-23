@@ -25,14 +25,14 @@
             </div><!-- .row -->
 
 </div>
-</div> 
-          
+</div>
+
 
 
           <div class="row" id="row-lowgray-1">
 
 <div class="col-lg-12 text-justify" data-aos="zoom-in">
-<form action="<?= base_url('index.php/Contacto/enviar_correo') ?>" method="POST">
+<form action="<?= base_url('Contacto/enviar_correo') ?>" method="POST">
           <div class="form-group">
 
 
@@ -91,7 +91,7 @@
         </form>
 
 </div>
-</div> 
+</div>
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-    
+
 
 
 

@@ -98,7 +98,7 @@
 
           <!-- About Section Button -->
           <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="<?= base_url('index.php/Somos'); ?>">
+            <a class="btn btn-xl btn-outline-light" href="<?= base_url('Somos'); ?>">
               <i class="fas fa-plus-square"></i>
               Leer más
             </a>
@@ -124,7 +124,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/modelo_apa'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/modelo_apa'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -152,7 +152,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Formacion_Docente'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -175,7 +175,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Gestion_Escolar'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -200,7 +200,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Asistencia_Permanencia'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -224,7 +224,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Evaluacion_Aprendizaje'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -249,7 +249,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Sistemas_Informacion'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Sistemas_Informacion'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -273,7 +273,7 @@
 
             <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
 
-              <a href="<?= base_url('index.php/Hacemos/Descarga_Administrativa'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
+              <a href="<?= base_url('Hacemos/Descarga_Administrativa'); ?>" class="text-decoration-none" role="button" aria-pressed="true">
                 <div class="card mb-3 sm-box-1">
                   <div class="row no-gutters align-items-center">
                     <div class="col-md-4">
@@ -406,7 +406,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Política educativa y Modelo APA</h2>
                   <p>El Modelo de Asistencia, Permanencia, Aprendizaje (APA), un referente de la gestión educativa nacional.</p>
-                  <a href="<?= base_url('index.php/Hacemos/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/modelo_apa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-1.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -418,7 +418,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Formación continua para docentes</h2>
                   <p>Con capacitación de calidad construimos y avanzamos.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Formacion_Docente'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-3.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -430,7 +430,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Capacitación de directores y supervisores</h2>
                   <p>Esencial en toda estrategia que aspire a la mejora educativa.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Gestion_Escolar'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-4.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -442,7 +442,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Asistencia y permanencia escolares</h2>
                   <p>Cada alumno es el más importante: todos a la escuela.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Asistencia_Permanencia'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-2.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -454,7 +454,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Evaluación del aprendizaje</h2>
                   <p>La evaluación educativa aún está por mostrar sus mayores beneficios.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Evaluacion_Aprendizaje'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-7.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -466,7 +466,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Sistemas de información para la gestión educativa</h2>
                   <p>Que favorezcan los procesos de toma de decisión.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Sistemas_Informacion'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Sistemas_Informacion'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-5.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
@@ -478,7 +478,7 @@
                 <div class="col-lg-6 cc-light">
                   <h2>Descarga administrativa</h2>
                   <p>Reducir la carga administrativa del personal de las escuelas.</p>
-                  <a href="<?= base_url('index.php/Hacemos/Descarga_Administrativa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
+                  <a href="<?= base_url('Hacemos/Descarga_Administrativa'); ?>" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Leer más</a>
                 </div>
                 <div class="d-none d-lg-block col-lg-6"><img src="<?= base_url('assets/img/home/ct-slider/ct-slider-6.jpg'); ?>" class="img-fluid" alt="Responsive image"></div>
               </div>
