@@ -83,15 +83,15 @@
                         Somos
                       </a>
                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Nosotros'); ?>">Organización</a>
-                        <a class="dropdown-item" href="<?= base_url('index.php/Nosotros/Equipo'); ?>">Equipo</a>
+                        <a class="dropdown-item" href="<?= base_url('Nosotros/Nosotros'); ?>">Organización</a>
+                        <a class="dropdown-item" href="<?= base_url('Nosotros/Equipo'); ?>">Equipo</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                       </div>
                     </li>-->
                     <li class="nav-item mx-0 mx-lg-1">
 
-                <a class="nav-link rounded" href="<?= base_url('index.php/Somos'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('Somos'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -105,7 +105,7 @@
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
 
-                <a class="nav-link rounded" href="<?= base_url('index.php/Hacemos'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('Hacemos'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -118,7 +118,7 @@
 
                 </li>
                 <li class="nav-item">
-                <a class="nav-link rounded" href="<?= base_url('index.php/Logros/'); ?>">
+                <a class="nav-link rounded" href="<?= base_url('Logros/'); ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
@@ -130,7 +130,7 @@
                   </a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link rounded" href="<?= base_url('index.php/Contacto') ?>">
+                <a class="nav-link rounded" href="<?= base_url('Contacto') ?>">
 
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>

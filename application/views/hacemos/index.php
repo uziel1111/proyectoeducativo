@@ -23,7 +23,7 @@
                 <h2 class="section-heading text-uppercase line-behind"><span>NUESTRO QUEHACER</span></h2>
                 <p>Es el elevar la calidad y la equidad de la educación mediante la asesoría, el diseño y el acompañamiento de acciones innovadoras en la educación básica y media superior. <strong>Nuestro compromiso es contribuir a que el sistema educativo ofrezca un mejor servicio educativo, eleve su percepción entre la población y se ubique como referente nacional</strong>, como ya lo hemos logrado con diversas entidades federativas en temas concretos:</p>
               </div>
-            </div>  
+            </div>
 
 
 
@@ -33,7 +33,7 @@
             <div class="col-12 text-left ml-5" data-aos="flip-left" data-aos-delay="0" data-aos-duration="1000">
                   <h4 class="font-weight-bold mb-3">Campos con mayor trayectoria</h4>
               </div>
-            
+
               <div class="col box" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
                   <i class="fas fa-circle fa-stack-2x fc-1"></i>
@@ -41,7 +41,7 @@
                 </span>
                 <h4 class="service-heading fc-1">Política educativa Modelo APA</h4>
                 <p class="text-muted px-4">Para diseñar e implementar estrategias que apunten a los aspectos más importantes de la educación; logren resultados tangibles; sean sustentables financiera y operativamente; y abonen a la imagen de la administración estatal.</p>
-                <a class="btn bc-1 text-white" href="<?= base_url('index.php/Hacemos/modelo_apa'); ?>" role="button">Leer mas</a>
+                <a class="btn bc-1 text-white" href="<?= base_url('Hacemos/modelo_apa'); ?>" role="button">Leer mas</a>
               </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
@@ -50,7 +50,7 @@
                 </span>
                 <h4 class="service-heading fc-2">Formación continua para docentes</h4>
                 <p class="text-muted px-4">Focalizada, relevante, cercana, sustentable y de alta calidad, para estar en posición de impulsar procesos de mejora.</p>
-                <a class="btn bc-2 text-white" href="<?= base_url('index.php/Hacemos/Formacion_Docente'); ?>" role="button">Leer mas</a>
+                <a class="btn bc-2 text-white" href="<?= base_url('Hacemos/Formacion_Docente'); ?>" role="button">Leer mas</a>
               </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
@@ -59,7 +59,7 @@
                 </span>
                 <h4 class="service-heading fc-3">Capacitación de directores y supervisores</h4>
                 <p class="text-muted px-4">Para formar a cuadros que deben tener una muy alta prioridad en el proceso de fortalecimiento de la escuela como unidad básica para la mejora del sistema educativo.</p>
-                <a class="btn bc-3 text-white" href="<?= base_url('index.php/Hacemos/Gestion_Escolar'); ?>" role="button">Leer mas</a>
+                <a class="btn bc-3 text-white" href="<?= base_url('Hacemos/Gestion_Escolar'); ?>" role="button">Leer mas</a>
               </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="0" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
@@ -68,7 +68,7 @@
                 </span>
                 <h4 class="service-heading fc-4">Impulso a la asistencia y permanencia</h4>
                 <p class="text-muted px-4">Para dar prioridad a los problemas más sensibles de un sistema educativo que también debe elevar su calidad por la vía de la equidad.</p>
-                <a class="btn bc-4 text-white" href="<?= base_url('index.php/Hacemos/Asistencia_Permanencia'); ?>" role="button">Leer mas</a>
+                <a class="btn bc-4 text-white" href="<?= base_url('Hacemos/Asistencia_Permanencia'); ?>" role="button">Leer mas</a>
               </div>
 
               <div class="d-none d-lg-block d-xl-block w-100"></div>
@@ -80,7 +80,7 @@
                 </span>
                 <h4 class="service-heading text-warning">Evaluación del aprendizaje</h4>
                 <p class="text-muted px-4">Para contar con herramientas oportunas de diagnóstico que sirvan de sustento a las tareas de planeación y seguimiento de escuelas, zonas escolares y autoridades estatales.</p>
-                <a class="btn btn-warning text-white" href="<?= base_url('index.php/Hacemos/Evaluacion_Aprendizaje'); ?>" role="button">Leer mas</a>
+                <a class="btn btn-warning text-white" href="<?= base_url('Hacemos/Evaluacion_Aprendizaje'); ?>" role="button">Leer mas</a>
               </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
@@ -89,7 +89,7 @@
                 </span>
                 <h4 class="service-heading fc-5">Sistemas de información educativa</h4>
                 <p class="text-muted px-4">Para impulsar el aprovechamiento de los datos con que ya cuentan las instancias estatales mediante una integración más intuitiva, un análisis más práctico y una redistribución más amplia y oportuna información.</p>
-                <a class="btn bc-5 text-white" href="<?= base_url('index.php/Hacemos/Sistemas_Informacion'); ?>" role="button">Leer mas</a>
+                <a class="btn bc-5 text-white" href="<?= base_url('Hacemos/Sistemas_Informacion'); ?>" role="button">Leer mas</a>
               </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
@@ -98,8 +98,8 @@
                 </span>
                 <h4 class="service-heading text-info">Descarga administrativa</h4>
                 <p class="text-muted px-4">Para simplificar la gestión escolar, ahorrar recursos e incrementar el tiempo disponible para los aspectos académicos en escuelas, zonas escolares y oficinas estatales.</p>
-                <a class="btn btn-info text-white" href="<?= base_url('index.php/Hacemos/Descarga_Administrativa'); ?>" role="button">Leer mas</a>
-              </div>  
+                <a class="btn btn-info text-white" href="<?= base_url('Hacemos/Descarga_Administrativa'); ?>" role="button">Leer mas</a>
+              </div>
               <div class="col box" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
                 <span class="fa-stack fa-3x icon">
                   <i class="fas fa-circle fa-stack-2x text-success"></i>
@@ -108,7 +108,7 @@
                 <h4 class="service-heading text-success">Optimización de recursos</h4>
                 <p class="text-muted px-4">Financieros y humanos, para asegurar el mayor provecho de los recursos del FONE y de las plazas disponibles tanto federales como estatales.</p>
                 <a class="btn btn-success" href="#" role="button">Leer mas</a>
-              </div>                           
+              </div>
             </div>
             </div>
 
@@ -118,7 +118,7 @@
 
               <div class="col-lg-6 text-justify">
 
-          
+
               <ul class="list-group list-boxed-1">
   <li class="list-group-item">
     <div class="d-flex w-100 justify-content-between">
@@ -189,24 +189,24 @@
 
   </ul>
               </div>
-              
+
 
 
             </div> -->
- 
-              
+
+
 
               <div class="row" id="row-secondary-2">
 
 <div class="col-lg-12 text-justify" data-aos="zoom-in">
 
             <h4 class="font-weight-bold text-white mb-3">Principios de trabajo</h4>
-        
+
   <div class="accordion accordion-dark" id="accordionExample">
       <div class="card">
         <div class="card-header closed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
         Mejora educativa
-        <span class="collapse-icon"></span>      
+        <span class="collapse-icon"></span>
 
         </div>
 
@@ -246,7 +246,7 @@
       <div class="card">
       <div class="card-header" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
 
-      Sustentabilidad 
+      Sustentabilidad
       <span class="collapse-icon"></span>
         </div>
         <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
@@ -259,7 +259,7 @@
       <div class="card">
       <div class="card-header" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
 
-      Objetivos educativos  
+      Objetivos educativos
       <span class="collapse-icon"></span>
         </div>
         <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
@@ -267,7 +267,7 @@
             Los objetivos educativos más esenciales siempre van por delante. La mejora debe procurar siempre la asistencia a la escuela de todas las personas en edad escolar, pues ello nos da la razón de ser. Lo siguiente más importante es que todos concluyan los niveles obligatorios y alcancen el aprendizaje mínimo indispensable previsto en los planes y programas. Esas son metas muy altas y debemos aspirar a alcanzarlas.
           </div>
         </div>
-      </div>                    
+      </div>
 
       <div class="card">
       <div class="card-header" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
@@ -280,7 +280,7 @@
              Hay que empezar por atender a quienes más lo requieren. Las acciones y recursos deben priorizar a escuelas, docentes y alumnos con mayor necesidad de apoyo académico: debemos aspirar, antes que nada, a garantizar a cada persona un servicio que juzguemos aceptable. La experiencia indica que ello no solo es lo más justo, sino que también es lo más eficaz y rápido para mejorar.
           </div>
         </div>
-      </div> 
+      </div>
 
 
       <div class="card">
@@ -294,12 +294,12 @@
             Implementar y dar seguimiento es tan importante como planear y evaluar. De ahí la necesidad de dar la mayor relevancia a esos procesos: comunicar con amplitud y oportunidad a toda la estructura; acompañar con capacitación y asesoría a las personas involucradas; monitorear avances y dificultades; e identificar insuficiencias y oportunidades de mejora.
           </div>
         </div>
-      </div>                     
+      </div>
 
       <div class="card">
       <div class="card-header" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
 
-      Nos ponemos la camiseta 
+      Nos ponemos la camiseta
       <span class="collapse-icon"></span>
         </div>
         <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
@@ -307,11 +307,11 @@
           De nuestros clientes, pues nos sentimos corresponsables de las acciones como parte de un equipo del que queremos contribuir a desarrollar su potencial. De ahí que, además de nuestro mayor esfuerzo, ponemos a trabajar nuestras alianzas nacionales e internacionales para gestionar los mayores beneficios para el sistema educativo.
           </div>
         </div>
-      </div> 
+      </div>
 
 </div>
 </div>
-</div>              
+</div>
 
           </div>
         </section>
