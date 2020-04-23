@@ -72,7 +72,7 @@
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
         <div class="row">
-         <div class="col-12" style="overflow-x:auto;">
+         <div class="col-12" style="overflow-x:auto;" id="div_tabla">
           <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
             <thead>
              <tr>
