@@ -115,10 +115,10 @@ function obtener_nombres_recursos(){
       dataType: 'json',
       data: {slc_nivel:slc_nivel, slc_area:slc_area, slc_grado:slc_grado},
       beforeSend: function (xhr) {
-        Mensaje.cargando("Obteniendo información");
+        // Mensaje.cargando("Obteniendo información");
       },
       success: function (data) {
-        Mensaje.cerrar();
+        // Mensaje.cerrar();
         // console.log(data);
 				var countries = data;
 				autocomplete(document.getElementById("inp_pclave"), countries);
