@@ -5,89 +5,92 @@ class Informacion_apoyo_model extends CI_Model {
 
 	function obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo)
 	{
-		if ($pclave=='undefined') {
-			$pclave='';
-		}
-		$data = array();
-		$where = '';
-		if ($nivel != 0 || $area != 0 || $grado != 0) {
-			$where = 'WHERE ';
-			if ($nivel != 0) {
-				$where .= ' n.idnivel = ? ';
-				array_push($data,$nivel);
-				if ($area != 0) {
-					if ($tipo == 'P') {
-						$where .= ' AND a.idarea = ? ';
-						array_push($data,$area);
-					}else{
-						$where .= ' AND ra.idsubarea = ? ';
-						array_push($data,$area);
-					}
-					if ($grado != 0) {
-						$where .= ' AND ra.grado = ?';
-						array_push($data,$grado);
-					}
-				}else {
-					if ($grado != 0) {
-						$where .= ' AND ra.grado = ? ';
-						array_push($data,$grado);
-					}
-				}
-			}else{
-				if ($area != 0) {
-					if ($tipo == 'P') {
-						$where .= ' a.idarea = ? ';
-						array_push($data,$area);
-					}else{
-						$where .= ' ra.idsubarea = ? ';
-						array_push($data,$area);
-					}
-					if ($grado != 0) {
-						$where .= ' AND ra.grado = ?';
-						array_push($data,$grado);
+		if (strlen($pclave) > 150) {
+			if ($pclave=='undefined') {
+				$pclave='';
+			}
+			$data = array();
+			$where = '';
+			if ($nivel != 0 || $area != 0 || $grado != 0) {
+				$where = 'WHERE ';
+				if ($nivel != 0) {
+					$where .= ' n.idnivel = ? ';
+					array_push($data,$nivel);
+					if ($area != 0) {
+						if ($tipo == 'P') {
+							$where .= ' AND a.idarea = ? ';
+							array_push($data,$area);
+						}else{
+							$where .= ' AND ra.idsubarea = ? ';
+							array_push($data,$area);
+						}
+						if ($grado != 0) {
+							$where .= ' AND ra.grado = ?';
+							array_push($data,$grado);
+						}
+					}else {
+						if ($grado != 0) {
+							$where .= ' AND ra.grado = ? ';
+							array_push($data,$grado);
+						}
 					}
 				}else{
-					if ($grado != 0) {
-						$where .= ' ra.grado = ?';
-						array_push($data,$grado);
+					if ($area != 0) {
+						if ($tipo == 'P') {
+							$where .= ' a.idarea = ? ';
+							array_push($data,$area);
+						}else{
+							$where .= ' ra.idsubarea = ? ';
+							array_push($data,$area);
+						}
+						if ($grado != 0) {
+							$where .= ' AND ra.grado = ?';
+							array_push($data,$grado);
+						}
+					}else{
+						if ($grado != 0) {
+							$where .= ' ra.grado = ?';
+							array_push($data,$grado);
+						}
 					}
 				}
 			}
-		}
-		$aux_group="";
-		if ($nivel == 0 || $grado == 0) {
-			$aux_group="GROUP BY rpl.nombre,rpl.link,p.publico_objetivo";
-		}
-		else {
-			$aux_group="GROUP BY ra.idrecurso";
-		}
+			$aux_group="";
+			if ($nivel == 0 || $grado == 0) {
+				$aux_group="GROUP BY rpl.nombre,rpl.link,p.publico_objetivo";
+			}
+			else {
+				$aux_group="GROUP BY ra.idrecurso";
+			}
 
-		$multiple = str_replace(", ","|",$pclave);
-		
+			$multiple = str_replace(", ","|",$pclave);
+			
 
-		$query = "SELECT
-		rpl.nombre,
-		rpl.fuente,
-		t.tipo_recurso,
-		p.publico_objetivo,
-		rpl.link
-		FROM
-		c_material rpl
-		INNER JOIN
-		recurso_apoyo ra ON ra.idmaterial = rpl.idmaterial
-		INNER JOIN
-		c_tipo_recurso t ON t.idtipo_recurso = ra.idtipo_recurso
-		INNER JOIN
-		c_publico p ON p.idpublico_obj = ra.idpublico_obj
-		INNER JOIN
-		c_nivel n ON n.idnivel = ra.idnivel
-		INNER JOIN
-		c_area a ON a.idarea = ra.idarea
-		{$where} AND  rpl.nombre regexp '{$multiple}'
-		{$aux_group}
-		";
-
-		return $this->db->query($query, $data)->result_array();
+			$query = "SELECT
+			rpl.nombre,
+			rpl.fuente,
+			t.tipo_recurso,
+			p.publico_objetivo,
+			rpl.link
+			FROM
+			c_material rpl
+			INNER JOIN
+			recurso_apoyo ra ON ra.idmaterial = rpl.idmaterial
+			INNER JOIN
+			c_tipo_recurso t ON t.idtipo_recurso = ra.idtipo_recurso
+			INNER JOIN
+			c_publico p ON p.idpublico_obj = ra.idpublico_obj
+			INNER JOIN
+			c_nivel n ON n.idnivel = ra.idnivel
+			INNER JOIN
+			c_area a ON a.idarea = ra.idarea
+			{$where} AND  rpl.nombre regexp '{$multiple}'
+			{$aux_group}
+			";
+			return $this->db->query($query, $data)->result_array();
+		} else {
+			return "error";
+		}
 	}//obtener_datos_tabla
 	public function obtener_c_nivel()
 	{
@@ -98,10 +101,10 @@ class Informacion_apoyo_model extends CI_Model {
 	{
 		$query = "SELECT * from (
 		select idarea,area,'sub_area','idsubarea', concat(idarea,'P') as tipo_a from c_area
-	) as A
-	union all
-	(select idarea,'area',sub_area,idsubarea, concat(idsubarea,'H') as tipo_a from c_sub_area) order by idarea,area desc,sub_area asc";
-	return $this->db->query($query)->result_array();
+		) as A
+		union all
+		(select idarea,'area',sub_area,idsubarea, concat(idsubarea,'H') as tipo_a from c_sub_area) order by idarea,area desc,sub_area asc";
+		return $this->db->query($query)->result_array();
 	}//obtener_c_area
 
 	public function obtener_c_grado($nivel)

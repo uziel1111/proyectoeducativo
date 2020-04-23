@@ -5,7 +5,12 @@ $(document).ready(function() {
 
 $( "#inp_pclave" ).click(function (e) {
   e.preventDefault();
+  cad = $("#inp_pclave").val();
+  if (cad.length < 150) {
 	obtener_nombres_recursos();
+  }else{
+  	Mensaje.alerta('error','Excedió el tamaño de carácteres permitidos','Máximo 150 carácteres');
+  }
 });
 function autocomplete(inp, arr) {
 	/*the autocomplete function takes two arguments,
