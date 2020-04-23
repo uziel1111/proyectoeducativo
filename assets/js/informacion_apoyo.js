@@ -54,7 +54,11 @@ $("#slc_area").change(function() {
 				$("#slc_nivel").html(nivel);
 				$("#slc_grado").val(0);
 				$("#inp_pclave").val('');
-		}
+		},
+      error: function (jqXHR, textStatus, errorThrown) {
+				Mensaje.cerrar();
+				Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
+			}
 	});
 
 });
@@ -82,7 +86,11 @@ $("#slc_nivel").change(function() {
 			}
 				$("#slc_grado").html(grado);
 				$("#inp_pclave").val('');
-		}
+		},
+      error: function (jqXHR, textStatus, errorThrown) {
+				Mensaje.cerrar();
+				Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
+			}
 	});
 
 });

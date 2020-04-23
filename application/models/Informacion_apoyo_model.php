@@ -62,6 +62,9 @@ class Informacion_apoyo_model extends CI_Model {
 			$aux_group="GROUP BY ra.idrecurso";
 		}
 
+		$multiple = str_replace(", ","|",$pclave);
+		
+
 		$query = "SELECT
 		rpl.nombre,
 		rpl.fuente,
@@ -80,7 +83,7 @@ class Informacion_apoyo_model extends CI_Model {
 		c_nivel n ON n.idnivel = ra.idnivel
 		INNER JOIN
 		c_area a ON a.idarea = ra.idarea
-		{$where} AND rpl.nombre like '%{$pclave}%'
+		{$where} AND  rpl.nombre regexp '{$multiple}'
 		{$aux_group}
 		";
 
