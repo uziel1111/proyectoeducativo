@@ -36,10 +36,10 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['tipo_slctd'] = $area.$tipo;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 
+
 		 // $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 $pagina_anterior = '';
 		 
-
 		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 // $pagina_anterior = '';
 		 // echo "<pre>";print_r($pagina_anterior);die();
