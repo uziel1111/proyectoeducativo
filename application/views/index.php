@@ -60,7 +60,7 @@
                    <label for="inp_pclave">Palabras clave</label>
                    <form autocomplete="off" action="">
                     <div class="autocomplete" >
-                      <input id="inp_pclave" type="text" name="inp_pclave" placeholder="Escriba palabras clave" class="form-control">
+                      <input id="inp_pclave" title="Puede poner palabras separadas por comas para multiples búsquedas" type="text" maxlength="150" name="inp_pclave" placeholder="Escriba palabras clave" class="form-control">
                     </div>
                   </form>
                 </div>

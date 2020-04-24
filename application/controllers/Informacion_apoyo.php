@@ -12,12 +12,13 @@ class Informacion_apoyo extends CI_Controller {
 
 	public function index()
 	{
+		
 		$nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
 		$area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
 		$grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
 		$pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+		$pclave = ($pclave != 'undefined') ? $pclave : '';
 		$tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
-
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
@@ -26,7 +27,7 @@ class Informacion_apoyo extends CI_Controller {
 		
 
 		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
-		
+
 		 $data['datos_tabla'] = $datos_tabla;
 		 $data['nivel'] = $nivel;
 		 $data['area'] = $area;
@@ -38,10 +39,6 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['pclave'] = $pclave;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 
-
-		 // $pagina_anterior = $_SERVER['HTTP_REFERER'];
-		 $pagina_anterior = '';
-		 
 		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 // $pagina_anterior = '';
 		 // echo "<pre>";print_r($pagina_anterior);die();
@@ -77,7 +74,7 @@ class Informacion_apoyo extends CI_Controller {
 		foreach ($arr_info as $key => $value) {
 			array_push($arr_aux, $value['nombre']);
 		}
-		
+
 		Utilerias::enviaDataJson($arr_aux,$this);
         exit();
 	}//obtener_nombres_recursos
