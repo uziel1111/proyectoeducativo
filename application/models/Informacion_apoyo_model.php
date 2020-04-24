@@ -58,6 +58,11 @@ class Informacion_apoyo_model extends CI_Model {
 
 			if (strlen($pclave) != 0) {
 				$multiple = str_replace(", ","|",$pclave);
+				$multiple = str_replace("a","[á|a]",$multiple);
+				$multiple = str_replace("e","[é|e]",$multiple);
+				$multiple = str_replace("i","[í|i]",$multiple);
+				$multiple = str_replace("o","[ó|o]",$multiple);
+				$multiple = str_replace("u","[ú|u]",$multiple);
 				$where .= " AND  rpl.nombre regexp '{$multiple}'";
 			}
 
@@ -67,7 +72,7 @@ class Informacion_apoyo_model extends CI_Model {
 			}
 			else {
 				$aux_group="GROUP BY ra.idrecurso";
-			}			
+			}
 
 			$query = "SELECT
 			rpl.nombre,
@@ -87,7 +92,7 @@ class Informacion_apoyo_model extends CI_Model {
 			c_nivel n ON n.idnivel = ra.idnivel
 			INNER JOIN
 			c_area a ON a.idarea = ra.idarea
-			{$where} 
+			{$where}
 			{$aux_group}
 			";
 			return $this->db->query($query, $data)->result_array();
