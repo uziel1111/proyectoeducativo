@@ -25,7 +25,7 @@ class Informacion_apoyo extends CI_Controller {
 
 
 		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
-		
+
 		 $data['datos_tabla'] = $datos_tabla;
 		 $data['nivel'] = $nivel;
 		 $data['area'] = $area;
@@ -37,10 +37,6 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['pclave'] = $pclave;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 
-
-		 // $pagina_anterior = $_SERVER['HTTP_REFERER'];
-		 $pagina_anterior = '';
-		 
 		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 // $pagina_anterior = '';
 		 // echo "<pre>";print_r($pagina_anterior);die();
@@ -76,7 +72,7 @@ class Informacion_apoyo extends CI_Controller {
 		foreach ($arr_info as $key => $value) {
 			array_push($arr_aux, $value['nombre']);
 		}
-		
+
 		Utilerias::enviaDataJson($arr_aux,$this);
         exit();
 	}//obtener_nombres_recursos
