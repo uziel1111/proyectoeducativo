@@ -83,6 +83,7 @@
              </tr>
            </thead>
            <tbody>
+            <?php if ($datos_tabla != 'error') { ?>
             <?php foreach ($datos_tabla as $key => $v) { ?>
               <tr>
                <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
@@ -91,6 +92,7 @@
                <td><?=$v['publico_objetivo']?></td>
              </tr>
            <?php } ?>
+          <?php } ?>
          </tbody>
        </table>
      </div>

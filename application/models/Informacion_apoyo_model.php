@@ -5,7 +5,7 @@ class Informacion_apoyo_model extends CI_Model {
 
 	function obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo)
 	{
-		if (strlen($pclave) > 150) {
+		if (strlen($pclave) < 150) {
 			if ($pclave=='undefined') {
 				$pclave='';
 			}
@@ -55,16 +55,19 @@ class Informacion_apoyo_model extends CI_Model {
 					}
 				}
 			}
+
+			if (strlen($pclave) != 0) {
+				$multiple = str_replace(", ","|",$pclave);
+				$where .= " AND  rpl.nombre regexp '{$multiple}'";
+			}
+
 			$aux_group="";
 			if ($nivel == 0 || $grado == 0) {
 				$aux_group="GROUP BY rpl.nombre,rpl.link,p.publico_objetivo";
 			}
 			else {
 				$aux_group="GROUP BY ra.idrecurso";
-			}
-
-			$multiple = str_replace(", ","|",$pclave);
-			
+			}			
 
 			$query = "SELECT
 			rpl.nombre,
@@ -84,7 +87,7 @@ class Informacion_apoyo_model extends CI_Model {
 			c_nivel n ON n.idnivel = ra.idnivel
 			INNER JOIN
 			c_area a ON a.idarea = ra.idarea
-			{$where} AND  rpl.nombre regexp '{$multiple}'
+			{$where} 
 			{$aux_group}
 			";
 			return $this->db->query($query, $data)->result_array();

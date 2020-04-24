@@ -25,6 +25,7 @@ class Informacion_apoyo extends CI_Controller {
 
 
 		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
+		
 		 $data['datos_tabla'] = $datos_tabla;
 		 $data['nivel'] = $nivel;
 		 $data['area'] = $area;
@@ -34,16 +35,15 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['c_grado'] = $c_grado;
 		 $data['tipo_slctd'] = $area.$tipo;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
+
 		 // $pagina_anterior = $_SERVER['HTTP_REFERER'];
 		 $pagina_anterior = '';
+		 
+
+		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
+		 // $pagina_anterior = '';
 		 // echo "<pre>";print_r($pagina_anterior);die();
 		 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
-		 if ($this->input->get('ajax') !== null) {
-		 	$vista = $this->load->view( 'informacion_apoyo/info_ajax', $data, TRUE );
-                $respuesta = array( 'vista' => $vista );
-                Utilerias::enviaDataJson(200, $respuesta,$this);
-                exit();
-		 }
 		 Utilerias::pagina_basica($this, "informacion_apoyo/informacion_apoyo", $data);
 	}//index
 
@@ -52,7 +52,7 @@ class Informacion_apoyo extends CI_Controller {
 		$area = $this->input->post('area');
 		$tipo = $this->input->post('tipo');
 		$area_datos = $this->Informacion_apoyo_model->obtener_nivel($area,$tipo);
-		Utilerias::enviaDataJson(200, $area_datos,$this);
+		Utilerias::enviaDataJson($area_datos,$this);
         exit();
 	}//obtener_nivel
 
@@ -60,7 +60,7 @@ class Informacion_apoyo extends CI_Controller {
 	{
 		$nivel = $this->input->post('nivel');
 		$grado_datos = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
-		Utilerias::enviaDataJson(200, $grado_datos,$this);
+		Utilerias::enviaDataJson($grado_datos,$this);
         exit();
 	}//obtener_grado
 
@@ -75,8 +75,8 @@ class Informacion_apoyo extends CI_Controller {
 		foreach ($arr_info as $key => $value) {
 			array_push($arr_aux, $value['nombre']);
 		}
-		// echo "<pre>";print_r($arr_aux);die();
-		Utilerias::enviaDataJson(200, $arr_aux,$this);
+		
+		Utilerias::enviaDataJson($arr_aux,$this);
         exit();
 	}//obtener_nombres_recursos
 
