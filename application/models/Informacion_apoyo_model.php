@@ -182,4 +182,11 @@ class Informacion_apoyo_model extends CI_Model {
 		return $this->db->query($query)->result_array();
 	}
 
+	public function obtener_sitios_conocidos($sitio){
+		$query = "SELECT url_sitio
+		FROM c_sitiosconocidos
+		WHERE url_sitio = ? ";
+		return $this->db->query($query,[$sitio])->result_array();
+	}
+
 }//class
