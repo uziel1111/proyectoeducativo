@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+date_default_timezone_set('America/Monterrey');
+setlocale(LC_TIME, 'es_MX.UTF-8');
 class Informacion_apoyo extends CI_Controller {
 
 	function __construct() {
@@ -22,7 +23,7 @@ class Informacion_apoyo extends CI_Controller {
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
 
-
+		
 
 		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
 		
@@ -80,5 +81,25 @@ class Informacion_apoyo extends CI_Controller {
 		Utilerias::enviaDataJson($arr_aux,$this);
         exit();
 	}//obtener_nombres_recursos
+
+	function generar_token($sitio){
+		//pagina que esta haciendo la peticion
+		// fecha 2020/04/24
+		//key_Auxiliar=Cquery123.
+		$key_auxiliar="Cquery123.";
+		$pagina_sitio="";
+		$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos($sitio);
+		if(count($result)>0){
+			$pagina_sitio=$result[0]['url_sitio'];
+		}
+		$fecha = date("Y/m/d");
+		$cadena=$pagina_sitio.$fecha.$key_auxiliar;
+		// $token=hash("sha512",$cadena);
+		$token=md5($cadena);
+		// echo $pagina."\n";
+		// echo $fecha."\n";
+		// echo $token; die();
+		return $token;
+	}
 
 }//class
