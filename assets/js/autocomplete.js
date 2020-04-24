@@ -113,7 +113,7 @@ function obtener_nombres_recursos(){
 	slc_area = $("#slc_area option:selected").val();
 	slc_grado = $("#slc_grado option:selected").val();
 
-	ruta = base_url + "Informacion_apoyo/obtener_nombres_recursos";
+	ruta = base_url + "Recursos_de_apoyo_para_el_aprendizaje/obtener_nombres_recursos";
     $.ajax({
       url: ruta,
       type: 'POST',

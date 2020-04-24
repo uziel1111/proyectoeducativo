@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Informacion_apoyo extends CI_Controller {
+class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 
 	function __construct() {
 			parent::__construct();
@@ -9,15 +9,15 @@ class Informacion_apoyo extends CI_Controller {
 			 $this->load->model( 'Informacion_apoyo_model' );
 		}
 
-	public function index()
+	public function recursos($area,$tipo,$nivel,$grado,$pclave)
 	{
 		
-		$nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
-		$area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
-		$grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
-		$pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+		// $nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
+		// $area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
+		// $grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
+		// $pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
 		$pclave = ($pclave != 'undefined') ? $pclave : '';
-		$tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
+		// $tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();

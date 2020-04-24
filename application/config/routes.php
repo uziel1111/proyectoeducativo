@@ -53,4 +53,4 @@ $route['default_controller'] = 'Index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['Recursos_de_apoyo_para_el_aprendizaje'] = 'Informacion_apoyo';
+// $route['Recursos_de_apoyo_para_el_aprendizaje/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'Recursos_de_apoyo_para_el_aprendizaje/index/$1/$2/$3/$4/$5';
