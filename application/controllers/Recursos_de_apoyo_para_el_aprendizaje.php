@@ -24,26 +24,51 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
 
-		
+		$token = ($this->input->get('token')!== null) ? $this->input->get('token') : '';
+		$bandera=FALSE;
+		if($token==''){
+			$mystring = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+			$cadena_aux = 'https://proyectoeducativo.org/Recursos_de_apoyo_para_el_aprendizaje';
+			$cadena2_aux='localhost/proyectoeducativo/Recursos_de_apoyo_para_el_aprendizaje';
+			$cadena=stristr($mystring, $cadena2_aux);
+			$cadena2=stristr($mystring, $cadena_aux);
+			if($cadena2==$mystring || $cadena==$mystring){
+				$bandera=TRUE;
+			}
+		}else{
+			$bandera==$this->Valida_token($token);
+		}
 
-		$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
+		if($bandera==TRUE){
+			$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
 
-		 $data['datos_tabla'] = $datos_tabla;
-		 $data['nivel'] = $nivel;
-		 $data['area'] = $area;
-		 $data['grado'] = $grado;
-		 $data['c_nivel'] = $c_nivel;
-		 $data['c_area'] = $c_area;
-		 $data['c_grado'] = $c_grado;
-		 $data['tipo_slctd'] = $area.$tipo;
-		 $data['pclave'] = $pclave;
-		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
+			 $data['datos_tabla'] = $datos_tabla;
+			 $data['nivel'] = $nivel;
+			 $data['area'] = $area;
+			 $data['grado'] = $grado;
+			 $data['c_nivel'] = $c_nivel;
+			 $data['c_area'] = $c_area;
+			 $data['c_grado'] = $c_grado;
+			 $data['tipo_slctd'] = $area.$tipo;
+			 $data['pclave'] = $pclave;
+			 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 
-		 $pagina_anterior = $_SERVER['HTTP_REFERER'];
-		 // $pagina_anterior = '';
-		 // echo "<pre>";print_r($pagina_anterior);die();
-		 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
-		 Utilerias::pagina_basica($this, "informacion_apoyo/informacion_apoyo", $data);
+			 $pagina_anterior = $_SERVER['HTTP_REFERER'];
+			 // $pagina_anterior = '';
+			 // echo "<pre>";print_r($pagina_anterior);die();
+			 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
+			 Utilerias::pagina_basica($this, "informacion_apoyo/informacion_apoyo", $data);
+		}else{
+			$encabezado="Recursos de apoyo del aprendizaje";
+			$mensaje="Ocurrió un error, intente nuevamente";
+
+			if($token!=''){
+				$mensaje="Token inválido";
+			}
+			$data['encabezado']=$encabezado;
+			$data['mensaje']=$mensaje;
+			Utilerias::pagina_basica($this, "errors/error", $data);
+		}
 	}//index
 
 	function obtener_nivel()
@@ -79,24 +104,19 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
         exit();
 	}//obtener_nombres_recursos
 
-	function generar_token($sitio){
+	function Valida_token($token){
 		//pagina que esta haciendo la peticion
-		// fecha 2020/04/24
-		//key_Auxiliar=Cquery123.
-		$key_auxiliar="Cquery123.";
-		$pagina_sitio="";
-		$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos($sitio);
-		if(count($result)>0){
-			$pagina_sitio=$result[0]['url_sitio'];
+		$bandera=FALSE;
+		$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos();
+		foreach($result  AS $value){
+			$cadena=$value['url_sitio'].$value['parametro'];
+			$token_auxiliar=md5($cadena);
+			if($token_auxiliar==$token){
+				return TRUE;
+			}
 		}
-		$fecha = date("Y/m/d");
-		$cadena=$pagina_sitio.$fecha.$key_auxiliar;
-		// $token=hash("sha512",$cadena);
-		$token=md5($cadena);
-		// echo $pagina."\n";
-		// echo $fecha."\n";
-		// echo $token; die();
-		return $token;
+		
+		return $bandera;
 	}
 
 }//class
