@@ -34,6 +34,7 @@ class Informacion_apoyo extends CI_Controller {
 		 $data['c_area'] = $c_area;
 		 $data['c_grado'] = $c_grado;
 		 $data['tipo_slctd'] = $area.$tipo;
+		 $data['pclave'] = $pclave;
 		 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
 
 

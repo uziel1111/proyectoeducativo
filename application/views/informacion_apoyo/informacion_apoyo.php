@@ -65,6 +65,10 @@
         </div>
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
+          <div class="col-12 col-md-6 col-lg-3"><?php if (strlen($pclave) > 0): ?>
+            <label>Palabras clave aplicadas:</label>
+            <label><?=$pclave?></label>
+          <?php endif ?></div>
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
         <div class="row">
