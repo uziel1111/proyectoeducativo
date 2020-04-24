@@ -18,8 +18,20 @@
 
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
           <div class="row">
-            <p class="text-center"><strong>Seleccione la opción deseada:</strong></p>
+            <div class="col-12 col-md-6 col-lg-6">
+              <strong>Seleccione la opción deseada:</strong>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <?php if (strlen($pclave) > 0): ?>
+                <label for="pc">Palabras clave aplicadas:</label> 
+                <input id="pc" class="form-control" disabled name="" value="<?=$pclave?>">
+              <?php endif ?>
+            </div>
           </div>
+          <div class="row">
+          <div class="col-lg-12"><h1>  </h1></div>
+          <div class="col-lg-12"><h1>  </h1></div>
+        </div>
           <div class="row">
 
             <div class="col-12 col-md-6 col-lg-3">
@@ -65,10 +77,6 @@
         </div>
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
-          <div class="col-12 col-md-6 col-lg-3"><?php if (strlen($pclave) > 0): ?>
-            <label>Palabras clave aplicadas:</label>
-            <label><?=$pclave?></label>
-          <?php endif ?></div>
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
         <div class="row">
@@ -88,15 +96,15 @@
            </thead>
            <tbody>
             <?php if ($datos_tabla != 'error') { ?>
-            <?php foreach ($datos_tabla as $key => $v) { ?>
-              <tr>
-               <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
-               <td><?=$v['fuente']?></td>
-               <td><?=$v['tipo_recurso']?></td>
-               <td><?=$v['publico_objetivo']?></td>
-             </tr>
+              <?php foreach ($datos_tabla as $key => $v) { ?>
+                <tr>
+                 <td><a target="_blank" href="<?=$v['link']?>"><?=$v['nombre']?></a></td>
+                 <td><?=$v['fuente']?></td>
+                 <td><?=$v['tipo_recurso']?></td>
+                 <td><?=$v['publico_objetivo']?></td>
+               </tr>
+             <?php } ?>
            <?php } ?>
-          <?php } ?>
          </tbody>
        </table>
      </div>

@@ -11,12 +11,13 @@ class Informacion_apoyo extends CI_Controller {
 
 	public function index()
 	{
+		
 		$nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
 		$area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
 		$grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
 		$pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+		$pclave = ($pclave != 'undefined') ? $pclave : '';
 		$tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
-
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
