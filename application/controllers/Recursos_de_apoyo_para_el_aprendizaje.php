@@ -1,10 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
-
 date_default_timezone_set('America/Monterrey');
 setlocale(LC_TIME, 'es_MX.UTF-8');
+class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
+
 	function __construct() {
 			parent::__construct();
 			$this->load->library('Utilerias');
