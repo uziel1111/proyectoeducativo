@@ -118,8 +118,8 @@ $("#btn_buscar_filtro").click(function(e) {
 		Mensaje.alerta('warning','Seleccione al menos una opción','');
 	}else{
 
-	var ruta = base_url + 'Recursos_de_apoyo_para_el_aprendizaje/recursos'
+	var ruta = base_url + 'Recursos_de_apoyo_para_el_aprendizaje'
 	Mensaje.cargando('Buscando datos...');
-	window.location = ruta+'/'+slc_area+'/'+tipo+'/'+slc_nivel+'/'+slc_grado+'/'+inp_pclave;
+	window.location = ruta+'/'+slc_area+'/'+tipo+'/'+slc_nivel+'/'+slc_grado+'/'+inp_pclave+'/token_prueba';
 }
 });

@@ -10,9 +10,9 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 			 $this->load->model( 'Informacion_apoyo_model' );
 		}
 
-	public function recursos($area,$tipo,$nivel,$grado,$pclave)
+	public function recursos($area = null, $tipo = null, $nivel = null, $grado = null, $pclave = null, $token = null)
 	{
-		
+
 		// $nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
 		// $area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
 		// $grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
@@ -23,7 +23,7 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
-
+		$pagina_anterior = '';
 		$token = ($this->input->get('token')!== null) ? $this->input->get('token') : '';
 		$bandera=FALSE;
 		if($token==''){
@@ -52,8 +52,12 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 			 $data['tipo_slctd'] = $area.$tipo;
 			 $data['pclave'] = $pclave;
 			 $filtros='area:'.$area.'/nivel:'.$nivel.'/grado:'.$grado.'/pclave:'.$pclave;
-
-			 $pagina_anterior = $_SERVER['HTTP_REFERER'];
+			 if(isset($_SERVER['HTTP_REFERER'])) {
+			  $pagina_anterior = $_SERVER['HTTP_REFERER'];
+			 }
+			 else {
+			 	$pagina_anterior = '';
+			 }
 			 // $pagina_anterior = '';
 			 // echo "<pre>";print_r($pagina_anterior);die();
 			 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
@@ -115,7 +119,7 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 				return TRUE;
 			}
 		}
-		
+
 		return $bandera;
 	}
 
