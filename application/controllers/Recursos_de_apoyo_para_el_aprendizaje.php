@@ -13,12 +13,6 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 	public function recursos($area = null, $tipo = null, $nivel = null, $grado = null, $pclave = null, $token = null)
 	{
 
-		$area = (!is_nan($area)) ? 0 : $area;
-		$nivel = (!is_nan($nivel)) ? 0 : $nivel;
-		$grado = (!is_nan($grado)) ? 0 : $grado;
-		if ($tipo != 'H' || $tipo != 'P') {
-			$tipo = 'undefined';
-		}
 		$pclave = ($pclave != 'undefined') ? urldecode($pclave) : '';
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
