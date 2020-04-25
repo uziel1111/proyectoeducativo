@@ -400,7 +400,7 @@ if ( ! function_exists('show_error'))
 	 * @param	string
 	 * @return	void
 	 */
-	function show_error($message, $status_code = 500, $heading = 'An Error Was Encountered')
+	function show_error($message, $status_code = 500, $heading = 'Parametros inválidos')
 	{
 		$status_code = abs($status_code);
 		if ($status_code < 100)

@@ -125,8 +125,8 @@ class CI_Exceptions {
 		}
 		else
 		{
-			$heading = '404 Page Not Found';
-			$message = 'The page you requested was not found.';
+			$heading = 'Parametros Inválidos';
+			$message = 'Los parametros enviados son incorrectos, intentelo nuevamente.';
 		}
 
 		// By default we log this, but allow a dev to skip it
@@ -134,7 +134,7 @@ class CI_Exceptions {
 		{
 			log_message('error', $heading.': '.$page);
 		}
-
+		
 		echo $this->show_error($heading, $message, 'error_404', 404);
 		exit(4); // EXIT_UNKNOWN_FILE
 	}

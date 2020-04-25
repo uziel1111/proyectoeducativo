@@ -13,18 +13,18 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 	public function recursos($area = null, $tipo = null, $nivel = null, $grado = null, $pclave = null, $token = null)
 	{
 
-		// $nivel = ($this->input->get('nivel')!== null) ? $this->input->get('nivel') : '';
-		// $area = ($this->input->get('area')!== null) ? $this->input->get('area') : '';
-		// $grado = ($this->input->get('grado')!== null) ? $this->input->get('grado') : '';
-		// $pclave = ($this->input->get('pclave')!== null) ? $this->input->get('pclave') : '';
+		$area = (!is_nan($area)) ? 0 : $area;
+		$nivel = (!is_nan($nivel)) ? 0 : $nivel;
+		$grado = (!is_nan($grado)) ? 0 : $grado;
+		if ($tipo != 'H' || $tipo != 'P') {
+			$tipo = 'undefined';
+		}
 		$pclave = ($pclave != 'undefined') ? urldecode($pclave) : '';
-		// $tipo = ($this->input->get('tipo')!== null) ? $this->input->get('tipo') : '';
 
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
 		$pagina_anterior = '';
-		// $token = ($this->input->get('token')!== null) ? $this->input->get('token') : '';
 
 		$bandera=$this->Valida_token($token);
 
