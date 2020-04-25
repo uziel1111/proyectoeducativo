@@ -112,8 +112,8 @@ $("#btn_buscar_filtro").click(function(e) {
 	var slc_grado = $("#slc_grado option:selected").val();
 	var inp_pclave = $("#inp_pclave").val();
 	var tipo = $("#slc_area option:selected").data('tipo');
-	var token = 'b0a8e106b1e83e2e7c0a4bc0780665cc'; // PROD
-	// var token = '2622378fc647a91aba535ead84dd90aa'; // DEV
+	// var token = 'b0a8e106b1e83e2e7c0a4bc0780665cc'; // PROD
+	var token = '2622378fc647a91aba535ead84dd90aa'; // DEV
 
 	if (inp_pclave == '') {
 		inp_pclave = 'undefined';

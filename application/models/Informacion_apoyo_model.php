@@ -57,8 +57,8 @@ class Informacion_apoyo_model extends CI_Model {
 			}
 
 			if (strlen($pclave) != 0) {
-				if ($token == 'b0a8e106b1e83e2e7c0a4bc0780665cc') {  // Prod
-				// if ($token == '2622378fc647a91aba535ead84dd90aa') { //Dev 
+				// if ($token == 'b0a8e106b1e83e2e7c0a4bc0780665cc') {  // Prod
+				if ($token == '2622378fc647a91aba535ead84dd90aa') { //Dev 
 					$multiple = str_replace(", ","|",$pclave);
 				}else {
 					$multiple = str_replace(",","|",$pclave);
