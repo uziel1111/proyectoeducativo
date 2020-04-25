@@ -30,7 +30,7 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 
 
 		if($bandera==TRUE){
-			$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
+			$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo,$token);
 
 			 $data['datos_tabla'] = $datos_tabla;
 			 $data['nivel'] = $nivel;

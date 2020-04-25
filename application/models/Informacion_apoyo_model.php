@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Informacion_apoyo_model extends CI_Model {
 
-	function obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo)
+	function obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo,$token)
 	{
 		if (strlen($pclave) < 150) {
 			if ($pclave=='undefined') {
@@ -57,7 +57,12 @@ class Informacion_apoyo_model extends CI_Model {
 			}
 
 			if (strlen($pclave) != 0) {
-				$multiple = str_replace(", ","|",$pclave);
+				//if ($token == '2622378fc647a91aba535ead84dd90aa') {  // Prod
+				if ($token == '2622378fc647a91aba535ead84dd90aa') { //Dev 
+					$multiple = str_replace(", ","|",$pclave);
+				}else {
+					$multiple = str_replace(",","|",$pclave);
+				}
 				$multiple = str_replace("a","[á|a]",$multiple);
 				$multiple = str_replace("e","[é|e]",$multiple);
 				$multiple = str_replace("i","[í|i]",$multiple);
@@ -95,6 +100,7 @@ class Informacion_apoyo_model extends CI_Model {
 			{$where}
 			{$aux_group}
 			";
+			// echo "<pre>"; print_r($query); die();
 			return $this->db->query($query, $data)->result_array();
 		} else {
 			return "error";
@@ -187,7 +193,7 @@ class Informacion_apoyo_model extends CI_Model {
 		return $this->db->query($query)->result_array();
 	}
 
-	public function obtener_sitios_conocidos(){
+		public function obtener_sitios_conocidos(){
 		$query = "SELECT url_sitio,parametro
 		FROM c_sitiosconocidos ";
 		return $this->db->query($query)->result_array();
