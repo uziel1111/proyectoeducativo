@@ -24,12 +24,12 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
 		$pagina_anterior = '';
-		$token = ($this->input->get('token')!== null) ? $this->input->get('token') : '';
+		// $token = ($this->input->get('token')!== null) ? $this->input->get('token') : '';
 
-		// $bandera=$this->Valida_token($token);
+		$bandera=$this->Valida_token($token);
 
 
-		// if($bandera==TRUE){
+		if($bandera==TRUE){
 			$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo);
 
 			 $data['datos_tabla'] = $datos_tabla;
@@ -52,17 +52,17 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 			 // echo "<pre>";print_r($pagina_anterior);die();
 			 $this->Informacion_apoyo_model->insertar_contador($filtros, $pagina_anterior);
 			 Utilerias::pagina_basica($this, "informacion_apoyo/informacion_apoyo", $data);
-		// }else{
-		// 	$encabezado="Recursos de apoyo del aprendizaje";
-		// 	$mensaje="Ocurrió un error, intente nuevamente";
+		}else{
+			$encabezado="Recursos de apoyo del aprendizaje";
+			$mensaje="Ocurrió un error, intente nuevamente";
 
-		// 	if($token!=''){
-		// 		$mensaje="Token inválido";
-		// 	}
-		// 	$data['encabezado']=$encabezado;
-		// 	$data['mensaje']=$mensaje;
-		// 	Utilerias::pagina_basica($this, "errors/error", $data);
-		// }
+			if($token!=''){
+				$mensaje="Token inválido";
+			}
+			$data['encabezado']=$encabezado;
+			$data['mensaje']=$mensaje;
+			Utilerias::pagina_basica($this, "errors/error", $data);
+		}
 	}//index
 
 	function obtener_nivel()
@@ -103,15 +103,17 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 		//pagina que esta haciendo la peticion
 		$bandera=FALSE;
 		$bandera_sitio=FALSE;
+
 		if($token!=""){
-			$cadena = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+			$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
+			$cadena = $protocol.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$array = explode("Recursos_de_apoyo_para_el_aprendizaje",$cadena);
-			// print_r($porciones);die();
+			// print_r($array);die();
 			$sitio=$array[0];
 		 	// $token=md5($sitio."proyec.123");
 		 	// echo $token; die();
 			$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos();
-
+			// print_r($result); die();
 			foreach($result AS $value){
 				if($sitio==$value['url_sitio']){
 					$bandera_sitio=TRUE;
@@ -128,7 +130,6 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 					}
 				}
 			}
-
 		}
 
 		return $bandera;
