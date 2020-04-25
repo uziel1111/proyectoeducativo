@@ -108,6 +108,8 @@ $("#btn_buscar_filtro").click(function(e) {
 	var slc_grado = $("#slc_grado option:selected").val();
 	var inp_pclave = $("#inp_pclave").val();
 	var tipo = $("#slc_area option:selected").data('tipo');
+	//var token = 'f33e8d3d9e2d61211c9b044895003d96'; // PROD
+	var token = '2622378fc647a91aba535ead84dd90aa'; // DEV
 
 	if (inp_pclave == '') {
 		inp_pclave = 'undefined';
@@ -120,6 +122,6 @@ $("#btn_buscar_filtro").click(function(e) {
 
 	var ruta = base_url + 'Recursos_de_apoyo_para_el_aprendizaje'
 	Mensaje.cargando('Buscando datos...');
-	window.location = ruta+'/'+slc_area+'/'+tipo+'/'+slc_nivel+'/'+slc_grado+'/'+inp_pclave+'/token_prueba';
+	window.location = ruta+'/'+slc_area+'/'+tipo+'/'+slc_nivel+'/'+slc_grado+'/'+inp_pclave+'/'+token;
 }
 });
