@@ -21,7 +21,7 @@
             <div class="col-12 col-md-6 col-lg-6">
               <strong>Seleccione la opción deseada:</strong>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6" id="div_pclaves">
               <?php if (strlen($pclave) > 0): ?>
                 <label for="pc">Palabras clave aplicadas:</label> 
                 <input id="pc" class="form-control" disabled name="" value="<?=$pclave?>">
