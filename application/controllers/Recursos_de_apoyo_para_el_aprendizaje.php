@@ -94,31 +94,41 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 
 	function Valida_token($token){
 
-		//pagina que esta haciendo la peticion
 		$bandera=FALSE;
-		$bandera_sitio=FALSE;
-
+		
 		if($token!=""){
-			$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
-			$cadena = $protocol.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-			$array = explode("Recursos_de_apoyo_para_el_aprendizaje",$cadena);
-			// print_r($array);die();
-			$sitio=$array[0];
-		 	// $token=md5($sitio."proyec.123");
-		 	// echo $token; die();
 			$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos();
-			// print_r($result); die();
-			foreach($result AS $value){
-				if($sitio==$value['url_sitio']){
-					$bandera_sitio=TRUE;
-					break;
-				}
-			}
-			if($bandera_sitio==TRUE){
-				foreach($result  AS $value){
+
+			if(isset($_SERVER['HTTP_REFERER'])) {
+			  	$pagina_anterior = $_SERVER['HTTP_REFERER'];
+				foreach($result AS $value){
+					$pag=stristr($pagina_anterior,$value['url_sitio']);
 					$cadena=$value['url_sitio'].$value['parametro'];
 					$token_auxiliar=md5($cadena);
-					if($token_auxiliar==$token){
+					if($pag!="" && $token_auxiliar==$token){
+						// echo $pag; die();
+						$bandera=TRUE;
+						break;
+					}
+				}
+			}else {
+			 	$protocol=stristr($_SERVER['SERVER_PROTOCOL'],'https');
+			 	if($protocol!=""){
+					$protocol="https://";
+				}else{
+					$protocol="http://";
+				}
+				// echo $protocol; die();
+				$sitio="";
+				$cadena = $protocol.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+				$array = explode("Recursos_de_apoyo_para_el_aprendizaje",$cadena);
+				if(count($array)>0){
+					$sitio=$array[0];
+				}
+				foreach($result AS $value){
+					$cadena=$value['url_sitio'].$value['parametro'];
+					$token_auxiliar=md5($cadena);
+					if($sitio==$value['url_sitio'] && $token_auxiliar==$token){
 						$bandera=TRUE;
 						break;
 					}
