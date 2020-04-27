@@ -95,44 +95,52 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 	function Valida_token($token){
 
 		$bandera=FALSE;
-		
+		// echo $token; die();
 		if($token!=""){
-			$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos();
-
+			// echo $_SERVER['HTTP_REFERER']; die();
 			if(isset($_SERVER['HTTP_REFERER'])) {
-			  	$pagina_anterior = $_SERVER['HTTP_REFERER'];
-				foreach($result AS $value){
-					$pag=stristr($pagina_anterior,$value['url_sitio']);
-					$cadena=$value['url_sitio'].$value['parametro'];
-					$token_auxiliar=md5($cadena);
-					if($pag!="" && $token_auxiliar==$token){
-						// echo $pag; die();
-						$bandera=TRUE;
-						break;
+				// echo $_SERVER['HTTP_REFERER'];
+				// die();
+				// $pagina = parse_url($_SERVER['HTTP_REFERER']);
+				// print_r($pagina); die();
+				$cadena=explode('://',$_SERVER['HTTP_REFERER']);
+				// echo "<pre>";
+				// print_r($cadena); die();
+				if(count($cadena)>1){
+					$protocolo=$cadena[0];
+					$nombre_auxliar=explode('/',$cadena[1]);
+					// echo "<pre>";print_r($nombre_auxliar); die();
+
+					if(count($nombre_auxliar)>0){
+						if($nombre_auxliar[1]!=""){
+							$sitio=$protocolo."://".$nombre_auxliar[0]."/".$nombre_auxliar[1]."/";
+						}else{
+							$sitio=$protocolo."://".$nombre_auxliar[0]."/";
+						}
+						// echo $sitio; die();
+						$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos($sitio);
+						// print_r($result); die();
+						if(count($result)>0){
+							$token_auxiliar=md5($result[0]['url_sitio'].$result[0]['parametro']);
+							if($token_auxiliar==$token){
+								$bandera=TRUE;
+							}
+						}else{
+							//no es un sitio conocido
+							redirect('Index');
+						}
+					}else{
+						//cuando la pagina anterior no cumple con la estructura de la url
+						redirect('Index');
 					}
-				}
-			}else {
-			 	$protocol=stristr($_SERVER['SERVER_PROTOCOL'],'https');
-			 	if($protocol!=""){
-					$protocol="https://";
 				}else{
-					$protocol="http://";
+					//cuando la pagina anterior no cumple con la estructura de la url
+					redirect('Index');
 				}
-				// echo $protocol; die();
-				$sitio="";
-				$cadena = $protocol.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-				$array = explode("Recursos_de_apoyo_para_el_aprendizaje",$cadena);
-				if(count($array)>0){
-					$sitio=$array[0];
-				}
-				foreach($result AS $value){
-					$cadena=$value['url_sitio'].$value['parametro'];
-					$token_auxiliar=md5($cadena);
-					if($sitio==$value['url_sitio'] && $token_auxiliar==$token){
-						$bandera=TRUE;
-						break;
-					}
-				}
+				
+			}else {
+				//cuando no hay una pagina anterior lo mando al index
+				redirect('Index');
 			}
 		}
 

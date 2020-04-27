@@ -193,10 +193,17 @@ class Informacion_apoyo_model extends CI_Model {
 		return $this->db->query($query)->result_array();
 	}
 
-		public function obtener_sitios_conocidos(){
-		$query = "SELECT url_sitio,parametro
-		FROM c_sitiosconocidos ";
-		return $this->db->query($query)->result_array();
+		public function obtener_sitios_conocidos($sitio){
+			$where="";
+			if($sitio!=""){
+				$where.="WHERE url_sitio LIKE '%{$sitio}%' ";
+			}
+			$query = "SELECT url_sitio,parametro
+					FROM c_sitiosconocidos
+					{$where}
+					";
+			// echo $query; die();
+			return $this->db->query($query)->result_array();
 	}
 
 }//class
