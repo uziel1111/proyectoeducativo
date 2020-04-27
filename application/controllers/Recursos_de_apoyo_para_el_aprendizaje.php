@@ -101,40 +101,31 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 			if(isset($_SERVER['HTTP_REFERER'])) {
 				// echo $_SERVER['HTTP_REFERER'];
 				// die();
-				// $pagina = parse_url($_SERVER['HTTP_REFERER']);
-				// print_r($pagina); die();
-				$cadena=explode('://',$_SERVER['HTTP_REFERER']);
+				$pagina = parse_url($_SERVER['HTTP_REFERER']);
 				// echo "<pre>";
-				// print_r($cadena); die();
-				if(count($cadena)>1){
-					$protocolo=$cadena[0];
-					$nombre_auxliar=explode('/',$cadena[1]);
-					// echo "<pre>";print_r($nombre_auxliar); die();
-
-					if(count($nombre_auxliar)>0){
-						if($nombre_auxliar[1]!=""){
-							$sitio=$protocolo."://".$nombre_auxliar[0]."/".$nombre_auxliar[1]."/";
-						}else{
-							$sitio=$protocolo."://".$nombre_auxliar[0]."/";
-						}
-						// echo $sitio; die();
-						$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos($sitio);
+				// print_r($pagina); die();
+				$sitio="";
+				if($pagina['host']=="localhost"){
+					$cadena=explode('/',$pagina['path']);
+					// echo "<pre>";print_r($cadena); die();
+					$sitio=$pagina['scheme']."://".$pagina['host']."/".$cadena[1];
+				}else{
+					$sitio=$pagina['scheme']."://".$pagina['host'];
+				}
+				if($sitio!=""){
+					$result=$this->Informacion_apoyo_model->obtener_sitios_conocidos($sitio);
 						// print_r($result); die();
-						if(count($result)>0){
-							$token_auxiliar=md5($result[0]['url_sitio'].$result[0]['parametro']);
-							if($token_auxiliar==$token){
-								$bandera=TRUE;
-							}
-						}else{
-							//no es un sitio conocido
-							redirect('Index');
+					if(count($result)>0){
+						$token_auxiliar=md5($result[0]['url_sitio'].$result[0]['parametro']);
+						if($token_auxiliar==$token){
+							$bandera=TRUE;
 						}
 					}else{
-						//cuando la pagina anterior no cumple con la estructura de la url
+						//cuando no es un sitio conocido
 						redirect('Index');
 					}
 				}else{
-					//cuando la pagina anterior no cumple con la estructura de la url
+					//cuando el sitio viene vacio
 					redirect('Index');
 				}
 				
