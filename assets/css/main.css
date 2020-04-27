@@ -1654,3 +1654,10 @@ main>.container {
   -webkit-border-radius: 30px 30px 5px 5px;
   border: 0px solid #000000;
 }
+
+@media screen and (min-width: 1050px) {
+.etq-oculta{
+display:none;
+
+}
+}

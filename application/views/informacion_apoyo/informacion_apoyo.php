@@ -85,6 +85,7 @@
         </div>
         <div class="row">
          <div class="col-12" style="overflow-x:auto;" id="div_tabla">
+          <span class="etq-oculta" style="color:#00AE9A;">*Deslice hacia la derecha para ver la tabla completa</span>
           <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
             <thead>
              <tr>
