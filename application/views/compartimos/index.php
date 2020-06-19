@@ -27,7 +27,11 @@
           <h4 class="font-weight-bold mb-3">txt</h4>
         </div> -->
 
-        <div class="col-lg-4" id="logos-1">
+        <div class="col-lg-6" id="logos-1">
+          <div class="text-center text-white showcase-parent">
+            <h4 class="font-weight-bold mb-3"><b><em>Tres prioridades</em></b> para la contingencia <br><br></h4>
+          </div>
+          <center>
           <div class="logobox">
             <img src="<?= base_url('assets/img/compartimos/contingencia.JPG'); ?>" class="figure-img img-fluid image" alt="...">
             <div class="overlay">
@@ -36,11 +40,14 @@
               </a>
             </div>
           </div>
+        </center>
         </div>
-        <div class="col-lg-4" id="logos-1">
 
-        </div>
-        <div class="col-lg-4" id="logos-1">
+        <div class="col-lg-6" id="logos-1">
+          <div class="text-center text-white showcase-parent">
+            <h4 class="font-weight-bold mb-3">Encuesta Nacional de Deserción en la Educación Media Superior</h4>
+          </div>
+          <center>
           <div class="logobox">
             <img src="<?= base_url('assets/img/compartimos/ENADEMS.JPG'); ?>" class="figure-img img-fluid image" alt="...">
             <div class="overlay">
@@ -49,6 +56,7 @@
               </a>
             </div>
           </div>
+        </center>
         </div>
 
 
