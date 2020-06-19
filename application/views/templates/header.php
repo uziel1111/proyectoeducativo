@@ -129,6 +129,19 @@
                     Logramos
                   </a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link rounded" href="<?= base_url('Compartimos/'); ?>">
+
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fa fa-share fa-stack-1x icon"></i>
+
+                    </span>
+                    Compartimos
+                  </a>
+                </li>
+
                 <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link rounded" href="<?= base_url('Contacto') ?>">
 
