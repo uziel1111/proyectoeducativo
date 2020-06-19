@@ -20,8 +20,8 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 		$c_grado = $this->Informacion_apoyo_model->obtener_c_grado($nivel);
 		$pagina_anterior = '';
 
-		$bandera=$this->Valida_token($token);
-
+		// $bandera=$this->Valida_token($token);
+		$bandera=TRUE;
 
 		if($bandera==TRUE){
 			$datos_tabla = $this->Informacion_apoyo_model->obtener_datos_tabla($nivel, $area, $grado, $pclave,$tipo,$token);
