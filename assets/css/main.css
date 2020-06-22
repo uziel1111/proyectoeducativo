@@ -1616,7 +1616,7 @@ main>.container {
 /*** JUMBO HOME***/
 
 .jumbotron.jumbohome {
-  margin: 110px 0 0 0;
+  /* margin: 110px 0 0 0; */
   background-image: url("../img/home/slider/jumbo-search-2.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -1628,10 +1628,10 @@ main>.container {
   font-size: 35px;
   position: absolute;
   left: 28px;
-  padding: 11px;
+  /* padding: 11px; */
   color: #ffffff;
   font-weight: 800;
-  top: 33px;
+  /* top: 33px; */
   background: #f16726;
   border-radius: 30px 30px 30px 30px;
   -moz-border-radius: 30px 30px 30px 30px;
