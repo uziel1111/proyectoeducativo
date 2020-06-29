@@ -46,22 +46,7 @@ class Compartimos extends CI_Controller {
 		if (strpos($foo, 'bas_yuc') !== false) {
 		    $imagen = "logo-kaambal.png";
 		}
-
-		// die();
-
-		// $sarape   = 'http://localhost/eclasebas_yuc/';
-		// $yucatan   = 'http://localhost/eclase/';
-		// $proyed = 'http://localhost/proyectoeducativo/';
-		// $possarape = strstr($origen, $sarape);
-		// $poskambal = strstr($origen, $yucatan);
-		// $imagen = "proyed";
-		// if(!$possarape){
-		// 	$imagen = "logo-sarape.png";
-		// }
-
-		// if(!$poskambal){
-		// 	$imagen = "logo-kaambal.png";
-		// }
+		
 		$data = array();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
