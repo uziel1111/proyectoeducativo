@@ -28,18 +28,36 @@ class Compartimos extends CI_Controller {
 	public function index()
 	{
 		$origen = $this->agent->referrer();
-		$sarape   = 'http://localhost/eclasebas_yuc/';
-		$yucatan   = 'http://localhost/eclase/';
-		$possarape = strstr($origen, $sarape);
-		$poskambal = strstr($origen, $yucatan);
-		$imagen = "proyed";
-		if(!$possarape){
-			$imagen = "logo-sarape.png";
+
+		$foo = $origen;
+
+		if (strpos($foo, 'proyectoeducativo') !== false) {
+		    $imagen = "proyed.png";
 		}
 
-		if(!$poskambal){
-			$imagen = "logo-kaambal.png";
+		if (strpos($foo, 'eclasebas_yuc') !== false) {
+		    $imagen = "logo-kaambal.png";
 		}
+
+		if (strpos($foo, 'eclase') !== false) {
+		    $imagen = "logo-sarape.png";
+		}
+
+		// die();
+
+		// $sarape   = 'http://localhost/eclasebas_yuc/';
+		// $yucatan   = 'http://localhost/eclase/';
+		// $proyed = 'http://localhost/proyectoeducativo/';
+		// $possarape = strstr($origen, $sarape);
+		// $poskambal = strstr($origen, $yucatan);
+		// $imagen = "proyed";
+		// if(!$possarape){
+		// 	$imagen = "logo-sarape.png";
+		// }
+
+		// if(!$poskambal){
+		// 	$imagen = "logo-kaambal.png";
+		// }
 		$data = array();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
 		$c_nivel = $this->Informacion_apoyo_model->obtener_c_nivel();
