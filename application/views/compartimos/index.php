@@ -23,7 +23,7 @@
 
       <div class="row">
         <div class="col">
-          <img src="<?=base_url('assets/img/otros/').$logo?>">
+          <center><img src="<?=base_url('assets/img/otros/').$logo?>" width="200" height="70"></center>
           <div class="cc-light px-3">
             <i class="fas fa-info"></i>
             <center><h4 class="font-weight-bold">Recursos de apoyo para el aprendizaje</h4></center>

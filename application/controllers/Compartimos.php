@@ -30,17 +30,21 @@ class Compartimos extends CI_Controller {
 		$origen = $this->agent->referrer();
 
 		$foo = $origen;
+		// echo"<pre>";
+		// print_r($foo);
+		// print_r(strpos($foo, 'eclasebas_yuc', 1));
+		// die();
 
 		if (strpos($foo, 'proyectoeducativo') !== false) {
 		    $imagen = "proyed.png";
 		}
 
-		if (strpos($foo, 'eclasebas_yuc') !== false) {
-		    $imagen = "logo-kaambal.png";
-		}
-
 		if (strpos($foo, 'eclase') !== false) {
 		    $imagen = "logo-sarape.png";
+		}
+
+		if (strpos($foo, 'bas_yuc') !== false) {
+		    $imagen = "logo-kaambal.png";
 		}
 
 		// die();
