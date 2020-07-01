@@ -14,23 +14,23 @@ class Recursos_de_apoyo_para_el_aprendizaje extends CI_Controller {
 	public function recursos($area = null, $tipo = null, $nivel = null, $grado = null, $pclave = null, $token = null)
 	{
 
-		$origen = $this->agent->referrer();
+		// $origen = $this->agent->referrer();
 
-		$foo = $origen;
+		// $foo = $origen;
 
-		if (strpos($foo, 'proyectoeducativo') !== false) {
-		    $imagen = "proyed.png";
-		}
+		// if (strpos($foo, 'proyectoeducativo') !== false) {
+		//     $imagen = "proyed.png";
+		// }
 
-		if (strpos($foo, 'eclase') !== false) {
-		    $imagen = "logo-sarape.png";
-		}
+		// if (strpos($foo, 'eclase') !== false) {
+		//     $imagen = "logo-sarape.png";
+		// }
 
-		if (strpos($foo, 'bas_yuc') !== false) {
-		    $imagen = "logo-kaambal.png";
-		}
+		// if (strpos($foo, 'bas_yuc') !== false) {
+		//     $imagen = "logo-kaambal.png";
+		// }
 
-		$data['logo'] = $imagen;
+		// $data['logo'] = $imagen;
 
 		$pclave = ($pclave != 'undefined') ? urldecode($pclave) : '';
 

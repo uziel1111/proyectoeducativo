@@ -27,21 +27,21 @@ class Compartimos extends CI_Controller {
 	 */
 	public function index()
 	{
-		$origen = $this->agent->referrer();
+		// $origen = $this->agent->referrer();
 
-		$foo = $origen;
+		// $foo = $origen;
 
-		if (strpos($foo, 'proyectoeducativo') !== false) {
-		    $imagen = "proyed.png";
-		}
+		// if (strpos($foo, 'proyectoeducativo') !== false) {
+		//     $imagen = "proyed.png";
+		// }
 
-		if (strpos($foo, 'eclase') !== false) {
-		    $imagen = "logo-sarape.png";
-		}
+		// if (strpos($foo, 'eclase') !== false) {
+		//     $imagen = "logo-sarape.png";
+		// }
 
-		if (strpos($foo, 'bas_yuc') !== false) {
-		    $imagen = "logo-kaambal.png";
-		}
+		// if (strpos($foo, 'bas_yuc') !== false) {
+		//     $imagen = "logo-kaambal.png";
+		// }
 
 		$data = array();
 		$c_area = $this->Informacion_apoyo_model->obtener_c_area();
@@ -50,7 +50,7 @@ class Compartimos extends CI_Controller {
 		$data['nivel'] = '';
 		$data['c_area'] = $c_area;
 		$data['area'] = '';
-		$data['logo'] = $imagen;
+		// $data['logo'] = $imagen;
 		// Utilerias::pagina_basica($this, "index", $data);
 		Utilerias::pagina_basica($this, "compartimos/index", $data);
 
