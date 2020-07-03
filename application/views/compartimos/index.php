@@ -128,7 +128,6 @@
           </div>
         </center>
         </div>
-        <div class="col-lg-3" id="logos-1"></div>
         <div class="col-lg-6" id="logos-1">
           <div class="text-center text-white showcase-parent">
             <h4 class="font-weight-bold mb-3">Obligatoriedad y competencias por delante: la segunda mitad de la RIEMS</h4>
@@ -144,7 +143,22 @@
           </div>
         </center>
         </div>
-        <div class="col-lg-3" id="logos-1"></div>
+        <div class="col-lg-6" id="logos-1">
+          <div class="text-center text-white showcase-parent">
+            <h4 class="font-weight-bold mb-3">Alertas y propuestas para la permanencia escolar</h4>
+          </div>
+          <center>
+          <div class="logobox">
+            <img src="<?= base_url('assets/img/compartimos/alertas.JPG'); ?>" class="figure-img img-fluid image" alt="...">
+            <div class="overlay">
+              <a href="<?= base_url('assets/docs/compartimos/alertas_propuestas_permanencia.pdf'); ?>" class="icon" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </center>
+        </div>
+
 
 
 
