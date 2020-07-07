@@ -159,6 +159,37 @@
         </center>
         </div>
 
+        <div class="col-lg-6" id="logos-1">
+          <div class="text-center text-white showcase-parent">
+            <h4 class="font-weight-bold mb-3">Motivar para poder enseñar</h4>
+          </div>
+          <center>
+          <div class="logobox">
+            <img src="<?= base_url('assets/img/compartimos/motivar.JPG'); ?>" class="figure-img img-fluid image" alt="...">
+            <div class="overlay">
+              <a href="<?= base_url('assets/docs/compartimos/Docentes-motivacion.pdf'); ?>" class="icon" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </center>
+        </div>
+        <div class="col-lg-6" id="logos-1">
+          <div class="text-center text-white showcase-parent">
+            <h4 class="font-weight-bold mb-3">Estabilidad emocional para ser un gran docente</h4>
+          </div>
+          <center>
+          <div class="logobox">
+            <img src="<?= base_url('assets/img/compartimos/socioemocional.JPG'); ?>" class="figure-img img-fluid image" alt="...">
+            <div class="overlay">
+              <a href="<?= base_url('assets/docs/compartimos/socioemocional.pdf'); ?>" class="icon" target="_blank">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </center>
+        </div>
+
 
 
 
