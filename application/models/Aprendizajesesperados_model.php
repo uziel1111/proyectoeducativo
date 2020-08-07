@@ -107,7 +107,8 @@ class Aprendizajesesperados_model extends CI_Model {
 			$query = "SELECT
 								e.ideje, e.eje, t.idtema, t.tema,
 								a.idaprendizaje_esperado, a.aprendizaje_esperado,
-								GROUP_CONCAT(DISTINCT al.liga) as ligas
+								GROUP_CONCAT(DISTINCT al.liga) as ligas,
+								nc.idnivel,nc.idcomponente, cc.idcampo, cg.idgrado, ga.idasignatura
 								FROM r_nivel_componente_ae nc
 								INNER JOIN r_componente_campo_ae cc ON  nc.id = cc.idr_nivel_componente
 								INNER JOIN r_campo_grado_ae cg ON cc.id = cg.idr_componente_campo
@@ -122,6 +123,36 @@ class Aprendizajesesperados_model extends CI_Model {
 								WHERE nc.idnivel = ? AND nc.idcomponente= ? AND cc.idcampo= ? AND cg.idgrado= ? AND ga.idasignatura = ? {$wheremas}
 								GROUP BY a.idaprendizaje_esperado
 								ORDER BY ta.orden";
+			// echo "<pre>"; print_r($query); die();
+			return $this->apr_db->query($query,$datos)->result_array();
+	}//obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema
+
+	function obtener_arr_ficha_aprendizajesesperados($idnivel,$idcomponente,$idcampo,$grado,$idasignatura,$ideje,$idtema,$idaprendizaje_esperado){
+		$datos = [$idnivel,$idcomponente,$idcampo,$grado,$idasignatura,$ideje,$idtema,$idaprendizaje_esperado];
+			$query = "SELECT
+				n.nivel, co.componente, ca.campo, g.grado, asi.asignatura, e.eje, t.tema,
+				a.aprendizaje_esperado, a.plan, GROUP_CONCAT(al.liga) as ligas,
+				 GROUP_CONCAT(CONCAT(' Título: ',asil.titulo,'. ',asil.liga)) as libros
+				FROM r_nivel_componente_ae nc
+				INNER JOIN c_nivel_ae n ON nc.idnivel = n.idnivel
+				INNER JOIN c_componente_ae co ON nc.idcomponente = co.idcomponente
+				INNER JOIN r_componente_campo_ae cc ON  nc.id = cc.idr_nivel_componente
+				INNER JOIN c_campo_ae ca ON cc.idcampo = ca.idcampo
+				INNER JOIN r_campo_grado_ae cg ON cc.id = cg.idr_componente_campo
+				INNER JOIN c_grado_ae g ON cg.idgrado = g.idgrado
+				INNER JOIN r_grado_asignatura_ae ga ON cg.id = ga.idr_campo_grado
+				INNER JOIN c_asignatura_ae asi ON ga.idasignatura = asi.idasignatura
+				INNER JOIN r_asignatura_eje_ae ae ON ga.id = ae.idr_grado_asignatura
+				INNER JOIN c_eje_ae e ON ae.ideje = e.ideje
+				INNER JOIN r_eje_tema_ae et ON ae.id = et.idr_asignatura_eje
+				INNER JOIN c_tema_ae t ON et.idtema =t.idtema
+				INNER JOIN r_tema_prendizajes_esperados_ae ta ON et.id = ta.idr_eje_tema
+				INNER JOIN c_aprendizaje_esperado_ae a ON ta.idaprendizaje_esperado = a.idaprendizaje_esperado
+				LEFT JOIN r_aprendizaje_esperado_liga_ae al ON a.idaprendizaje_esperado = al.idaprendizaje_esperado AND nc.idnivel = al.idnivel AND cg.idgrado = al.idgrado AND ga.idasignatura = al.idasignatura
+				LEFT JOIN r_asignatura_libro_ae asil ON n.idnivel = asil.idnivel AND g.idgrado = asil.idgrado AND asi.idasignatura = asil.idasignatura
+				WHERE nc.idnivel = ? AND nc.idcomponente = ? AND cc.idcampo = ? AND cg.idgrado = ? AND ga.idasignatura = ? AND ae.ideje = ? AND et.idtema = ? AND ta.idaprendizaje_esperado = ?
+				GROUP BY a.idaprendizaje_esperado
+				ORDER BY ta.orden";
 			// echo "<pre>"; print_r($query); die();
 			return $this->apr_db->query($query,$datos)->result_array();
 	}//obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema
