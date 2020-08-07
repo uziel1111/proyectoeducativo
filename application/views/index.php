@@ -56,7 +56,7 @@
               <!-- <center> -->
                 <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/biblioteca-virtual-completo.jpg')?>">
                 <div class="text-center text-white dv-estylo-orange-blanco1">
-                  <span><b>Más de 18,000</b> recursos academicos</span>
+                  <span><b>Más de 18,000</b> recursos académicos</span>
                 </div>
             <!-- </center> -->
             </div>
@@ -65,7 +65,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/biblioteca-virtual-texto.jpg')?>">
               <div class="text-center text-white dv-estylo-orange-blanco2">
-                <span><b>Más de 18,000</b> recursos academicos</span>
+                <span><b>Más de 18,000</b> recursos académicos</span>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
