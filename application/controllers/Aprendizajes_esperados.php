@@ -74,4 +74,21 @@ class Aprendizajes_esperados extends CI_Controller {
         exit();
 	}
 
+	public function get_aprendizajes_esperados(){
+		$idnivel = $this->input->post('idnivel');
+		$idcomponente = $this->input->post('idcomponente');
+		$idcampo = $this->input->post('idcampo');
+		$idgrado = $this->input->post('idgrado');
+		$idasignatura = $this->input->post('idasignatura');
+		$ideje = $this->input->post('ideje');
+		$idtema = $this->input->post('idtema');
+
+		$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+		$data['aprendizajes'] = $aprendizajes;
+		
+		$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+		Utilerias::enviaDataJson($vista,$this);
+        exit();
+	}
+
 }//class
