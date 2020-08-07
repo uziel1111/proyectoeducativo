@@ -1,14 +1,29 @@
+
+$("#btn_buscar_filtro_ae").click(function(e){
+	e.preventDefault();
+	var idnivel = $("#slc_nivel_ae").val();
+	var idcomponente = $("#slc_componente_ae").val();
+	var idcampo = $("#slc_campo_ae").val();
+	var idgrado = $("#slc_grado_ae").val();
+	var idasignatura = $("#slc_asignatura_ae").val();
+	var ideje = $("#slc_eje_ae").val();
+	var idtema = $("#slc_tema_ae").val();
+ 	Aprendizajes_e.get_aprendizajes_esperados(idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema);
+});
+
 $("#slc_nivel_ae").change(function(){
 	var idnivel = $(this).val();
 	Aprendizajes_e.get_componentes(idnivel);
 	$('#slc_componente_ae').prop('disabled', false);
 });
+
 $("#slc_componente_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $(this).val();
 	Aprendizajes_e.get_campos(idnivel,idcomponente);
 	$('#slc_campo_ae').prop('disabled', false);
 });
+
 $("#slc_campo_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $("#slc_componente_ae").val();
@@ -16,6 +31,7 @@ $("#slc_campo_ae").change(function(){
 	Aprendizajes_e.get_grados(idnivel,idcomponente,idcampo);
 	$('#slc_grado_ae').prop('disabled', false);
 });
+
 $("#slc_grado_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $("#slc_componente_ae").val();
@@ -24,6 +40,7 @@ $("#slc_grado_ae").change(function(){
 	Aprendizajes_e.get_asignaturas(idnivel,idcomponente,idcampo,idgrado);
 	$('#slc_asignatura_ae').prop('disabled', false);
 });
+
 $("#slc_asignatura_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $("#slc_componente_ae").val();
@@ -33,6 +50,7 @@ $("#slc_asignatura_ae").change(function(){
 	Aprendizajes_e.get_ejes(idnivel,idcomponente,idcampo,idgrado,idasignatura);
 	$('#slc_eje_ae').prop('disabled', false);
 });
+
 $("#slc_eje_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $("#slc_componente_ae").val();
@@ -43,9 +61,6 @@ $("#slc_eje_ae").change(function(){
 	Aprendizajes_e.get_temas(idnivel,idcomponente,idcampo,idgrado,idasignatura,ideje);
 	$('#slc_tema_ae').prop('disabled', false);
 });
-// $("#slc_tema_ae").change(function(){
-// 	$('#slc_componente_ae').prop('disabled', false);
-// });
 	
 let Aprendizajes_e = {
 
@@ -200,5 +215,26 @@ get_temas: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje) => {
 		}
 	});
 },//get_ejes
+
+get_aprendizajes_esperados: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema) => {
+	$.ajax({
+		url: base_url+"Aprendizajes_esperados/get_aprendizajes_esperados",
+		type: 'POST',
+		dataType: 'json',
+		data: {'idnivel': idnivel, 'idcomponente': idcomponente, 'idcampo': idcampo, 'idgrado': idgrado, 'idasignatura': idasignatura, 'ideje': ideje, 'idtema':idtema},
+		beforeSend: function(){
+			Mensaje.cargando('Cargando ejes...');
+		},
+		success: function(data){
+			Mensaje.cerrar();
+			$("#div_tabla_aprendizajes").empty();
+			$("#div_tabla_aprendizajes").append(data);
+		},
+		error: function (jqXHR, textStatus, errorThrown) {
+			Mensaje.cerrar();
+			Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
+		}
+	});
+}
 
 }

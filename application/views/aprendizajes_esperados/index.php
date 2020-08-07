@@ -27,8 +27,8 @@
           <div class="col-lg-12"><h1>  </h1></div>
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
+        <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
           <div class="row">
-
             <div class="col-12 col-md-6 col-lg-2">
               <label for="slc_nivel_ae">Nivel</label>
               <select id="slc_nivel_ae" class="form-control">
@@ -79,9 +79,10 @@
            </div>
            <div class="col-12 col-md-6 col-lg-3">
             <label for="btn_buscar_filtro"></label><br>
-            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro"><i class="fas fa-search"></i> Buscar</button>
+            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
           </div>
         </div>
+        </form>
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
           <div class="col-lg-12"><h1>  </h1></div>
@@ -91,21 +92,9 @@
           <div class="col-lg-12"><h1>  </h1></div>
         </div>
         <div class="row">
-         <div class="col-12" style="overflow-x:auto;" id="div_tabla">
-          <span class="etq-oculta" style="color:#00AE9A;">*Deslice hacia la derecha para ver la tabla completa</span>
-          <table class="table table-sm table-borderless dataTables_length" id="tabla_datos">
-            <thead>
-             <tr>
-               <th style="width:60% !important">Nombre del recurso</th>
-               <th style="width:15% !important">Fuente</th>
-               <th style="width:15% !important">Tipo de recurso</th>
-               <th style="width:10% !important">Público objetivo</th>
-             </tr>
-           </thead>
-           <tbody>
-         </tbody>
-       </table>
-     </div>
+         <div class="col-12" style="overflow-x:auto;" id="div_tabla_aprendizajes">
+          
+         </div>
    </div>
  </div>
 </div>
