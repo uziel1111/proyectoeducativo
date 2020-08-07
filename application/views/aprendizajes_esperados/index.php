@@ -29,24 +29,46 @@
         </div>
           <div class="row">
 
-            <div class="col-12 col-md-6 col-lg-3">
-              <label for="slc_area">Área / tema</label>
+            <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_area">Nivel</label>
               <select id="slc_area" class="form-control">
                 <option value='0'>TODOS</option>
               </select>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <label for="slc_nivel">Nivel</label>
+            <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_nivel">Componente</label>
               <select id="slc_nivel" class="form-control">
                 <option value='0'>TODOS</option>
               </select>
             </div>
-
-
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <label for="slc_grado">Grado / Semestre</label>
+            <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_grado">Campo</label>
+              <select id="slc_grado" class="form-control">
+               <option value='0'>TODOS</option>
+             </select>
+           </div>
+           <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_grado">Grador</label>
+              <select id="slc_grado" class="form-control">
+               <option value='0'>TODOS</option>
+             </select>
+           </div>
+           <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_grado">Asignatura</label>
+              <select id="slc_grado" class="form-control">
+               <option value='0'>TODOS</option>
+             </select>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_grado">Eje</label>
+              <select id="slc_grado" class="form-control">
+               <option value='0'>TODOS</option>
+             </select>
+           </div>
+           <div class="col-12 col-md-6 col-lg-2">
+              <label for="slc_grado">Tema</label>
               <select id="slc_grado" class="form-control">
                <option value='0'>TODOS</option>
              </select>
