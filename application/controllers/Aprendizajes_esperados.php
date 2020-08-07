@@ -23,7 +23,7 @@ class Aprendizajes_esperados extends CI_Controller {
 		Utilerias::enviaDataJson($componentes,$this);
         exit();
 	}
-	
+
 	public function get_campos(){
 		$idnivel = $this->input->post('idnivel');
 		$idcomponente = $this->input->post('idcomponente');
@@ -85,7 +85,7 @@ class Aprendizajes_esperados extends CI_Controller {
 
 		$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
 		$data['aprendizajes'] = $aprendizajes;
-		
+
 		$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
 		Utilerias::enviaDataJson($vista,$this);
         exit();
