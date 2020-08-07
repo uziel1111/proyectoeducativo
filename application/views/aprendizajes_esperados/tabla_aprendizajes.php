@@ -14,13 +14,13 @@
         <td><?=$v['eje']?></td>
         <td><?=$v['tema']?></td>
         <td><?=$v['aprendizaje_esperado']?></td>
-        <td><button class="btn btn-primary btn-sm">PDF</button></td>
+        <td><a class="btn btn-primary btn-sm" href="<?=base_url("reportes/aprendizajes/{$v['idnivel']}/{$v['idcomponente']}/{$v['idcampo']}/{$v['idgrado']}/{$v['idasignatura']}/{$v['ideje']}/{$v['idtema']}/{$v['idaprendizaje_esperado']}")?>" target="_blank">PDF</a></td>
         <td>
           <?php if ($v['ligas'] != null): ?>
             <?php 
             $ligas = explode(",", $v['ligas']);
             for ($i=0; $i < count($ligas); $i++) { ?>
-              <a href="<?=$ligas[$i] ?>">liga</a>
+              <a href="<?=$ligas[$i] ?>" target="_blank"><i class="fas fa-paperclip"></i></a>
             <?php }
             ?>
           <?php endif ?>
