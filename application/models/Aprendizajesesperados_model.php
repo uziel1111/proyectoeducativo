@@ -26,7 +26,7 @@ class Aprendizajesesperados_model extends CI_Model {
 
 	function obtener_arr_campo_xidnivel_idcomponente($idnivel,$idcomponente){
 			$query = "SELECT
-								c.idcampo, c.idcampo
+								c.idcampo, c.campo
 								FROM r_nivel_componente_ae nc
 								INNER JOIN r_componente_campo_ae cc ON  nc.id = cc.idr_nivel_componente
 								INNER JOIN c_campo_ae c ON cc.idcampo = c.idcampo

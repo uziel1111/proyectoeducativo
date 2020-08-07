@@ -33,7 +33,10 @@
               <label for="slc_nivel_ae">Nivel</label>
               <select id="slc_nivel_ae" class="form-control">
                 <option value='0'>SELECCIONE</option>
-                <option value='1'>primaria</option>
+                <?php foreach ($niveles as $key => $value): ?>
+                  <option value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
+                <?php endforeach ?>
+                
               </select>
             </div>
             <div class="col-12 col-md-6 col-lg-2">
