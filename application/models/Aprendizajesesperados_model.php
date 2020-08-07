@@ -93,4 +93,37 @@ class Aprendizajesesperados_model extends CI_Model {
 			return $this->apr_db->query($query,[$idnivel,$idcomponente,$idcampo,$grado,$idasignatura,$ideje])->result_array();
 	}//obtener_arr_tema_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje
 
+	function obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$grado,$idasignatura,$ideje,$idtema){
+		$wheremas = "";
+		$datos = [$idnivel,$idcomponente,$idcampo,$grado,$idasignatura];
+		if($ideje != 0 ){
+			$wheremas .= " AND ae.ideje= ?";
+			array_push($datos, $ideje);
+		}
+		if($idtema != 0 ){
+			$wheremas .= " AND et.idtema= ?";
+			array_push($datos, $idtema);
+		}
+			$query = "SELECT
+								e.ideje, e.eje, t.idtema, t.tema,
+								a.idaprendizaje_esperado, a.aprendizaje_esperado,
+								GROUP_CONCAT(DISTINCT al.liga) as ligas
+								FROM r_nivel_componente_ae nc
+								INNER JOIN r_componente_campo_ae cc ON  nc.id = cc.idr_nivel_componente
+								INNER JOIN r_campo_grado_ae cg ON cc.id = cg.idr_componente_campo
+								INNER JOIN r_grado_asignatura_ae ga ON cg.id = ga.idr_campo_grado
+								INNER JOIN r_asignatura_eje_ae ae ON ga.id = ae.idr_grado_asignatura
+								INNER JOIN c_eje_ae e ON ae.ideje = e.ideje
+								INNER JOIN r_eje_tema_ae et ON ae.id = et.idr_asignatura_eje
+								INNER JOIN c_tema_ae t ON et.idtema =t.idtema
+								INNER JOIN r_tema_prendizajes_esperados_ae ta ON et.id = ta.idr_eje_tema
+								INNER JOIN c_aprendizaje_esperado_ae a ON ta.idaprendizaje_esperado = a.idaprendizaje_esperado
+								LEFT JOIN r_aprendizaje_esperado_liga_ae al ON a.idaprendizaje_esperado = al.idaprendizaje_esperado AND nc.idnivel = al.idnivel AND cg.idgrado = al.idgrado AND ga.idasignatura = al.idasignatura
+								WHERE nc.idnivel = ? AND nc.idcomponente= ? AND cc.idcampo= ? AND cg.idgrado= ? AND ga.idasignatura = ? {$wheremas}
+								GROUP BY a.idaprendizaje_esperado
+								ORDER BY ta.orden";
+			// echo "<pre>"; print_r($query); die();
+			return $this->apr_db->query($query,$datos)->result_array();
+	}//obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema
+
 }//class
