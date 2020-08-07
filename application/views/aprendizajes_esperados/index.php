@@ -30,47 +30,51 @@
           <div class="row">
 
             <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_area">Nivel</label>
-              <select id="slc_area" class="form-control">
-                <option value='0'>TODOS</option>
+              <label for="slc_nivel_ae">Nivel</label>
+              <select id="slc_nivel_ae" class="form-control">
+                <option value='0'>SELECCIONE</option>
+                <?php foreach ($niveles as $key => $value): ?>
+                  <option value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
+                <?php endforeach ?>
+                
               </select>
             </div>
             <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_nivel">Componente</label>
-              <select id="slc_nivel" class="form-control">
-                <option value='0'>TODOS</option>
+              <label for="slc_componente_ae">Componente</label>
+              <select id="slc_componente_ae" class="form-control" disabled>
+                <option value='0'>SELECCIONE</option>
               </select>
             </div>
             <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado">Campo</label>
-              <select id="slc_grado" class="form-control">
-               <option value='0'>TODOS</option>
+              <label for="slc_campo_ae">Campo</label>
+              <select id="slc_campo_ae" class="form-control" disabled>
+               <option value='0'>SELECCIONE</option>
              </select>
            </div>
            <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado">Grador</label>
-              <select id="slc_grado" class="form-control">
-               <option value='0'>TODOS</option>
+              <label for="slc_grado_ae">Grador</label>
+              <select id="slc_grado_ae" class="form-control" disabled>
+               <option value='0'>SELECCIONE</option>
              </select>
            </div>
            <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado">Asignatura</label>
-              <select id="slc_grado" class="form-control">
-               <option value='0'>TODOS</option>
+              <label for="slc_asignatura_ae">Asignatura</label>
+              <select id="slc_asignatura_ae" class="form-control" disabled>
+               <option value='0'>SELECCIONE</option>
              </select>
            </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado">Eje</label>
-              <select id="slc_grado" class="form-control">
-               <option value='0'>TODOS</option>
+              <label for="slc_eje_ae">Eje</label>
+              <select id="slc_eje_ae" class="form-control" disabled>
+               <option value='0'>SELECCIONE</option>
              </select>
            </div>
            <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado">Tema</label>
-              <select id="slc_grado" class="form-control">
-               <option value='0'>TODOS</option>
+              <label for="slc_tema_ae">Tema</label>
+              <select id="slc_tema_ae" class="form-control" disabled>
+               <option value='0'>SELECCIONE</option>
              </select>
            </div>
            <div class="col-12 col-md-6 col-lg-3">
@@ -110,3 +114,4 @@
 <!-- END We do... Boxes -->
 </main>
 <!-- END Main page content -->
+<script src="<?= base_url('assets/js/aprendizajes_esperados/aprendizajes_e.js'); ?>"></script>
