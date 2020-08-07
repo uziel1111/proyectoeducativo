@@ -7,6 +7,8 @@ class Aprendizajes_esperados extends CI_Controller {
 	function __construct() {
 			parent::__construct();
 			$this->load->library('Utilerias');
+			$this->load->model('Aprendizajesesperados_model');
+
 		}
 
 	public function index(){

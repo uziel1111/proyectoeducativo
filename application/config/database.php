@@ -95,3 +95,26 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+$db['aprendizaje'] = array(
+	'dsn'	=> '',
+	'hostname' => '208.91.198.53',
+	'username' => 'proye7nb_proye7n',
+	'password' => 'proye7n.123',
+	'database' => 'proye7nb_aprendizajes_esperados',
+	'dbdriver' => 'mysqli',
+	'port' => '3306',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
