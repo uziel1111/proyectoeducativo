@@ -4,6 +4,13 @@ $(document).ready( function () {
     "language": {
       "url": base_url+'assets/plugins/localisation/Spanish.json'
     },
+    rowReorder: true,
+        columnDefs: [
+            { orderable: true, className: 'Eje', targets: 0 },
+            { orderable: true, className: 'Tema', targets: 1 },
+            { orderable: true, className: 'Aprendizaje esperado', targets:  2},
+            { orderable: false, targets: '' }
+        ],
     responsive: false,
     initComplete: function () {
       this.api().columns().every( function () {
