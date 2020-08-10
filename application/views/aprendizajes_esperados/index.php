@@ -16,6 +16,9 @@
     <div class="container pt-0">
       <div class="row" id="row-lowgray-1">
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
+          <div class="row">
+            <h4><b>Busque recursos de apoyo para el aprendizaje a través del filtrado de opciones:</b></h4>
+          </div>
 
         <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
           <div class="row">
