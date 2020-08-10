@@ -116,7 +116,7 @@
         <div class="col-12 col-md-6 col-lg-4"></div>
         <div class="col-12 col-md-6 col-lg-4">
          <label for="btn_buscar_filtro"></label><br>
-         <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
+         <button class="btn btn-lg btn-primary btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
         </div>
         <div class="col-12 col-md-6 col-lg-4"></div>
       </div>

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= $titulo ?></title>
+  <title>Aprendizajes esperados</title>
 
   <!-- Favicon -->
 
@@ -59,9 +59,11 @@
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.js"></script>
 
   <script type="text/javascript">
+    var base_url = "<?= base_url() ?>";
     $(document).ready(function() {
       window.onbeforeunload = null;
       Header.irArriba();
+
     });
   </script>
 
@@ -78,23 +80,7 @@
   <div>
     <!-- HEADER -->
     <header>
-      <!-- COLOR BAR -->
-      <!-- <div class="container-fluid color-bar top-fixed clearfix">
-        <div class="row">
-          <div class="col-sm-1 col-2 bg-color-1">fix bar</div>
-          <div class="col-sm-1 col-2 bg-color-2">fix bar</div>
-          <div class="col-sm-1 col-2 bg-color-3">fix bar</div>
-          <div class="col-sm-1 col-2 bg-color-1">fix bar</div>
-          <div class="col-sm-1 col-2 bg-color-2">fix bar</div>
-          <div class="col-sm-1 col-2 bg-color-3">fix bar</div>
-          <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
-          <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
-          <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
-          <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
-          <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
-          <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
-        </div>
-      </div> -->
+
       <!-- TOP INFO BAR -->
       <div class="top-pattern-bar bg-primary"></div>
       <!-- NAVBAR -->
