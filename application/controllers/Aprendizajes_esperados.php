@@ -74,21 +74,62 @@ class Aprendizajes_esperados extends CI_Controller {
         exit();
 	}
 
-	public function get_aprendizajes_esperados(){
-		$idnivel = $this->input->post('idnivel');
-		$idcomponente = $this->input->post('idcomponente');
-		$idcampo = $this->input->post('idcampo');
-		$idgrado = $this->input->post('idgrado');
-		$idasignatura = $this->input->post('idasignatura');
-		$ideje = $this->input->post('ideje');
-		$idtema = $this->input->post('idtema');
+	// public function get_aprendizajes_esperados(){
+	// 	$idnivel = $this->input->post('idnivel');
+	// 	$idcomponente = $this->input->post('idcomponente');
+	// 	$idcampo = $this->input->post('idcampo');
+	// 	$idgrado = $this->input->post('idgrado');
+	// 	$idasignatura = $this->input->post('idasignatura');
+	// 	$ideje = $this->input->post('ideje');
+	// 	$idtema = $this->input->post('idtema');
 
-		$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
-		$data['aprendizajes'] = $aprendizajes;
+	// 	$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+	// 	$data['aprendizajes'] = $aprendizajes;
 
-		$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
-		Utilerias::enviaDataJson($vista,$this);
-        exit();
-	}
+	// 	$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+	// 	Utilerias::enviaDataJson($vista,$this);
+ //        exit();
+	// }
+
+	public function get_aprendizajes($idnivel = null, $idcomponente = null, $idcampo = null, $idgrado = null, $idasignatura = null, $ideje = null, $idtema = null)
+	{
+		$data['aprendizajes'] = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+		$data['niveles'] = $this->Aprendizajesesperados_model->obtener_arr_nivel();
+		if($idnivel != null && $idnivel != 0){
+			$data['idnivelselec'] = $idnivel;
+		}
+		if($idnivel != null && $idnivel != 0){
+			$componentes = $this->Aprendizajesesperados_model->obtener_arr_componente_xidnivel($idnivel);
+			$data['componentes'] = $componentes;
+			$data['idcomponenteselec'] = $idcomponente;
+		}
+		if($idcomponente != null && $idcomponente != 0){
+			$campos = $this->Aprendizajesesperados_model->obtener_arr_campo_xidnivel_idcomponente($idnivel,$idcomponente);
+			$data['campos'] = $campos;
+			$data['idcamposelec'] = $idcampo;
+		}
+		if($idcampo != null && $idcampo != 0){
+			$grados = $this->Aprendizajesesperados_model->obtener_arr_grado_xidnivel_idcomponente_idcampo($idnivel,$idcomponente,$idcampo);
+			$data['grados'] = $grados;
+			$data['idgradoselec'] = $idgrado;
+		}
+		if($idgrado != null && $idgrado != 0){
+			$asignaturas = $this->Aprendizajesesperados_model->obtener_arr_asignatura_xidnivel_idcomponente_idcampo_grado($idnivel,$idcomponente,$idcampo,$idgrado);
+			$data['asignaturas'] = $asignaturas;
+			$data['idasignaturaselec'] = $idasignatura;
+		}
+		if($idasignatura != null && $idasignatura != 0){
+			$ejes = $this->Aprendizajesesperados_model->obtener_arr_eje_xidnivel_idcomponente_idcampo_grado_idasignatura($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura);
+			$data['ejes'] = $ejes;
+			$data['idejeselec'] = $ideje;
+		}
+		if($ideje != null && $ideje != 0 ){
+			$temas = $this->Aprendizajesesperados_model->obtener_arr_tema_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje);
+			$data['temas'] = $temas;
+			$data['idtemaselec'] = $idtema;
+		}
+		$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+		Utilerias::pagina_basica($this, "aprendizajes_esperados/index", $data);
+	}//index
 
 }//class

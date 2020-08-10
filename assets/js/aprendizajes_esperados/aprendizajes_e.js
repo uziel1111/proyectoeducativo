@@ -277,24 +277,28 @@ get_temas: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje) => {
 },//get_ejes
 
 get_aprendizajes_esperados: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema) => {
-	$.ajax({
-		url: base_url+"Aprendizajes_esperados/get_aprendizajes_esperados",
-		type: 'POST',
-		dataType: 'json',
-		data: {'idnivel': idnivel, 'idcomponente': idcomponente, 'idcampo': idcampo, 'idgrado': idgrado, 'idasignatura': idasignatura, 'ideje': ideje, 'idtema':idtema},
-		beforeSend: function(){
-			Mensaje.cargando('Cargando ejes...');
-		},
-		success: function(data){
-			Mensaje.cerrar();
-			$("#div_tabla_aprendizajes").empty();
-			$("#div_tabla_aprendizajes").append(data);
-		},
-		error: function (jqXHR, textStatus, errorThrown) {
-			Mensaje.cerrar();
-			Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
-		}
-	});
+	// $.ajax({
+	// 	url: base_url+"Aprendizajes_esperados/get_aprendizajes_esperados",
+	// 	type: 'GET',
+	// 	dataType: 'json',
+	// 	data: {'idnivel': idnivel, 'idcomponente': idcomponente, 'idcampo': idcampo, 'idgrado': idgrado, 'idasignatura': idasignatura, 'ideje': ideje, 'idtema':idtema},
+	// 	beforeSend: function(){
+	// 		Mensaje.cargando('Cargando ejes...');
+	// 	},
+	// 	success: function(data){
+	// 		Mensaje.cerrar();
+	// 		$("#div_tabla_aprendizajes").empty();
+	// 		$("#div_tabla_aprendizajes").append(data);
+	// 	},
+	// 	error: function (jqXHR, textStatus, errorThrown) {
+	// 		Mensaje.cerrar();
+	// 		Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
+	// 	}
+	// });
+
+	var ruta = base_url + 'Aprendizajes_esperados/get_aprendizajes'
+		Mensaje.cargando('Buscando datos...');
+		window.location =ruta+'/'+idnivel+'/'+idcomponente+'/'+idcampo+'/'+idgrado+'/'+idasignatura+'/'+ideje+'/'+idtema;
 },
 
 // funcionalidad_change: (elemento) => {
