@@ -16,18 +16,17 @@
     <div class="container pt-0">
       <div class="row" id="row-lowgray-1">
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
-          <div class="row">
-            <h4><b>Busque recursos de apoyo para el aprendizaje a través del filtrado de opciones:</b></h4>
-          </div>
+
 
         <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
           <div class="row">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Requeridos: </span>
-              </div>
+            <div class="col-12 col-md-12 col-lg-12">
+            <h4><b>Búsqueda de aprendizajes esperados:</b></h4>
+            </div>
+          </div>
+          <div class="row">
               <div class="col-12 col-md-6 col-lg-2">
-                <label for="slc_nivel_ae">Nivel</label>
+                <label for="slc_nivel_ae">Nivel <b style="color:red;">*</b></label></label>
                 <select id="slc_nivel_ae" class="form-control">
                   <option value='0'>SELECCIONE</option>
                   <?php foreach ($niveles as $key => $value): ?>
@@ -36,8 +35,8 @@
 
                 </select>
               </div>
-              <div class="col-12 col-md-6 col-lg-2">
-                <label for="slc_componente_ae">Componente</label>
+              <div class="col-12 col-md-6 col-lg-3">
+                <label for="slc_componente_ae">Componente  <b style="color:red;">*</b></label>
                 <select id="slc_componente_ae" class="form-control" <?= isset($idnivelselec)? "": "disabled"?> >
                   <option value='0'>SELECCIONE</option>
                   <?php if (isset($componentes)): ?>
@@ -47,8 +46,8 @@
                   <?php endif ?>
                 </select>
               </div>
-              <div class="col-12 col-md-6 col-lg-2">
-                <label for="slc_campo_ae">Campo</label>
+              <div class="col-12 col-md-6 col-lg-3">
+                <label for="slc_campo_ae">Campo  <b style="color:red;">*</b></label>
                 <select id="slc_campo_ae" class="form-control" <?= isset($componentes)? "": "disabled"?> >
                  <option value='0'>SELECCIONE</option>
                  <?php if (isset($campos)): ?>
@@ -59,7 +58,7 @@
                </select>
              </div>
              <div class="col-12 col-md-6 col-lg-2">
-                <label for="slc_grado_ae">Grador</label>
+                <label for="slc_grado_ae">Grado  <b style="color:red;">*</b></label>
                 <select id="slc_grado_ae" class="form-control" <?= isset($campos)?"":"disabled" ?> >
                  <option value='0'>SELECCIONE</option>
                  <?php if (isset($grados)): ?>
@@ -70,7 +69,7 @@
                </select>
              </div>
              <div class="col-12 col-md-6 col-lg-2">
-                <label for="slc_asignatura_ae">Asignatura</label>
+                <label for="slc_asignatura_ae">Asignatura  <b style="color:red;">*</b></label>
                 <select id="slc_asignatura_ae" class="form-control" <?= isset($grados)? "": "disabled"?>>
                  <option value='0'>SELECCIONE</option>
                  <?php if (isset($asignaturas)): ?>
@@ -80,15 +79,10 @@
                  <?php endif ?>
                </select>
              </div>
-          </div>
         </div>
 
           <div class="row">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Opcionales: </span>
-              </div>
-            <div class="col-12 col-md-5 col-lg-5">
+            <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_eje_ae">Eje</label>
                 <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
                  <option value='0'>SELECCIONE</option>
@@ -99,7 +93,7 @@
                  <?php endif ?>
                </select>
              </div>
-             <div class="col-12 col-md-5 col-lg-5">
+             <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_tema_ae">Tema</label>
                 <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
                  <option value='0'>SELECCIONE</option>
@@ -110,21 +104,17 @@
                  <?php endif ?>
                </select>
              </div>
+             <div class="col-12 col-md-6 col-lg-4">
+              <label for="btn_buscar_filtro" style="color:red;"></label><br>
+              <button class="btn btn-lg btn-primary btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
+             </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for=""><b style="color:red;">* Datos requeridos.</b></label>
           </div>
         </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4"></div>
-        <div class="col-12 col-md-6 col-lg-4">
-         <label for="btn_buscar_filtro"></label><br>
-         <button class="btn btn-lg btn-primary btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4"></div>
-      </div>
         </form>
-        <div class="row">
-          <div class="col-lg-12"><h1>  </h1></div>
-          <div class="col-lg-12"><h1>  </h1></div>
-        </div>
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
           <div class="col-lg-12"><h1>  </h1></div>

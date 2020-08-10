@@ -17,7 +17,7 @@ $(document).ready( function () {
         var column = this;
         // console.log($(column.header()).text().trim());
         if ($(column.header()).text().trim()!='') {
-          var select = $('<br><select  style="width:80px"><option value="">Todos los resultados</option></select>')
+          var select = $('<br><select  style="width:170px"><option value="">Todos los resultados</option></select>')
           .appendTo( $(column.header()) )
           .on( 'change', function () {
             var val = $.fn.dataTable.util.escapeRegex(

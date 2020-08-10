@@ -72,14 +72,12 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 shadow-sm bg-custom-1">
 
         <div class="container">
-          <a class="navbar-brand mr-auto" href="">
-            <!-- DESCOMENTAR ESTO DESPUÉS DE AJUSTE DE TAMAÑO DE IMAGEN EN HEADER -->
-
-              <img src="<?= base_url('assets/' . SKIN . '/img/template/logoQualiclass150x400.png') ?>" alt="">
-          </a>
-          <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
-            <ul class="navbar-nav ml-auto flex-row">
-            </ul>
+          <div class="row">
+            <div class="col-4">
+              <a class="navbar-brand mr-auto" href="">
+                <img src="<?= base_url('assets/' . SKIN . '/img/template/logoQualiclass150x400.png') ?>" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </nav>
