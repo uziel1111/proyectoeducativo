@@ -38,7 +38,7 @@
               </div>
               <div class="col-12 col-md-6 col-lg-2">
                 <label for="slc_componente_ae">Componente</label>
-                <select id="slc_componente_ae" class="form-control" <?= isset($niveles)? "": "disabled"?> >
+                <select id="slc_componente_ae" class="form-control" <?= isset($idnivelselec)? "": "disabled"?> >
                   <option value='0'>SELECCIONE</option>
                   <?php if (isset($componentes)): ?>
                     <?php foreach ($componentes as $key => $value): ?>

@@ -36,7 +36,6 @@ $("#slc_nivel_ae").change(function(){
 	if(idnivel != 0){
 		Aprendizajes_e.get_componentes(idnivel);
 		$('#slc_componente_ae').prop('disabled', false);
-		Aprendizajes_e.funcionalidad_change($(this));
 	}else{
 		$('#slc_componente_ae').val(0);
 		$("#slc_componente_ae").trigger("change");

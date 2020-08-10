@@ -23,9 +23,6 @@
 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
-
-  <!-- <link rel="stylesheet" href="<?= base_url('assets/multiselect/css/bootstrap-select.min.css') ?>"> -->
-
   <!-- PLUGINS CSS STYLE -->
   <link rel="stylesheet" href="<?= base_url('assets/' . SKIN . '/css/eclase/main-quali.css') ?>">
 
@@ -43,31 +40,18 @@
   <!-- Icons -->
   <link rel="shortcut icon" href="<?= base_url('assets/' . SKIN . '/favicon/favicon.ico') ?>">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/ui/trumbowyg.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/trumbowyg.min.js"></script>
-  <script src='<?= base_url('assets/js/utilerias/es.min.js') ?>'></script>
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
   <!-- Custom Whatsapp for this template -->
     <link href="<?= base_url('assets/css/whatsapp_style.css'); ?>" rel="stylesheet">
 
-  <script src='<?= base_url('assets/js/utilerias/helpers.js') ?>'></script>
-
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.css" />
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/fc-3.3.0/kt-2.5.1/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.js"></script>
 
   <script type="text/javascript">
     var base_url = "<?= base_url() ?>";
-    $(document).ready(function() {
-      window.onbeforeunload = null;
-      Header.irArriba();
-
-    });
   </script>
-
-  <script src='<?= base_url('assets/js/utilerias/trumbowyg.colors.min.js') ?>'></script>
 </head>
 
 <body>
@@ -91,22 +75,10 @@
           <a class="navbar-brand mr-auto" href="">
             <!-- DESCOMENTAR ESTO DESPUÉS DE AJUSTE DE TAMAÑO DE IMAGEN EN HEADER -->
 
-              <img src="<?= base_url('assets/' . SKIN . '/img/template/logo-main.png') ?>" alt="">
+              <img src="<?= base_url('assets/' . SKIN . '/img/template/logoQualiclass150x400.png') ?>" alt="">
           </a>
           <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
             <ul class="navbar-nav ml-auto flex-row">
-              <!-- Megamenu-->
-
-                <!-- Drop Usuario -->
-                <li class="nav-item dropdown megamenu">
-                  <a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">
-                    <img class="avatar mx-auto" src="<?= base_url('assets/' . SKIN . '/img/avatar/avatar-escolar-m.jpg') ?>" alt="...">
-
-                    <span class="username"><?= $tipousuario ?></span>
-                    <span class="caret"></span>
-                  </a>
-                </li>
-
             </ul>
           </div>
         </div>
