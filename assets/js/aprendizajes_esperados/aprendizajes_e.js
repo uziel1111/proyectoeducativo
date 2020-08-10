@@ -8,28 +8,69 @@ $("#btn_buscar_filtro_ae").click(function(e){
 	var idasignatura = $("#slc_asignatura_ae").val();
 	var ideje = $("#slc_eje_ae").val();
 	var idtema = $("#slc_tema_ae").val();
- 	Aprendizajes_e.get_aprendizajes_esperados(idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema);
+	if(idnivel != 0){
+		if(idcomponente != 0){
+			if(idcampo != 0){
+				if(idgrado != 0){
+					if(idasignatura != 0){
+						Aprendizajes_e.get_aprendizajes_esperados(idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema);
+					}else{
+						Mensaje.alerta('warning','!Alerta¡','Seleccione asignatura');
+					}
+				}else{
+					Mensaje.alerta('warning','!Alerta¡','Seleccione grado');
+				}
+			}else{
+				Mensaje.alerta('warning','!Alerta¡','Seleccione campo');
+			}
+		}else{
+			Mensaje.alerta('warning','!Alerta¡','Seleccione componente');
+		}
+	}else{
+		Mensaje.alerta('warning','!Alerta¡','Seleccione nivel');
+	}
 });
 
 $("#slc_nivel_ae").change(function(){
 	var idnivel = $(this).val();
-	Aprendizajes_e.get_componentes(idnivel);
-	$('#slc_componente_ae').prop('disabled', false);
+	if(idnivel != 0){
+		Aprendizajes_e.get_componentes(idnivel);
+		$('#slc_componente_ae').prop('disabled', false);
+		Aprendizajes_e.funcionalidad_change($(this));
+	}else{
+		$('#slc_componente_ae').val(0);
+		$("#slc_componente_ae").trigger("change");
+		$('#slc_componente_ae').prop('disabled', true);
+	}
+	
 });
 
 $("#slc_componente_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $(this).val();
-	Aprendizajes_e.get_campos(idnivel,idcomponente);
-	$('#slc_campo_ae').prop('disabled', false);
+	if(idcomponente != 0){
+		Aprendizajes_e.get_campos(idnivel,idcomponente);
+		$('#slc_campo_ae').prop('disabled', false);
+	}else{
+		$('#slc_campo_ae').val(0);
+		$("#slc_campo_ae").trigger("change");
+		$('#slc_campo_ae').prop('disabled', true);
+	}
 });
 
 $("#slc_campo_ae").change(function(){
 	var idnivel = $("#slc_nivel_ae").val();
 	var idcomponente = $("#slc_componente_ae").val();
 	var idcampo = $(this).val();
-	Aprendizajes_e.get_grados(idnivel,idcomponente,idcampo);
-	$('#slc_grado_ae').prop('disabled', false);
+	if(idcampo != 0){
+		Aprendizajes_e.get_grados(idnivel,idcomponente,idcampo);
+		$('#slc_grado_ae').prop('disabled', false);
+	}else{
+		$('#slc_grado_ae').val(0);
+		$("#slc_grado_ae").trigger("change");
+		$('#slc_grado_ae').prop('disabled', true);
+	}
+	
 });
 
 $("#slc_grado_ae").change(function(){
@@ -37,8 +78,14 @@ $("#slc_grado_ae").change(function(){
 	var idcomponente = $("#slc_componente_ae").val();
 	var idcampo = $("#slc_campo_ae").val();
 	var idgrado = $(this).val();
-	Aprendizajes_e.get_asignaturas(idnivel,idcomponente,idcampo,idgrado);
-	$('#slc_asignatura_ae').prop('disabled', false);
+	if(idgrado != 0){
+		Aprendizajes_e.get_asignaturas(idnivel,idcomponente,idcampo,idgrado);
+		$('#slc_asignatura_ae').prop('disabled', false);
+	}else{
+		$('#slc_asignatura_ae').val(0);
+		$("#slc_asignatura_ae").trigger("change");
+		$('#slc_asignatura_ae').prop('disabled', true);
+	}
 });
 
 $("#slc_asignatura_ae").change(function(){
@@ -47,8 +94,15 @@ $("#slc_asignatura_ae").change(function(){
 	var idcampo = $("#slc_campo_ae").val();
 	var idgrado = $("#slc_grado_ae").val();
 	var idasignatura = $(this).val();
-	Aprendizajes_e.get_ejes(idnivel,idcomponente,idcampo,idgrado,idasignatura);
-	$('#slc_eje_ae').prop('disabled', false);
+	if(idasignatura != 0){
+		Aprendizajes_e.get_ejes(idnivel,idcomponente,idcampo,idgrado,idasignatura);
+		$('#slc_eje_ae').prop('disabled', false);
+	}else{
+		$('#slc_eje_ae').val(0);
+		$("#slc_eje_ae").trigger("change");
+		$('#slc_eje_ae').prop('disabled', true);
+	}
+	
 });
 
 $("#slc_eje_ae").change(function(){
@@ -58,8 +112,14 @@ $("#slc_eje_ae").change(function(){
 	var idgrado = $("#slc_grado_ae").val();
 	var idasignatura = $("#slc_asignatura_ae").val();
 	var ideje = $(this).val();
-	Aprendizajes_e.get_temas(idnivel,idcomponente,idcampo,idgrado,idasignatura,ideje);
-	$('#slc_tema_ae').prop('disabled', false);
+	if(ideje != 0){
+		Aprendizajes_e.get_temas(idnivel,idcomponente,idcampo,idgrado,idasignatura,ideje);
+		$('#slc_tema_ae').prop('disabled', false);
+	}else{
+		$('#slc_tema_ae').val(0);
+		$("#slc_tema_ae").trigger("change");
+		$('#slc_tema_ae').prop('disabled', true);
+	}
 });
 	
 let Aprendizajes_e = {
@@ -235,6 +295,37 @@ get_aprendizajes_esperados: (idnivel, idcomponente, idcampo, idgrado, idasignatu
 			Mensaje.error_ajax(jqXHR,textStatus, errorThrown);
 		}
 	});
-}
+},
+
+// funcionalidad_change: (elemento) => {
+// 	// alert($(elemento).attr('id'));
+// 	switch($(elemento).attr('id')) {
+// 	  case 'slc_nivel_ae':
+// 	    if($("#slc_nivel_ae").val() != 0){
+
+// 	    }else{
+
+// 	    }
+// 	    break;
+// 	  case 'slc_componente_ae':
+// 	    // code block
+// 	    break;
+// 	  case 'slc_campo_ae':
+// 	    // code block
+// 	    break;
+// 	  case 'slc_grado_ae':
+// 	    // code block
+// 	    break;
+// 	  case 'slc_asignatura_ae':
+// 	    // code block
+// 	    break;
+// 	  case 'slc_eje_ae':
+// 	    // code block
+// 	    break;
+// 	  case 'slc_tema_ae':
+// 	    // code block
+// 	    break;
+// 	}
+// }
 
 }
