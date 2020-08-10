@@ -15,7 +15,7 @@ class Aprendizajes_esperados extends CI_Controller {
 	$data = array();
 	$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
 	$data['niveles'] = $this->Aprendizajesesperados_model->obtener_arr_nivel();
-		Utilerias::pagina_basica($this, "aprendizajes_esperados/index", $data);
+		Utilerias::pagina_basica_ae($this, "aprendizajes_esperados/index", $data);
 	}
 
 	public function get_componentes(){
@@ -130,7 +130,7 @@ class Aprendizajes_esperados extends CI_Controller {
 			$data['idtemaselec'] = $idtema;
 		}
 		$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
-		Utilerias::pagina_basica($this, "aprendizajes_esperados/index", $data);
+		Utilerias::pagina_basica_ae($this, "aprendizajes_esperados/index", $data);
 	}//index
 
 }//class

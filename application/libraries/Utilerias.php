@@ -34,6 +34,11 @@ class Utilerias{
      * @param VISTA $vista      El nombre de la vista que se cargará después del header
      * @param DATA  $data       Arreglo con los campos que usará templates/header y $vista
      */
+    public static function pagina_basica_ae($contexto, $vista = '', $data) {
+	    	$contexto->load->view('templates_ae/header');
+	    	$contexto->load->view($vista, $data);
+	    	$contexto->load->view('templates_ae/footer');
+	    }
 
 			/*
 	    Funcion para retornar datos a peticiones ajax
