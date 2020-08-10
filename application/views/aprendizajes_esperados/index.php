@@ -34,7 +34,7 @@
               <select id="slc_nivel_ae" class="form-control">
                 <option value='0'>SELECCIONE</option>
                 <?php foreach ($niveles as $key => $value): ?>
-                  <option <?= ($idnivelselec == $value['idnivel'])? "selected":""?> value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
+                  <option <?= (isset($idnivelselec) && $idnivelselec == $value['idnivel'])? "selected":""?> value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
                 <?php endforeach ?>
                 
               </select>
@@ -45,7 +45,7 @@
                 <option value='0'>SELECCIONE</option>
                 <?php if (isset($componentes)): ?>
                   <?php foreach ($componentes as $key => $value): ?>
-                    <option <?= ($idcomponenteselec == $value['idcomponente'])? "selected":""?> value='<?=$value['idcomponente']?>'><?=$value['componente']?></option>
+                    <option <?= (isset($idcomponenteselec) && $idcomponenteselec == $value['idcomponente'])? "selected":""?> value='<?=$value['idcomponente']?>'><?=$value['componente']?></option>
                   <?php endforeach ?>
                 <?php endif ?>
               </select>
@@ -56,7 +56,7 @@
                <option value='0'>SELECCIONE</option>
                <?php if (isset($campos)): ?>
                  <?php foreach ($campos as $key => $value): ?>
-                   <option <?= ($idcamposelec == $value['idcampo'])? "selected":""?> value='<?=$value['idcampo']?>'><?=$value['campo']?></option>
+                   <option <?= (isset($idcamposelec) && $idcamposelec == $value['idcampo'])? "selected":""?> value='<?=$value['idcampo']?>'><?=$value['campo']?></option>
                  <?php endforeach ?>
                <?php endif ?>
              </select>
@@ -67,7 +67,7 @@
                <option value='0'>SELECCIONE</option>
                <?php if (isset($grados)): ?>
                  <?php foreach ($grados as $key => $value): ?>
-                   <option <?= ($idgradoselec == $value['idgrado'])? "selected":""?> value='<?=$value['idgrado']?>'><?=$value['grado']?></option>
+                   <option <?= (isset($idgradoselec) && $idgradoselec == $value['idgrado'])? "selected":""?> value='<?=$value['idgrado']?>'><?=$value['grado']?></option>
                  <?php endforeach ?>
                <?php endif ?>
              </select>
@@ -78,7 +78,7 @@
                <option value='0'>SELECCIONE</option>
                <?php if (isset($asignaturas)): ?>
                  <?php foreach ($asignaturas as $key => $value): ?>
-                   <option <?= ($idasignaturaselec == $value['idasignatura'])? "selected":""?> value='<?=$value['idasignatura']?>'><?=$value['asignatura']?></option>
+                   <option <?= (isset($idasignaturaselec) && $idasignaturaselec == $value['idasignatura'])? "selected":""?> value='<?=$value['idasignatura']?>'><?=$value['asignatura']?></option>
                  <?php endforeach ?>
                <?php endif ?>
              </select>
@@ -91,7 +91,7 @@
                <option value='0'>SELECCIONE</option>
                <?php if (isset($ejes)): ?>
                  <?php foreach ($ejes as $key => $value): ?>
-                   <option <?= ($idejeselec == $value['ideje'])? "selected":""?> value='<?=$value['ideje']?>'><?=$value['eje']?></option>
+                   <option <?= (isset($idejeselec) && $idejeselec == $value['ideje'])? "selected":""?> value='<?=$value['ideje']?>'><?=$value['eje']?></option>
                  <?php endforeach ?>
                <?php endif ?>
              </select>
@@ -102,7 +102,7 @@
                <option value='0'>SELECCIONE</option>
                <?php if (isset($temas)): ?>
                  <?php foreach ($temas as $key => $value): ?>
-                   <option <?= ($idtemaselec == $value['idtema'])? "selected":""?> value='<?=$value['idtema']?>'><?=$value['tema']?></option>
+                   <option <?= (isset($idtemaselec) && $idtemaselec == $value['idtema'])? "selected":""?> value='<?=$value['idtema']?>'><?=$value['tema']?></option>
                  <?php endforeach ?>
                <?php endif ?>
              </select>

@@ -9,6 +9,7 @@
     </tr>
   </thead>
   <tbody>
+    <?php if (isset($aprendizajes)): ?>
     <?php foreach ($aprendizajes as $key => $v): ?>
       <tr>
         <td><?=$v['eje']?></td>
@@ -27,6 +28,7 @@
         </td>
       </tr>
     <?php endforeach ?>
+    <?php endif ?>
   </tbody>
 </table>
 <script src="<?= base_url('assets/js/aprendizajes_esperados/tabla_aprendizajes.js'); ?>"></script>

@@ -13,6 +13,7 @@ class Aprendizajes_esperados extends CI_Controller {
 
 	public function index(){
 	$data = array();
+	$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
 	$data['niveles'] = $this->Aprendizajesesperados_model->obtener_arr_nivel();
 		Utilerias::pagina_basica($this, "aprendizajes_esperados/index", $data);
 	}
