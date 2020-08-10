@@ -93,7 +93,7 @@ class Aprendizajes_esperados extends CI_Controller {
 
 	public function get_aprendizajes($idnivel = null, $idcomponente = null, $idcampo = null, $idgrado = null, $idasignatura = null, $ideje = null, $idtema = null)
 	{
-		$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+		$data['aprendizajes'] = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
 		$data['niveles'] = $this->Aprendizajesesperados_model->obtener_arr_nivel();
 		if($idnivel != null && $idnivel != 0){
 			$data['idnivelselec'] = $idnivel;
@@ -128,7 +128,7 @@ class Aprendizajes_esperados extends CI_Controller {
 			$data['temas'] = $temas;
 			$data['idetemaselec'] = $idtema;
 		}
-		$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+		$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
 		Utilerias::pagina_basica($this, "aprendizajes_esperados/index", $data);
 
 		// }else{

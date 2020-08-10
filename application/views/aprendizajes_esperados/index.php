@@ -123,7 +123,7 @@
         </div>
         <div class="row">
          <div class="col-12" style="overflow-x:auto;" id="div_tabla_aprendizajes">
-          
+          <?=$vista_aprendizajes?>
          </div>
    </div>
  </div>
