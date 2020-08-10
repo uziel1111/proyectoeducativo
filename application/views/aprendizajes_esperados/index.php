@@ -16,92 +16,110 @@
     <div class="container pt-0">
       <div class="row" id="row-lowgray-1">
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
+          <div class="row">
+            <h4><b>Busque recursos de apoyo para el aprendizaje a través del filtrado de opciones:</b></h4>
+          </div>
 
         <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_nivel_ae">Nivel</label>
-              <select id="slc_nivel_ae" class="form-control">
-                <option value='0'>SELECCIONE</option>
-                <?php foreach ($niveles as $key => $value): ?>
-                  <option <?= (isset($idnivelselec) && $idnivelselec == $value['idnivel'])? "selected":""?> value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
-                <?php endforeach ?>
-
-              </select>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <label for="slc_componente_ae">Componente</label>
-              <select id="slc_componente_ae" class="form-control" <?= isset($niveles)? "": "disabled"?> >
-                <option value='0'>SELECCIONE</option>
-                <?php if (isset($componentes)): ?>
-                  <?php foreach ($componentes as $key => $value): ?>
-                    <option <?= (isset($idcomponenteselec) && $idcomponenteselec == $value['idcomponente'])? "selected":""?> value='<?=$value['idcomponente']?>'><?=$value['componente']?></option>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Requeridos: </span>
+              </div>
+              <div class="col-12 col-md-6 col-lg-2">
+                <label for="slc_nivel_ae">Nivel</label>
+                <select id="slc_nivel_ae" class="form-control">
+                  <option value='0'>SELECCIONE</option>
+                  <?php foreach ($niveles as $key => $value): ?>
+                    <option <?= (isset($idnivelselec) && $idnivelselec == $value['idnivel'])? "selected":""?> value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
                   <?php endforeach ?>
-                <?php endif ?>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <label for="slc_campo_ae">Campo</label>
-              <select id="slc_campo_ae" class="form-control" <?= isset($componentes)? "": "disabled"?> >
-               <option value='0'>SELECCIONE</option>
-               <?php if (isset($campos)): ?>
-                 <?php foreach ($campos as $key => $value): ?>
-                   <option <?= (isset($idcamposelec) && $idcamposelec == $value['idcampo'])? "selected":""?> value='<?=$value['idcampo']?>'><?=$value['campo']?></option>
-                 <?php endforeach ?>
-               <?php endif ?>
-             </select>
-           </div>
-           <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_grado_ae">Grador</label>
-              <select id="slc_grado_ae" class="form-control" <?= isset($campos)?"":"disabled" ?> >
-               <option value='0'>SELECCIONE</option>
-               <?php if (isset($grados)): ?>
-                 <?php foreach ($grados as $key => $value): ?>
-                   <option <?= (isset($idgradoselec) && $idgradoselec == $value['idgrado'])? "selected":""?> value='<?=$value['idgrado']?>'><?=$value['grado']?></option>
-                 <?php endforeach ?>
-               <?php endif ?>
-             </select>
-           </div>
-           <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_asignatura_ae">Asignatura</label>
-              <select id="slc_asignatura_ae" class="form-control" <?= isset($grados)? "": "disabled"?>>
-               <option value='0'>SELECCIONE</option>
-               <?php if (isset($asignaturas)): ?>
-                 <?php foreach ($asignaturas as $key => $value): ?>
-                   <option <?= (isset($idasignaturaselec) && $idasignaturaselec == $value['idasignatura'])? "selected":""?> value='<?=$value['idasignatura']?>'><?=$value['asignatura']?></option>
-                 <?php endforeach ?>
-               <?php endif ?>
-             </select>
-           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_eje_ae">Eje</label>
-              <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
-               <option value='0'>SELECCIONE</option>
-               <?php if (isset($ejes)): ?>
-                 <?php foreach ($ejes as $key => $value): ?>
-                   <option <?= (isset($idejeselec) && $idejeselec == $value['ideje'])? "selected":""?> value='<?=$value['ideje']?>'><?=$value['eje']?></option>
-                 <?php endforeach ?>
-               <?php endif ?>
-             </select>
-           </div>
-           <div class="col-12 col-md-6 col-lg-2">
-              <label for="slc_tema_ae">Tema</label>
-              <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
-               <option value='0'>SELECCIONE</option>
-               <?php if (isset($temas)): ?>
-                 <?php foreach ($temas as $key => $value): ?>
-                   <option <?= (isset($idtemaselec) && $idtemaselec == $value['idtema'])? "selected":""?> value='<?=$value['idtema']?>'><?=$value['tema']?></option>
-                 <?php endforeach ?>
-               <?php endif ?>
-             </select>
-           </div>
-           <div class="col-12 col-md-6 col-lg-3">
-            <label for="btn_buscar_filtro"></label><br>
-            <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
+
+                </select>
+              </div>
+              <div class="col-12 col-md-6 col-lg-2">
+                <label for="slc_componente_ae">Componente</label>
+                <select id="slc_componente_ae" class="form-control" <?= isset($niveles)? "": "disabled"?> >
+                  <option value='0'>SELECCIONE</option>
+                  <?php if (isset($componentes)): ?>
+                    <?php foreach ($componentes as $key => $value): ?>
+                      <option <?= (isset($idcomponenteselec) && $idcomponenteselec == $value['idcomponente'])? "selected":""?> value='<?=$value['idcomponente']?>'><?=$value['componente']?></option>
+                    <?php endforeach ?>
+                  <?php endif ?>
+                </select>
+              </div>
+              <div class="col-12 col-md-6 col-lg-2">
+                <label for="slc_campo_ae">Campo</label>
+                <select id="slc_campo_ae" class="form-control" <?= isset($componentes)? "": "disabled"?> >
+                 <option value='0'>SELECCIONE</option>
+                 <?php if (isset($campos)): ?>
+                   <?php foreach ($campos as $key => $value): ?>
+                     <option <?= (isset($idcamposelec) && $idcamposelec == $value['idcampo'])? "selected":""?> value='<?=$value['idcampo']?>'><?=$value['campo']?></option>
+                   <?php endforeach ?>
+                 <?php endif ?>
+               </select>
+             </div>
+             <div class="col-12 col-md-6 col-lg-2">
+                <label for="slc_grado_ae">Grador</label>
+                <select id="slc_grado_ae" class="form-control" <?= isset($campos)?"":"disabled" ?> >
+                 <option value='0'>SELECCIONE</option>
+                 <?php if (isset($grados)): ?>
+                   <?php foreach ($grados as $key => $value): ?>
+                     <option <?= (isset($idgradoselec) && $idgradoselec == $value['idgrado'])? "selected":""?> value='<?=$value['idgrado']?>'><?=$value['grado']?></option>
+                   <?php endforeach ?>
+                 <?php endif ?>
+               </select>
+             </div>
+             <div class="col-12 col-md-6 col-lg-2">
+                <label for="slc_asignatura_ae">Asignatura</label>
+                <select id="slc_asignatura_ae" class="form-control" <?= isset($grados)? "": "disabled"?>>
+                 <option value='0'>SELECCIONE</option>
+                 <?php if (isset($asignaturas)): ?>
+                   <?php foreach ($asignaturas as $key => $value): ?>
+                     <option <?= (isset($idasignaturaselec) && $idasignaturaselec == $value['idasignatura'])? "selected":""?> value='<?=$value['idasignatura']?>'><?=$value['asignatura']?></option>
+                   <?php endforeach ?>
+                 <?php endif ?>
+               </select>
+             </div>
           </div>
         </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Opcionales: </span>
+              </div>
+            <div class="col-12 col-md-5 col-lg-5">
+                <label for="slc_eje_ae">Eje</label>
+                <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
+                 <option value='0'>SELECCIONE</option>
+                 <?php if (isset($ejes)): ?>
+                   <?php foreach ($ejes as $key => $value): ?>
+                     <option <?= (isset($idejeselec) && $idejeselec == $value['ideje'])? "selected":""?> value='<?=$value['ideje']?>'><?=$value['eje']?></option>
+                   <?php endforeach ?>
+                 <?php endif ?>
+               </select>
+             </div>
+             <div class="col-12 col-md-5 col-lg-5">
+                <label for="slc_tema_ae">Tema</label>
+                <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
+                 <option value='0'>SELECCIONE</option>
+                 <?php if (isset($temas)): ?>
+                   <?php foreach ($temas as $key => $value): ?>
+                     <option <?= (isset($idtemaselec) && $idtemaselec == $value['idtema'])? "selected":""?> value='<?=$value['idtema']?>'><?=$value['tema']?></option>
+                   <?php endforeach ?>
+                 <?php endif ?>
+               </select>
+             </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4"></div>
+        <div class="col-12 col-md-6 col-lg-4">
+         <label for="btn_buscar_filtro"></label><br>
+         <button class="btn btn-lg bc-1 btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4"></div>
+      </div>
         </form>
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
