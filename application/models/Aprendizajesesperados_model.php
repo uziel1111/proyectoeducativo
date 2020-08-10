@@ -154,6 +154,7 @@ class Aprendizajesesperados_model extends CI_Model {
 				GROUP BY a.idaprendizaje_esperado
 				ORDER BY ta.orden";
 			// echo "<pre>"; print_r($query); die();
+			$this->apr_db->query("SET SESSION group_concat_max_len = 1000000");
 			return $this->apr_db->query($query,$datos)->result_array();
 	}//obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema
 
