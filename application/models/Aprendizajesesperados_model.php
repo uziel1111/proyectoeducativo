@@ -19,7 +19,8 @@ class Aprendizajesesperados_model extends CI_Model {
 								c.idcomponente, c.componente
 								FROM r_nivel_componente_ae nc
 								INNER JOIN c_componente_ae c ON nc.idcomponente = c.idcomponente
-								WHERE nc.idnivel= ?";
+								WHERE nc.idnivel= ?
+								ORDER BY FIELD (c.componente,'Formación Académica','Desarrollo Personal y Social') ASC;";
 			// echo "<pre>"; print_r($query); die();
 			return $this->apr_db->query($query,[$idnivel])->result_array();
 	}//obtener_arr_componente_xidnivel
@@ -30,7 +31,8 @@ class Aprendizajesesperados_model extends CI_Model {
 								FROM r_nivel_componente_ae nc
 								INNER JOIN r_componente_campo_ae cc ON  nc.id = cc.idr_nivel_componente
 								INNER JOIN c_campo_ae c ON cc.idcampo = c.idcampo
-								WHERE nc.idnivel = ? AND nc.idcomponente= ?";
+								WHERE nc.idnivel = ? AND nc.idcomponente= ?
+								ORDER BY FIELD (c.campo,'Lenguaje y Comunicación','Pensamiento Matemático', 'Exploración y Comprensión del Mundo Natural y Social');";
 			// echo "<pre>"; print_r($query); die();
 			return $this->apr_db->query($query,[$idnivel,$idcomponente])->result_array();
 	}//obtener_arr_campo_xidnivel_idcomponente

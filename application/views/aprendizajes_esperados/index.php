@@ -18,7 +18,7 @@
         <div class="col-lg-12 text-justify" data-aos="zoom-in">
 
 
-        <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
+        <!-- <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado"> -->
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
             <h4><b>Búsqueda de Aprendizajes Esperados:</b></h4>
@@ -82,7 +82,7 @@
         </div>
 
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-4">
+<!--             <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_eje_ae">Eje</label>
                 <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
                  <option value='0'>Seleccione</option>
@@ -92,8 +92,8 @@
                    <?php endforeach ?>
                  <?php endif ?>
                </select>
-             </div>
-             <div class="col-12 col-md-4 col-lg-4">
+             </div> -->
+<!--              <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_tema_ae">Tema</label>
                 <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
                  <option value='0'>Seleccione</option>
@@ -103,10 +103,14 @@
                    <?php endforeach ?>
                  <?php endif ?>
                </select>
-             </div>
-             <div class="col-12 col-md-6 col-lg-4">
+             </div> -->
+             <div class="col-12 col-md-6 col-lg-2">
               <label for="btn_buscar_filtro" style="color:red;"></label><br>
               <button class="btn btn-lg btn-primary btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
+             </div>
+             <div class="col-12 col-md-6 col-lg-2">
+              <label for="btn_limpiar_filtro"></label><br>
+              <button class="btn btn-lg btn-secondary btn-block text-white" id="btn_limpiar_filtro_ae"><i class="fas fa-eraser"></i> Limpiar</button>
              </div>
         </div>
         <div class="row">
@@ -114,7 +118,7 @@
             <label for=""><b style="color:red;">* Datos requeridos.</b></label>
           </div>
         </div>
-        </form>
+        <!-- </form> -->
         <div class="row">
           <div class="col-lg-12"><h1>  </h1></div>
           <div class="col-lg-12"><h1>  </h1></div>
