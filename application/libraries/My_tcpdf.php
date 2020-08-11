@@ -33,7 +33,7 @@ class My_tcpdf_page extends TCPDF
     }
 
     public function Header() {
-
+      
     }
     public function Footer() {
             $this->SetY(-15);

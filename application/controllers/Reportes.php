@@ -36,7 +36,7 @@ class Reportes extends CI_Controller {
 					$aprendizaje_esperado = $arr_datos['aprendizaje_esperado'];
 					$plan = $arr_datos['plan'];
 					$ligas = $arr_datos['ligas'];
-					$libros = $arr_datos['libros'];
+					$libros = str_replace(",", ",<br>", $arr_datos['libros']);
 					$pdf->SetFont('montserrat', '', 12);
 						$str_html = <<<EOT
 						<style>
@@ -72,7 +72,7 @@ EOT;
 $html= <<<EOT
 $str_html
 EOT;
-				$pdf->writeHTMLCell($w=0,$h=20,$x=10,$y=25, $html, $border=0, $ln=1, $fill=0, $reseth=true, $aligh='L', $autopadding=true);
+				$pdf->writeHTMLCell($w=0,$h=20,$x=10,$y=35, $html, $border=0, $ln=1, $fill=0, $reseth=true, $aligh='L', $autopadding=true);
 			}
 			$pdf->Output('ficha_aprendizajes_esperados.pdf', 'I');
 	}
@@ -89,10 +89,12 @@ EOT;
 	// $pdf->SetFooterMargin(50); // set the margins
 	$pdf->AddPage('L', 'Legal');
 	$pdf->SetAutoPageBreak(TRUE, 10);
+	$pdf->setJPEGQuality(90);
+	$pdf->Image('assets/DEMO/img/template/logoQualiclass150x400.png', 10, 5, 50, 0, 'PNG');
 	$pdf->SetFont('montserrat', '', 12);
 	$pdf->Cell(0, 0, $fecha, 0, 1, 'R');
 	$pdf->SetFont('montserratb', '', 17);
-	$pdf->Cell(0, 5, 'Ficha del Aprendizaje Esperado', 0, 1, 'C');
+	$pdf->Cell(0, 20, 'Ficha del Aprendizaje Esperado', 0, 1, 'C');
 
 	// $pdf->Image($file='assets/img/logoreporte.png', $x=7, $y=12, $w=65, $h=12, $type='', $link='', $align='', $resize=true, $dpi=100, $palign='', $ismask=false, $imgmask=false, $border=0, $fitbox=false, $hidden=false, $fitonpage=false);
 
