@@ -24,7 +24,12 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
   <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="<?= base_url('assets/' . SKIN . '/css/eclase/main-quali.css') ?>">
+  <?php if (isset($estilo)): ?>
+    <link rel="stylesheet" href="<?=$estilo ?>">
+  <?php else: ?>
+    <link rel="stylesheet" href="<?= base_url('assets/' . SKIN . '/css/eclase/main-quali.css') ?>">
+  <?php endif ?>
+  
 
   <!-- Fontawesome -->
 
@@ -78,6 +83,13 @@
                 <img src="<?= base_url('assets/' . SKIN . '/img/template/logoQualiclass150x400.png') ?>" alt="">
               </a>
             </div>
+            <?php if (isset($logo)): ?>
+              <div class="col-4">
+              <a class="navbar-brand mr-auto" href="">
+                <img src="<?= $logo ?>" alt="">
+              </a>
+            </div>
+            <?php endif ?>
           </div>
         </div>
       </nav>

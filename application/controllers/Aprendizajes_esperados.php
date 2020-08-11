@@ -75,25 +75,42 @@ class Aprendizajes_esperados extends CI_Controller {
         exit();
 	}
 
-	// public function get_aprendizajes_esperados(){
-	// 	$idnivel = $this->input->post('idnivel');
-	// 	$idcomponente = $this->input->post('idcomponente');
-	// 	$idcampo = $this->input->post('idcampo');
-	// 	$idgrado = $this->input->post('idgrado');
-	// 	$idasignatura = $this->input->post('idasignatura');
-	// 	$ideje = $this->input->post('ideje');
-	// 	$idtema = $this->input->post('idtema');
+	public function get_aprendizajes_esperados(){
+		// echo"<pre>";
+		// 	print_r($_POST);
+		// 	die();
+		$idnivel = $this->input->post('idnivel');
+		$idcomponente = $this->input->post('idcomponente');
+		$idcampo = $this->input->post('idcampo');
+		$idgrado = $this->input->post('idgrado');
+		$idasignatura = $this->input->post('idasignatura');
+		$ideje = $this->input->post('ideje');
+		$idtema = $this->input->post('idtema');
 
-	// 	$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
-	// 	$data['aprendizajes'] = $aprendizajes;
+		$logo = $this->input->post('logo');
+		$estilo = $this->input->post('estilo');
+		if(isset($logo) && isset($estilo) && $logo != '' && $estilo != ''){
+			// echo "else aca"; die();
+			$this->get_aprendizajes($idnivel, $idcomponente, $idcampo, $idgrado, $idasignatura, $ideje, $idtema, $logo, $estilo);
+		}else{
+			// echo "aca";die();
+			$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+			$data['aprendizajes'] = $aprendizajes;
+			// echo"<pre>";
+			// print_r($aprendizajes);
+			// die();
 
-	// 	$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
-	// 	Utilerias::enviaDataJson($vista,$this);
- //        exit();
-	// }
+			$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+			Utilerias::enviaDataJson($vista,$this);
+	        exit();
+		}
 
-	public function get_aprendizajes($idnivel = null, $idcomponente = null, $idcampo = null, $idgrado = null, $idasignatura = null, $ideje = null, $idtema = null)
+		
+	}
+
+	public function get_aprendizajes($idnivel = null, $idcomponente = null, $idcampo = null, $idgrado = null, $idasignatura = null, $ideje = null, $idtema = null, $logo = null, $estilo = null)
 	{
+		// echo"aca function"; die();
 		$data['aprendizajes'] = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
 		$data['niveles'] = $this->Aprendizajesesperados_model->obtener_arr_nivel();
 		if($idnivel != null && $idnivel != 0){
@@ -129,6 +146,13 @@ class Aprendizajes_esperados extends CI_Controller {
 			$data['temas'] = $temas;
 			$data['idtemaselec'] = $idtema;
 		}
+		if($logo != null){
+			$data['logo'] = $logo;
+		}
+		if($estilo != null){
+			$data['estilo'] = $estilo;
+		}
+
 		$data['vista_aprendizajes'] = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
 		Utilerias::pagina_basica_ae($this, "aprendizajes_esperados/index", $data);
 	}//index
