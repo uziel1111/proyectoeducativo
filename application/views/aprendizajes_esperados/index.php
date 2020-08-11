@@ -21,7 +21,7 @@
         <form name="form_aprendizaje_esperado" id="form_aprendizaje_esperado">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
-            <h4><b>Búsqueda de aprendizajes esperados:</b></h4>
+            <h4><b>Búsqueda de Aprendizajes Esperados:</b></h4>
             </div>
           </div>
           <div class="row">
