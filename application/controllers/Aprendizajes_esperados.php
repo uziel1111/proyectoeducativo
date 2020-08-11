@@ -76,16 +76,17 @@ class Aprendizajes_esperados extends CI_Controller {
 	}
 
 	public function get_aprendizajes_esperados(){
-		// echo"<pre>";
-		// 	print_r($_POST);
-		// 	die();
-		$idnivel = $this->input->post('idnivel');
-		$idcomponente = $this->input->post('idcomponente');
-		$idcampo = $this->input->post('idcampo');
-		$idgrado = $this->input->post('idgrado');
-		$idasignatura = $this->input->post('idasignatura');
-		$ideje = $this->input->post('ideje');
-		$idtema = $this->input->post('idtema');
+// 		echo"<pre>";
+// 		var_dump($_GET);
+// var_dump($_POST);
+// 			die();
+		$idnivel = $this->input->get('idnivel');
+		$idcomponente = $this->input->get('idcomponente');
+		$idcampo = $this->input->get('idcampo');
+		$idgrado = $this->input->get('idgrado');
+		$idasignatura = $this->input->get('idasignatura');
+		$ideje = $this->input->get('ideje');
+		$idtema = $this->input->get('idtema');
 
 		$logo = $this->input->post('logo');
 		$estilo = $this->input->post('estilo');
@@ -93,19 +94,28 @@ class Aprendizajes_esperados extends CI_Controller {
 			// echo "else aca"; die();
 			$this->get_aprendizajes($idnivel, $idcomponente, $idcampo, $idgrado, $idasignatura, $ideje, $idtema, $logo, $estilo);
 		}else{
-			// echo "aca";die();
-			$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
-			$data['aprendizajes'] = $aprendizajes;
-			// echo"<pre>";
-			// print_r($aprendizajes);
-			// die();
+			if (Utilerias::isRequestAjax($this)) {
+				// echo "aca";die();
+				$aprendizajes = $this->Aprendizajesesperados_model->obtener_arr_aprendizajesesperados_xidnivel_idcomponente_idcampo_grado_idasignatura_ideje_idtema($idnivel,$idcomponente,$idcampo,$idgrado,$idasignatura,$ideje,$idtema);
+				$data['aprendizajes'] = $aprendizajes;
+				// echo"<pre>";
+				// print_r($aprendizajes);
+				// die();
 
-			$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
-			Utilerias::enviaDataJson($vista,$this);
-	        exit();
+				$vista = $this->load->view("aprendizajes_esperados/tabla_aprendizajes", $data, TRUE);
+				// echo"<pre>";
+				// print_r($vista);
+				// die();
+				Utilerias::enviaDataJson($vista,$this);
+		        exit();
+			}
+			else {
+				$this->get_aprendizajes($idnivel, $idcomponente, $idcampo, $idgrado, $idasignatura, $ideje, $idtema);
+			}
+
 		}
 
-		
+
 	}
 
 	public function get_aprendizajes($idnivel = null, $idcomponente = null, $idcampo = null, $idgrado = null, $idasignatura = null, $ideje = null, $idtema = null, $logo = null, $estilo = null)

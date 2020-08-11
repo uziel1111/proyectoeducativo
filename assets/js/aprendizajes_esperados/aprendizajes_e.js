@@ -41,7 +41,7 @@ $("#slc_nivel_ae").change(function(){
 		$("#slc_componente_ae").trigger("change");
 		$('#slc_componente_ae').prop('disabled', true);
 	}
-	
+
 });
 
 $("#slc_componente_ae").change(function(){
@@ -69,7 +69,7 @@ $("#slc_campo_ae").change(function(){
 		$("#slc_grado_ae").trigger("change");
 		$('#slc_grado_ae').prop('disabled', true);
 	}
-	
+
 });
 
 $("#slc_grado_ae").change(function(){
@@ -101,7 +101,7 @@ $("#slc_asignatura_ae").change(function(){
 		$("#slc_eje_ae").trigger("change");
 		$('#slc_eje_ae').prop('disabled', true);
 	}
-	
+
 });
 
 $("#slc_eje_ae").change(function(){
@@ -120,7 +120,7 @@ $("#slc_eje_ae").change(function(){
 		$('#slc_tema_ae').prop('disabled', true);
 	}
 });
-	
+
 let Aprendizajes_e = {
 
 get_componentes: (idnivel) => {
@@ -278,14 +278,15 @@ get_temas: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje) => {
 get_aprendizajes_esperados: (idnivel, idcomponente, idcampo, idgrado, idasignatura, ideje, idtema) => {
 	$.ajax({
 		url: base_url+"Aprendizajes_esperados/get_aprendizajes_esperados",
-		type: 'POST',
+		type: 'GET',
 		dataType: 'json',
-		data: {'idnivel': idnivel, 'idcomponente': idcomponente, 'idcampo': idcampo, 'idgrado': idgrado, 'idasignatura': idasignatura, 'ideje': ideje, 'idtema':idtema, "logo":"logo", "estilo":"estilo"},
+		data: {'idnivel': idnivel, 'idcomponente': idcomponente, 'idcampo': idcampo, 'idgrado': idgrado, 'idasignatura': idasignatura, 'ideje': ideje, 'idtema':idtema},
 		beforeSend: function(){
 			Mensaje.cargando('Cargando ejes...');
 		},
 		success: function(data){
 			Mensaje.cerrar();
+			// console.log(data);
 			$("#div_tabla_aprendizajes").empty();
 			$("#div_tabla_aprendizajes").append(data);
 		},

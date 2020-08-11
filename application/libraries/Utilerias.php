@@ -128,5 +128,15 @@ class Utilerias{
 	    	return true;
 	    }
 
+
+  public static function isRequestAjax($contexto) {
+    if ($contexto->input->is_ajax_request()) {
+      return true;
+    } else {
+      return false;
+    }
+  }// isRequestAjax()
+
+
 	}
 	?>
