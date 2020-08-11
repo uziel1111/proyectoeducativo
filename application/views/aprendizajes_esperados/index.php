@@ -28,7 +28,7 @@
               <div class="col-12 col-md-6 col-lg-2">
                 <label for="slc_nivel_ae">Nivel <b style="color:red;">*</b></label></label>
                 <select id="slc_nivel_ae" class="form-control">
-                  <option value='0'>SELECCIONE</option>
+                  <option value='0'>Seleccione</option>
                   <?php foreach ($niveles as $key => $value): ?>
                     <option <?= (isset($idnivelselec) && $idnivelselec == $value['idnivel'])? "selected":""?> value='<?=$value['idnivel']?>'><?=$value['nivel']?></option>
                   <?php endforeach ?>
@@ -38,7 +38,7 @@
               <div class="col-12 col-md-6 col-lg-3">
                 <label for="slc_componente_ae">Componente  <b style="color:red;">*</b></label>
                 <select id="slc_componente_ae" class="form-control" <?= isset($idnivelselec)? "": "disabled"?> >
-                  <option value='0'>SELECCIONE</option>
+                  <option value='0'>Seleccione</option>
                   <?php if (isset($componentes)): ?>
                     <?php foreach ($componentes as $key => $value): ?>
                       <option <?= (isset($idcomponenteselec) && $idcomponenteselec == $value['idcomponente'])? "selected":""?> value='<?=$value['idcomponente']?>'><?=$value['componente']?></option>
@@ -49,7 +49,7 @@
               <div class="col-12 col-md-6 col-lg-3">
                 <label for="slc_campo_ae">Campo  <b style="color:red;">*</b></label>
                 <select id="slc_campo_ae" class="form-control" <?= isset($componentes)? "": "disabled"?> >
-                 <option value='0'>SELECCIONE</option>
+                 <option value='0'>Seleccione</option>
                  <?php if (isset($campos)): ?>
                    <?php foreach ($campos as $key => $value): ?>
                      <option <?= (isset($idcamposelec) && $idcamposelec == $value['idcampo'])? "selected":""?> value='<?=$value['idcampo']?>'><?=$value['campo']?></option>
@@ -60,7 +60,7 @@
              <div class="col-12 col-md-6 col-lg-2">
                 <label for="slc_grado_ae">Grado  <b style="color:red;">*</b></label>
                 <select id="slc_grado_ae" class="form-control" <?= isset($campos)?"":"disabled" ?> >
-                 <option value='0'>SELECCIONE</option>
+                 <option value='0'>Seleccione</option>
                  <?php if (isset($grados)): ?>
                    <?php foreach ($grados as $key => $value): ?>
                      <option <?= (isset($idgradoselec) && $idgradoselec == $value['idgrado'])? "selected":""?> value='<?=$value['idgrado']?>'><?=$value['grado']?></option>
@@ -71,7 +71,7 @@
              <div class="col-12 col-md-6 col-lg-2">
                 <label for="slc_asignatura_ae">Asignatura  <b style="color:red;">*</b></label>
                 <select id="slc_asignatura_ae" class="form-control" <?= isset($grados)? "": "disabled"?>>
-                 <option value='0'>SELECCIONE</option>
+                 <option value='0'>Seleccione</option>
                  <?php if (isset($asignaturas)): ?>
                    <?php foreach ($asignaturas as $key => $value): ?>
                      <option <?= (isset($idasignaturaselec) && $idasignaturaselec == $value['idasignatura'])? "selected":""?> value='<?=$value['idasignatura']?>'><?=$value['asignatura']?></option>
@@ -85,7 +85,7 @@
             <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_eje_ae">Eje</label>
                 <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
-                 <option value='0'>SELECCIONE</option>
+                 <option value='0'>Seleccione</option>
                  <?php if (isset($ejes)): ?>
                    <?php foreach ($ejes as $key => $value): ?>
                      <option <?= (isset($idejeselec) && $idejeselec == $value['ideje'])? "selected":""?> value='<?=$value['ideje']?>'><?=$value['eje']?></option>
@@ -96,7 +96,7 @@
              <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_tema_ae">Tema</label>
                 <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
-                 <option value='0'>SELECCIONE</option>
+                 <option value='0'>Seleccione</option>
                  <?php if (isset($temas)): ?>
                    <?php foreach ($temas as $key => $value): ?>
                      <option <?= (isset($idtemaselec) && $idtemaselec == $value['idtema'])? "selected":""?> value='<?=$value['idtema']?>'><?=$value['tema']?></option>
