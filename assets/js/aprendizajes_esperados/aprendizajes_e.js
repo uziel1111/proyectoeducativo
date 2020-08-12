@@ -10,8 +10,8 @@ $("#btn_buscar_filtro_ae").click(function(e){
 	var idcampo = $("#slc_campo_ae").val();
 	var idgrado = $("#slc_grado_ae").val();
 	var idasignatura = $("#slc_asignatura_ae").val();
-	var ideje = 0;
-	var idtema = 0;
+	var ideje = $("#slc_eje_ae").val();
+	var idtema = $("#slc_tema_ae").val();
 	if(idnivel != 0){
 		if(idcomponente != 0){
 			if(idcampo != 0){
