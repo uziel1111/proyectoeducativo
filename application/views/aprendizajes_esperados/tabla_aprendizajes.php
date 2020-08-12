@@ -1,9 +1,9 @@
 <table class="table" id="tabla_datos_aprendizajes">
   <thead>
     <tr>
-      <th style="width:15% !important">Eje</th>
-      <th style="width:25% !important">Tema</th>
-      <th style="width:50% !important">Aprendizaje Esperado</th>
+      <th style="width:15% !important" class="text-center">Eje</th>
+      <th style="width:25% !important" class="text-center">Tema</th>
+      <th style="width:50% !important" class="text-center">Aprendizaje Esperado</th>
       <th style="width:5% !important"></th>
       <th style="width:5% !important"></th>
     </tr>
