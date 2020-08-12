@@ -82,7 +82,7 @@
         </div>
 
           <div class="row">
-<!--             <div class="col-12 col-md-4 col-lg-4">
+            <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_eje_ae">Eje</label>
                 <select id="slc_eje_ae" class="form-control" <?= isset($asignaturas)?"":"disabled" ?>>
                  <option value='0'>Seleccione</option>
@@ -92,8 +92,8 @@
                    <?php endforeach ?>
                  <?php endif ?>
                </select>
-             </div> -->
-<!--              <div class="col-12 col-md-4 col-lg-4">
+             </div>
+             <div class="col-12 col-md-4 col-lg-4">
                 <label for="slc_tema_ae">Tema</label>
                 <select id="slc_tema_ae" class="form-control" <?= isset($ejes)? "":"disabled"?>>
                  <option value='0'>Seleccione</option>
@@ -103,7 +103,7 @@
                    <?php endforeach ?>
                  <?php endif ?>
                </select>
-             </div> -->
+             </div>
              <div class="col-12 col-md-6 col-lg-2">
               <label for="btn_buscar_filtro" style="color:red;"></label><br>
               <button class="btn btn-lg btn-primary btn-block text-white" id="btn_buscar_filtro_ae"><i class="fas fa-search"></i> Buscar</button>
