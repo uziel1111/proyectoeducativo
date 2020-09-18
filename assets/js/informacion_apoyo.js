@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	Mensaje.cerrar();
+	// Swal.fire('Los libros de Secundaria de CONALITEG están siendo actualizados, por ello las ligas no se encuentran disponibles por el momento');
+	// Mensaje.cerrar();
 	$('#tabla_datos').DataTable({
     "paging": true, // false to disable pagination (or any other option)
     "language": {
