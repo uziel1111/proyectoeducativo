@@ -87,4 +87,5 @@
 <!--Library Turnjs-->
 <script type="text/javascript" src="<?= base_url('assets/js/turn_v4/turn.min.js'); ?>"></script>
 <script type="text/javascript" src="<?= base_url('assets/js/turn_v4/config.js'); ?>"></script>
+
 </html>

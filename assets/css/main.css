@@ -1151,6 +1151,14 @@ main>.container {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sh-xvaniversario {
+   background: linear-gradient( rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.90)), /* bottom, image */
+  url("../../assets/img/template/headers/xvaniversario.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* */
 
@@ -1378,7 +1386,7 @@ main>.container {
 }
 
 .accordion-dark .card .card-header span.collapse-icon::before {
-  font-family: "Font Awesome 5 Free Solid";
+  font-family: "FontAwesome";
   content: "\f068";
   color: rgba(254, 254, 254, 1);
   position: absolute;
@@ -1726,4 +1734,79 @@ display:none;
   bottom: 0;
   width: 60%;
   z-index: -1;
+}
+/***XV ANIVERSARIO ***/
+.padding-row {
+  padding-top: 30px;
+}
+.card-xv {
+height: 170px;
+text-align: center;
+}
+.cardbody-xv {
+  padding: 43px 43px;
+}
+.num-xv {
+  color: #fc7f3f;
+  padding-bottom: 10px;
+}
+.nos-xv-text {
+  border-top: 2px solid #52c4c4;
+  border-bottom: 1px solid #52c4c4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+.nos-xv-cuerpo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #52c4c4;
+}
+.title-sec-xv {
+color: #00ae9a;
+font-weight: 600 !important;
+}
+.sub-sec-xv {
+color: #fc7f3f;
+}
+.accordion-dark .card .card-header span.collapse-icon-xv::before {
+  font-family: "FontAwesome";
+  content: "\f054";
+  color: rgba(254, 254, 254, 1);
+  background-color: #00ae9a;
+  font-size: 15px;
+  margin: 0;
+  padding: 4px 6px 5px 6px;
+  border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+ 
+}
+
+.accordion-dark .card .card-header.collapsed span.collapse-icon-xv::before {
+  content: "\f078";
+}
+
+.card-book{
+  -webkit-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+  -ms-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+  -o-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+  box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+
+  -webkit-transition:-webkit-transform 0.1s;
+  -webkit-transform:translate(0, 0);
+  -moz-transition:-moz-transform 0.1s;
+  -moz-transform:translate(0, 0);
+  -ms-transition:-ms-transform 0.1s;
+  -ms-transform:translate(0, 0);
+  -o-transition:-o-transform 0.1s;
+  -o-transform:translate(0, 0);
+  transition:transform 0.1s;
+  transform:translate(0, 0);
+}
+.card-book:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
 }

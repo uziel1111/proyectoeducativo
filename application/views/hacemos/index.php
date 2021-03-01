@@ -204,7 +204,7 @@
 
   <div class="accordion accordion-dark" id="accordionExample">
       <div class="card">
-        <div class="card-header closed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <div class="card-header collapsed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
         Mejora educativa
         <span class="collapse-icon"></span>
 
@@ -217,7 +217,7 @@
         </div>
       </div>
       <div class="card">
-      <div class="card-header closed" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+      <div class="card-header collapsed" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
 
       Lo más importante son las personas
       <span class="collapse-icon"></span>
@@ -229,7 +229,7 @@
         </div>
       </div>
       <div class="card">
-      <div class="card-header" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+      <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
 
       Tarea compartida
       <span class="collapse-icon"></span>
@@ -244,7 +244,7 @@
 
 
       <div class="card">
-      <div class="card-header" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+      <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
 
       Sustentabilidad
       <span class="collapse-icon"></span>
@@ -257,7 +257,7 @@
       </div>
 
       <div class="card">
-      <div class="card-header" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+      <div class="card-header collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
 
       Objetivos educativos
       <span class="collapse-icon"></span>
@@ -270,7 +270,7 @@
       </div>
 
       <div class="card">
-      <div class="card-header" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+      <div class="card-header collapsed" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
 
       Atender a quien más lo requiere
       <span class="collapse-icon"></span>
@@ -284,7 +284,7 @@
 
 
       <div class="card">
-      <div class="card-header" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+      <div class="card-header collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
 
       Implementación y seguimiento
       <span class="collapse-icon"></span>
@@ -297,7 +297,7 @@
       </div>
 
       <div class="card">
-      <div class="card-header" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+      <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
 
       Nos ponemos la camiseta
       <span class="collapse-icon"></span>

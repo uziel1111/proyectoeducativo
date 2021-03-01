@@ -8,6 +8,12 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-xvaniversario.jpg'); ?>" alt="First slide">
+            <div class="carousel-caption d-md-block cc-light" >
+              <h2 class="font-weight-bold">CELEBREMOS 15 años de trayectoria </h2>
+            </div>
+          </div>
+          <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-4.jpg'); ?>" alt="First slide">
             <div class="carousel-caption d-md-block cc-light" >
               <h2 class="font-weight-bold">QUEREMOS que todos los niños y jóvenes asistan a buenas escuelas</h2>

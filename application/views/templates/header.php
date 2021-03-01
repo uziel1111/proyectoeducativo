@@ -22,7 +22,10 @@
     <title>Proyecto Educativo</title>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- COUNTERUP-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.js"></script>
 
     <link rel="canonical" href="https://www.proyectoeducativo.org/">
 
@@ -62,7 +65,7 @@
       <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
           <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="<?= base_url('/'); ?>" id="mainLogo">
-              <img src="<?= base_url('assets/img/template/Logo-Proyed-500-x-134.png'); ?>" class="img-fluid" alt="Proyecto Educativo Logo">
+              <img src="<?= base_url('assets/img/template/logo-aniversario.png'); ?>" class="img-fluid" alt="Proyecto Educativo Logo">
             </a>
             <div class="toggle">
               <span>Menú</span>
@@ -89,10 +92,19 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                       </div>
                     </li>-->
-                    <li class="nav-item mx-0 mx-lg-1">
+                <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link rounded" href="<?= base_url('Fotogaleria') ?>">
+                  <span class="fa-layers fa-stack">
+                      <i class="fas fa-circle fa-stack-2x holder"></i>
+                      <i class="far fa-circle fa-stack-2x circle"></i>
+                      <i class="fas fa-birthday-cake fa-stack-1x icon"></i>
 
+                    </span>
+                    <label style="font-size: 14px;">XV ANIVERSARIO</label>
+                  </a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link rounded" href="<?= base_url('Somos'); ?>">
-
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
@@ -101,21 +113,16 @@
                     </span>
                     Somos
                   </a>
-
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-
                 <a class="nav-link rounded" href="<?= base_url('Hacemos'); ?>">
-
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
                       <i class="fas fa-briefcase fa-stack-1x icon"></i>
-
                     </span>
                     Hacemos
                   </a>
-
                 </li>
                 <li class="nav-item">
                 <a class="nav-link rounded" href="<?= base_url('Logros/'); ?>">
@@ -154,6 +161,7 @@
                     Contáctenos
                   </a>
                 </li>
+
               </ul>
             </div>
           </div>
