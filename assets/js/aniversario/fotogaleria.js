@@ -1,11 +1,12 @@
-$("#flipbook").turn({
-		width: 400,
-		height: 300,
+$(".flipbook").turn({
+		width: 500,
+		height: 150,
+    elevation: 5,
+    gradients: true,
 		autoCenter: true
 	});
 
-$("#btn-modal_prueba").click(function(e) {
+$("#album-1").click(function(e) {
    e.preventDefault();
-   alert("hola");
    $("#modal_prueba").modal();
 });

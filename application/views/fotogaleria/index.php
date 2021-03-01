@@ -473,58 +473,62 @@
 
 
 <!-- Large modal -->
-<button id="btn-modal_prueba"type="button" class="btn btn-primary"> modal</button>
 
-<div id="modal_prueba"class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    </div>
+  <div id="modal_prueba" class="modal fade customModal" role="dialog" aria-labelledby="Buscar CCT" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
    <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Galeria 1</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div id="flipbook" >
-      <div >
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
+        <div class="container">
+          <center>
+          <div class="flipbook" >
         <div >
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen02.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div >
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen03.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div >
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen04.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div >
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen05.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen06.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-       <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen07.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen08.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-       <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen09.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen10.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-       <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen11.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      <div>
-        <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen12.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
-      </div>
-      </div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+          <div >
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen02.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div >
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen03.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div >
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen04.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div >
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen05.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen06.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+         <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen07.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen08.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+         <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen09.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen10.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+         <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen11.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        <div>
+          <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen12.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+        </div>
+        </div>
+      </center>
+        </div>
+
     </div>
+  </div>
   </div>
 </div>
  </main>

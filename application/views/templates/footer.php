@@ -84,8 +84,6 @@
 <script src="<?= base_url('assets/js/main.js'); ?>"></script>
 <script src="<?= base_url('assets/js/utilerias/mensaje_alert.js'); ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<!--Library Turnjs-->
-<script type="text/javascript" src="<?= base_url('assets/js/turn_v4/turn.min.js'); ?>"></script>
-<script type="text/javascript" src="<?= base_url('assets/js/turn_v4/config.js'); ?>"></script>
+
 
 </html>
