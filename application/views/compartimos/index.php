@@ -196,8 +196,6 @@
     </div>
   </section>
   <!-- END We do... Boxes -->
-
-
 </main>
 <!-- END Main page content -->
 <script src="<?= base_url('assets/js/autocomplete.js'); ?>"></script>

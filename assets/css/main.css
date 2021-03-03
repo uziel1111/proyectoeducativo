@@ -1155,7 +1155,7 @@ main>.container {
    background: linear-gradient( rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.90)), /* bottom, image */
   url("../../assets/img/template/headers/xvaniversario.jpg");
   background-color: #cccccc;
-  background-position: center;
+  background-position: 0px 41px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1809,4 +1809,63 @@ color: #fc7f3f;
   transform: scale(1.05);
   transition: 0.5s;
   cursor: pointer;
+}
+.flipbook {
+left: -25px;
+margin-top: 20px;
+margin-bottom: 20px;
+ max-width:320;
+  height: 245;
+}
+.btn-convocatoria_xv{
+  font-size:10px;
+  position:absolute;
+  bottom: 20px;             
+  right: 42%;
+  padding: 5px 25px;
+  color:#eccb7b;
+  border:1px solid #eccb7b;
+  letter-spacing: 2px;
+}
+.btn-convocatoria_xv-movil {
+  font-size:7px;
+  position:absolute;
+  bottom: 10px;             
+  right: 36%;
+  padding: 5px 10px;
+  color:#eccb7b;
+  border:1px solid #eccb7b;
+  letter-spacing: 1px;
+}
+.div-degr {
+background: linear-gradient(88deg, rgba(236,201,133,1) 0%, rgba(248,236,183,1) 0%, rgba(252,240,152,1) 29%, rgba(200,158,110,1) 55%, rgba(228,196,172,1) 70%, rgba(252,240,152,1) 98%);
+height: 3px;
+}
+.title-modal-style {
+color: white;
+font-weight:600!important;
+}
+.fc-7 {
+  color:#f7f7f7!important;
+}
+ .row-album {
+margin-left:0;
+margin-right: 0;
+padding-right: 30px;
+padding-left: 30px;
+}
+.ind-album {
+position:relative;
+width: 100%;
+max-width:400px;
+margin-bottom: 40px;
+}
+.width-1 {
+  max-width: 900px;
+}
+.width-2 {
+  max-width: 700px;
+}
+.title-xv {
+  font-size: 1.6rem;
 }

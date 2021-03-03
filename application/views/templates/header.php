@@ -23,10 +23,7 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <!-- COUNTERUP-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.js"></script>
-
+ 
     <link rel="canonical" href="https://www.proyectoeducativo.org/">
 
     <!-- Bootstrap core CSS -->

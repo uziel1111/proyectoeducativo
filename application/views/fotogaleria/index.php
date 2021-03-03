@@ -6,7 +6,7 @@
     <section class="page-section sh-xvaniversario text-white mb-0" id="subpage-head">
       <div class="container" data-aos="zoom-in" data-aos-duration="1000">
         <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span style="font-size: 1.6rem">XV ANIVERSARIO</span></h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span class="title-xv">XV ANIVERSARIO</span></h2>
       </div>
     </section>
     <section id="subpage_cont1">
@@ -52,7 +52,7 @@
                 </div>
               </div>
             </div>
-            <div style="background: linear-gradient(88deg, rgba(236,201,133,1) 0%, rgba(248,236,183,1) 0%, rgba(252,240,152,1) 29%, rgba(200,158,110,1) 55%, rgba(228,196,172,1) 70%, rgba(252,240,152,1) 98%);;height: 3px;"></div>
+            <div class="div-degr"></div>
             <div class="card shadow">
               <div class="card-body cardbody-xv">
                 <center><h3 class="title-sec-xv">NOSOTROS</h3></center>
@@ -186,22 +186,22 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse8">
                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2015 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 9
                 </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2016 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 10
                 </div>
@@ -209,11 +209,11 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading11" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2017 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 11
                 </div>
@@ -221,11 +221,11 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading12" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2018 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 12
                 </div>
@@ -233,11 +233,11 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading13" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2019 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 13
                 </div>
@@ -245,11 +245,11 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading14" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2020-
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 14
                 </div>
@@ -257,11 +257,11 @@
             </div>
 
             <div class="card">
-              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+              <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;2021 -
 
               </div>
-              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+              <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
                 <div class="card-body">
                 texto 15
                 </div>
@@ -270,77 +270,109 @@
            </div>
          </div>
        </div>
-
-      <div class="card shadow">
-        <div class="card-body col-lg-10 cardbody-xv">
-          <center><h3 class="title-sec-xv">FOTOGALERÍA</h3></center>
-          <i><center><h5 class="sub-sec-xv">Calidad y equidad educativa</h5></center></i>
-          <div class="row row-cols-1 row-cols-md-2 padding-row">
-            <div class="col mb-4">
-              <div id="album-1"class="card card-book " >
-                <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
-              </div>
-            </a>
-            </div>
-            <div class="col mb-4">
-              <div class="card card-book">
-               <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
-              </div>
-            </div>
+        <div class="card shadow" >
+          <div class="card-body col-lg-12 cardbody-xv"data-aos="zoom-in" >
+            <center><h3 class="title-sec-xv">FOTOGALERÍA</h3></center>
+            <i><center><h5 class="sub-sec-xv">Calidad y equidad educativa</h5></center></i>
           </div>
-           <div class="row row-cols-1 row-cols-md-2 padding-row">
-            <div class="col mb-4">
-              <div class="card card-book">
-                <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+          <div class="row row-album" data-aos="zoom-in">
+          <div class="col-lg-6">
+            <center>
+              <div class="ind-album">
+                <div id="album-1"class="card card-book">
+                  <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+                </div>
               </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card card-book">
-               <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
-
-              </div>
-            </div>
+            </center>
           </div>
+          <div class="col-lg-6">
+            <center>
+              <div class="ind-album">
+                <div id="album-2"class="card card-book">
+                  <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="col-lg-6">
+            <center>
+              <div class="ind-album">
+                <div id="album-3"class="card card-book">
+                  <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+                </div>
+              </div>
+            </center>
+          </div>
+           <div class="col-lg-6">
+            <center>
+              <div class="ind-album">
+                <div id="album-4"class="card card-book">
+                  <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-6">
+            <center>
+              <div class="ind-album">
+                <div id="album-5"class="card card-book">
+                  <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
+                </div>
+              </div>
+         
+          </div>
+           <div class="col-lg-3">
+          </div>
+          </center>
+        
+         
         </div>
-      </div>
-       <div style="background: linear-gradient(88deg, rgba(236,201,133,1) 0%, rgba(248,236,183,1) 0%, rgba(252,240,152,1) 29%, rgba(200,158,110,1) 55%, rgba(228,196,172,1) 70%, rgba(252,240,152,1) 98%);;height: 3px;"></div>
+  
+       <div class="div-degr"></div>
       <section class="">
-      <a href="#">
-        <!-- <div class="container"> -->
-          <div class="row d-none d-xl-block">
+            <div class="row d-none d-xl-block">
             <div class="col-12">
-              <!-- <center> -->
                 <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/xv_aniversario/banner-convocatoria.jpg')?>">
-            <!-- </center> -->
+                <div>
+                  <button type="button" class="btn btn-convocatoria_xv btn-convocatoria" style=" color:#eccb7b;">MÁS INFORMACIÓN</button>
+                </div>
             </div>
           </div>
-        <!-- </div> -->
-      </a>
+          <div class="row d-block d-sm-none d-sm-block d-md-none">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/xv_aniversario/banner-convocatoria-movil.jpg')?>">
+              <div>
+                  <button type="button" class="btn btn-convocatoria_xv-movil btn-convocatoria" style=" color:#eccb7b;">MÁS INFORMACIÓN</button>
+                </div>
+            </div>
+          </div>
     </section>
-    <div style="background: linear-gradient(88deg, rgba(236,201,133,1) 0%, rgba(248,236,183,1) 0%, rgba(252,240,152,1) 29%, rgba(200,158,110,1) 55%, rgba(228,196,172,1) 70%, rgba(252,240,152,1) 98%);;height: 3px;"></div>
+    <div class="div-degr"></div>
       <div class="row px-5 py-4 no-gutters">
         <div class="col-lg-12 my-auto text-justify" data-aos="zoom-in">
-          <center><h3 class="title-sec-xv">ALIADOS</h3></center>
+          <center><h3 class="title-sec-xv">CLIENTES</h3></center>
           <i><center><h5 class="sub-sec-xv">Confianza que perdura</h5></center></i>
 
           <div class="row padding-row">
             <div class="my-4">
              <!--Carousel Wrapper-->
-              <div id="carousel-aliados" class="carousel slide carousel-multi-item" data-ride="carousel">
+              <div id="carousel-clientes" class="carousel slide carousel-multi-item" data-ride="carousel">
 
                 <!--Controls-->
                 <!--<div class="controls-top">
-                  <a class="" href="#carousel-aliados" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                  <a class="" href="#carousel-aliados" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                  <a class="" href="#carousel-clientes" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                  <a class="" href="#carousel-clientes" data-slide="next"><i class="fa fa-chevron-right"></i></a>
                 </div>-->
                 <!--/.Controls-->
 
                 <!--Indicators-->
                 <ol class="carousel-indicators">
-                  <li data-target="#carousel-aliados" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-aliados" data-slide-to="1"></li>
-                  <li data-target="#carousel-aliados" data-slide-to="2"></li>
-                  <li data-target="#carousel-aliados" data-slide-to="3"></li>
+                  <li data-target="#carousel-clientes" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-clientes" data-slide-to="1"></li>
+                  <li data-target="#carousel-clientes" data-slide-to="2"></li>
+                  <li data-target="#carousel-clientes" data-slide-to="3"></li>
                 </ol>
                 <!--/.Indicators-->
 
@@ -445,13 +477,12 @@
           </div>
         </div>
       </div>
-       <div style="background: linear-gradient(88deg, rgba(236,201,133,1) 0%, rgba(248,236,183,1) 0%, rgba(252,240,152,1) 29%, rgba(200,158,110,1) 55%, rgba(228,196,172,1) 70%, rgba(252,240,152,1) 98%);;height: 3px;"></div>
+       <div class="div-degr"></div>
       <div class="card shadow">
         <div class="card-body cardbody-xv">
         <center><h3 class="title-sec-xv">NUESTRAS REDES</h3></center>
         <i><center><h5 class="sub-sec-xv">Lo más relevante de nuestros esfuerzos</h5></center></i>
         <div class="row mt-5">
-
           <div class="col-md-4 mb-5">
               <div class="card tweets">
                 <div id="fb-root"></div>
@@ -471,22 +502,19 @@
 
    </section>
 
-
-<!-- Large modal -->
-
-  <div id="modal_prueba" class="modal fade customModal" role="dialog" aria-labelledby="Buscar CCT" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog modal-lg">
-   <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Galeria 1</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<!---Modal album-->
+<div class="modal fade" id="modal_prueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+  <div class="modal-dialog width-1" role="document">
+    <div class="modal-content">
+      <div class="modal-header bc-1">
+        <h5 id="title-modal"class="modal-title title-modal-style"></h5>
+        <button type="button" class="close fc-7" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="container">
-          <center>
-          <div class="flipbook" >
+        <div id="seccion-album"class="container">
+        <div id="flip-1"class="flipbook" style="display:none">
         <div >
           <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
         </div>
@@ -563,8 +591,7 @@
        <div>
         <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen25.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
       </div>
-       <div>
-       <div>
+      <div>
         <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen26.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
       </div>
        <div>
@@ -582,18 +609,37 @@
        <div>
         <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen31.png'); ?>" class="" alt="Responsive image" width="100%" height="auto">
       </div>
-      <div style="background-color:#fc7f3f">
-
+      <div class="bc-1">
       </div>
-      </center>
-        </div>
+     </div>
 
-    </div>
+  </div>
   </div>
   </div>
 </div>
+</div>
+<!--Modal Convocatoria-->
+<div class="modal fade" id="modal_convocatoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+  <div class="modal-dialog width-2" role="document" >
+    <div class="modal-content">
+      <div class="modal-header bc-1">
+        <h5 class="modal-title title-modal-style">CONVOCATORIA</h5>
+        <button type="button" class="close fc-7" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <embed src="<?= base_url('assets/img/xv_aniversario/convocatoria-xv.pdf'); ?>"frameborder="0" width="100%" height="400px">  
+      </div>
+  </div>
+</div>
+</div>
  </main>
-  <!-- END Main page content -->
-              <!--Library Turnjs-->
+<!-- END Main page content -->
+<!-- COUNTERUP-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.js"></script>
+ <!--Library Turnjs-->
  <script type="text/javascript" src="<?= base_url('assets/js/turn_v4/turn.min.js'); ?>"></script>
 <script src="<?=base_url('assets/js/aniversario/fotogaleria.js');?>"></script>
+ 
