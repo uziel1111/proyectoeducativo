@@ -23,7 +23,7 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 
+
     <link rel="canonical" href="https://www.proyectoeducativo.org/">
 
     <!-- Bootstrap core CSS -->
@@ -90,7 +90,7 @@
                       </div>
                     </li>-->
                 <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link rounded" href="<?= base_url('Fotogaleria') ?>">
+                <a class="nav-link rounded" href="<?= base_url('Xv_aniversario') ?>">
                   <span class="fa-layers fa-stack">
                       <i class="fas fa-circle fa-stack-2x holder"></i>
                       <i class="far fa-circle fa-stack-2x circle"></i>
