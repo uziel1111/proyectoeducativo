@@ -3,11 +3,14 @@
   <!-- Main page content -->
   <main role="main" class="flex-shrink-0">
       <!-- Subpage Header -->
-    <section class="page-section sh-xvaniversario text-white mb-0" id="subpage-head">
-      <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-        <!-- Subpage Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white line-behind"><span class="title-xv">XV ANIVERSARIO</span></h2>
-      </div>
+      <section>
+            <div class="row d-none d-xl-block">
+            <div class="col-12">
+                <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/slider/slider-xvaniversario.jpg')?>">
+
+            </div>
+          </div>
+
     </section>
     <section id="subpage_cont1">
       <div class="container p-0">
@@ -321,15 +324,15 @@
                   <img src="<?= base_url('assets/img/xv_aniversario/foto_galeria/imagen01.png'); ?>" class="card-img-top" alt="...">
                 </div>
               </div>
-         
+
           </div>
            <div class="col-lg-3">
           </div>
           </center>
-        
-         
+
+
         </div>
-  
+
        <div class="div-degr"></div>
       <section class="">
             <div class="row d-none d-xl-block">
@@ -629,7 +632,7 @@
         </button>
       </div>
       <div class="modal-body">
-       <embed src="<?= base_url('assets/img/xv_aniversario/convocatoria-xv.pdf'); ?>"frameborder="0" width="100%" height="400px">  
+       <embed src="<?= base_url('assets/img/xv_aniversario/convocatoria-xv.pdf'); ?>"frameborder="0" width="100%" height="400px">
       </div>
   </div>
 </div>
@@ -642,4 +645,3 @@
  <!--Library Turnjs-->
  <script type="text/javascript" src="<?= base_url('assets/js/turn_v4/turn.min.js'); ?>"></script>
 <script src="<?=base_url('assets/js/aniversario/fotogaleria.js');?>"></script>
- 
