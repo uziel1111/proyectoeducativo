@@ -1788,6 +1788,7 @@ color: #fc7f3f;
 }
 
 .card-book{
+  width: 80%;
   -webkit-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
   -moz-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
   -ms-box-shadow:2px 2px 5px rgba(0,0,0,0.6);
@@ -1868,4 +1869,15 @@ margin-bottom: 40px;
 }
 .title-xv {
   font-size: 1.6rem;
+}
+.ico-xv {
+  width: 50px;
+  height: auto;
+}
+#row-fltpersonalizado {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 40px 30px;
+  background: whitesmoke;
+ 
 }
