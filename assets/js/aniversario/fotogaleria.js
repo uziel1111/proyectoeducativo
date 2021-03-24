@@ -1,43 +1,53 @@
+if (screen.width < 500){
+  var widthtno=300;
+  var heightno=190;
+}else if(screen.width < 1280){
+  var widthtno=700;
+  var heightno=450;
+}else{
+  var widthtno=792;
+  var heightno=513;
 
-
+}
+  
 $(".flipbook").turn({
-	width: 792,
-	height: 513,
+	width: widthtno,
+	height: heightno,
   elevation: 5,
   gradients: true,
 	autoCenter: true,
 	});
 $(".flipbook2").turn({
-  width: 792,
-  height: 513,
+  width: widthtno,
+  height: heightno,
   elevation: 5,
   gradients: true,
   autoCenter: true,
   });
 $(".flipbook3").turn({
-  width: 792,
-  height: 513,
+  width: widthtno,
+  height: heightno,
   elevation: 5,
   gradients: true,
   autoCenter: true,
   });
 $(".flipbook4").turn({
-  width: 792,
-  height: 513,
+  width: widthtno,
+  height: heightno,
   elevation: 5,
   gradients: true,
   autoCenter: true,
   });
 $(".flipbook5").turn({
-  width: 792,
-  height: 513,
+  width: widthtno,
+  height: heightno,
   elevation: 5,
   gradients: true,
   autoCenter: true,
   });
 $(".flipbook6").turn({
-  width: 792,
-  height: 513,
+  width: widthtno,
+  height:  heightno,
   elevation: 5,
   gradients: true,
   autoCenter: true,
