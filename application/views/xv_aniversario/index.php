@@ -233,15 +233,17 @@
                 </div>
             </div>
           </div>
-         </section>  
-        <div class="row" id="row-fltpersonalizado">
+         </section> 
+          <div class="div-degr">
+          </div> 
+        <div class="row" id="row-xv">
          <div class="col-lg-12 text-justify" data-aos="zoom-in">
           <center><h3 class="title-sec-xv">TRAYECTORIA</h3></center>
           <i><center><h5 class="sub-sec-xv">Celebrando 15 años de logros</h5></center></i>
-           <div class="accordion accordion-dark" id="accordionExample">
+           <div class="accordion accordion-xv" id="accordionExample">
                     <div class="card">
               <div class="card-header collapsed" id="heading0" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2006</b> - <b class="fc-6">INICIOS</b>
+                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2006 -</b> <b class="fc-6">INICIOS:</b> Nace Proyecto Educativo(ProyEdu)...
               </div>
               <div id="collapse0" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
                 <div class="card-body">
@@ -252,7 +254,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2007</b> - <b class="fc-6">PRIMERAS INVESTIGACIONES</b>
+                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2007 -</b> <b class="fc-6">PRIMERAS INVESTIGACIONES:</b> ProyEdu formando alianzas...
 
               </div>
               <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
@@ -264,7 +266,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading2" data-toggle="collapse" data-target="   #collapse2" aria-expanded="true" aria-controls="collapse2">
-                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2008 - <b class="fc-6">DISEÑO DE HERRAMIENTAS</b>
+                  <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2008 -</b> <b class="fc-6">DISEÑO DE HERRAMIENTAS:</b> Por encargo de SEP,ProyEdu desarrolla herramientas para ENLACE...
 
               </div>
               <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
@@ -276,7 +278,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2009 - <b class="fc-6">PROYECTO INTERNACIONAL MICROSOFT</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2009 -</b> <b class="fc-6">PROYECTO INTERNACIONAL MICROSOFT:</b> ProyEdu es seleccionado por Microsoft y SEP para participar...
 
               </div>
               <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
@@ -288,7 +290,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2010 - <b class="fc-6">PROYECTO PUEBLA</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2010 -</b> <b class="fc-6">PROYECTO PUEBLA:</b> Iniciamos nuestra participación con el gobierno de Puebla...
 
               </div>
               <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
@@ -300,7 +302,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2011 - <b class="fc-6">ENADEMS</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2011 -</b> <b class="fc-6">ENADEMS:</b> La SEP encomienda a ProyEdu el diseño y análisis de ENADEMS...
 
               </div>
               <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
@@ -312,7 +314,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2012 - <b class="fc-6">MODELOS DE POLÍTICA EDUCATIVA</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2012 -</b> <b class="fc-6">MODELOS DE POLÍTICA EDUCATIVA:</b> ProyEdu desarrolla APA y PAI...
 
               </div>
               <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
@@ -324,19 +326,37 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2013 - <b class="fc-6">PUEBLA, PRIMER LUGAR NACIONAL</b>
+                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2013 -</b> <b class="fc-6">PUEBLA, PRIMER LUGAR NACIONAL:</b> Puebla alcanza, 1er lugar nacional en PLANEA...
 
               </div>
               <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
                 <div class="card-body">
-                  texto 7
+                  <div class="col-lg-12">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png');?>" width="100%"  height="auto">
                 </div>
+                <div class="col-lg-6" style="font-size: 14px;border-left: 1px solid #f8e4b3">
+                  <h5><b class="fc-1">2015 - PUEBLA, PRIMER LUGAR NACIONAL</b></h5>
+                  El estado de Puebla alcanza, por primera vez, el primer lugar
+                  nacional en la prueba nacional <b>PLANEA</b> tanto en Secundaria como
+                  en Media Superior, aún cuando se trata del 5° estado más pobre del 
+                  país. Ese lugar lo conservó hasta la última aplicación de esos
+                  exámenes en <b>2017 (Media Superior) y 2019 (Secundaria).</b><br><br>
+                  La mejora también se ve reflejada en indicadores de equidad
+                  (permanencia escolar y desempeño de las escuelas en los 
+                  municipios más marginados) y en la eficiencia de la gestión estatal
+                  (difusión de información,formación docente).
+                </div>
+              </div>
+            </div>
               </div>
             </div>
 
             <div class="card">
               <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2014</b> - <b class="fc-6">SONORA, PRIMER LUGAR NACIONAL</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2014 -</b> <b class="fc-6">SONORA, PRIMER LUGAR NACIONAL:</b> ProyEdu coordina la estrategia de Sonora para mejorar resultados...
 
               </div>
               <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
@@ -348,7 +368,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse8">
-                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2015</b> - <b class="fc-6">PREINSCRIPCIONES EN LÍNEA</b>
+                 <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2015 -</b> <b class="fc-6">PREINSCRIPCIONES EN LÍNEA:</b> Diseño y operación del sistema...
 
               </div>
               <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
@@ -359,7 +379,7 @@
             </div>
             <div class="card">
               <div class="card-header collapsed" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2016</b> - <b class="fc-6">INEE/PISA/STANDFORD</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2016 -</b> <b class="fc-6">INEE/PISA/STANDFORD:</b> El director general de ProyEdu es seleccionado por el Senado para integrar INEE...
 
               </div>
               <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
@@ -371,7 +391,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading11" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2017</b> - <b class="fc-6">DESCARGA ADMINISTRATIVA</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2017-</b> <b class="fc-6">DESCARGA ADMINISTRATIVA:</b> ProyEdu reanuda sus actividades.
 
               </div>
               <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
@@ -383,7 +403,8 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading12" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2018</b> - <b class="fc-6">SOLUCIONES EDUCATIVAS</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2018 -</b>
+                 <b class="fc-6">SOLUCIONES EDUCATIVAS:</b> El sector educativo enfrenta el reto de la contingencia sanitaria por COVID19...
 
               </div>
               <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
@@ -395,7 +416,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading13" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2019</b> - <b class="fc-6">EDUCACIÓN SOCIEMOCIONAL</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2019 -</b> <b class="fc-6">EDUCACIÓN SOCIEMOCIONAL:</b> Somos el capítulo México del programa de Formación Socioemocional...
 
               </div>
               <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
@@ -407,7 +428,8 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading14" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2020</b> - <b class="fc-6">EDUCACIÓN SOCIEMOCIONAL</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2020 -</b> <b class="fc-6">EDUCACIÓN SOCIEMOCIONAL:</b> Somos el capítulo México del programa de Formación Socioemocional...
+
 
               </div>
               <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
@@ -419,7 +441,7 @@
 
             <div class="card">
               <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
-                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2021</b> - <b class="fc-6">INTELIGENCIA EDUCATIVA</b>
+                <span class="collapse-icon-xv"></span>&nbsp;&nbsp;<b class="fc-1">2021 -</b> <b class="fc-6">INTELIGENCIA EDUCATIVA:</b> Creamos MAYAM, un completo e innovador sistema de información...
 
               </div>
               <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
@@ -431,6 +453,7 @@
            </div>
          </div>
         </div>
+      </div>
         <div class="div-degr"></div>
         <div class="card shadow" >
           <div class="card-body col-lg-12 cardbody-xv"data-aos="zoom-in" >

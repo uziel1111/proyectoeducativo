@@ -1,3 +1,5 @@
+
+
 $(".flipbook").turn({
 	width: 792,
 	height: 513,
@@ -40,7 +42,6 @@ $(".flipbook6").turn({
   gradients: true,
   autoCenter: true,
   });
-
 
 $(".card-book").click(function(e) {
    e.preventDefault();
