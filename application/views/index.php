@@ -56,7 +56,7 @@
     <section class="border-color-orange">
       <a href="<?= base_url('Compartimos/'); ?>">
         <!-- <div class="container"> -->
-          <div class="row d-none d-xl-block">
+          <div class="row no-gutters img-panel-txt  d-none d-xl-block">
             <div class="col-12">
               <!-- <center> -->
                 <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/biblioteca-virtual-completo.jpg')?>">
@@ -66,7 +66,7 @@
             <!-- </center> -->
             </div>
           </div>
-          <div class="row d-block d-sm-none d-sm-block d-md-none">
+          <div class="row no-gutters img-panel-txt d-block d-sm-none d-sm-block d-md-none">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/home/biblioteca-virtual-texto.jpg')?>">
               <div class="text-center text-white dv-estylo-orange-blanco2">

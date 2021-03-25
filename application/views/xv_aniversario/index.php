@@ -215,12 +215,26 @@
               </div>             
             </div>
           </div>       
-     <div class="row  d-none d-xl-block">        
-      <div class="col-12">            
-      <section class="page-section cv-xvaniversario text-white mb-0" >
-    </section>
+
+          <section class="">
+            <div class="row no-gutters img-panel-txt d-none d-xl-block">
+            <div class="col-12">
+                <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/xv_aniversario/banner-convocatoria.jpg')?>">
+                <div>
+                  <button type="button" class="btn btn-convocatoria_xv btn-convocatoria" style=" color:#eccb7b;">MÁS INFORMACIÓN</button>
+                </div>
             </div>
           </div>
+          <div class="row no-gutters img-panel-txt d-block d-sm-none d-sm-block d-md-none">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="d-block w-100 img-fluid" src="<?= base_url('assets/img/xv_aniversario/banner-convocatoria-movil.jpg')?>">
+              <div>
+                  <button type="button" class="btn btn-convocatoria_xv-movil btn-convocatoria" style=" color:#eccb7b;">MÁS INFORMACIÓN</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
 
           <div class="div-degr">
