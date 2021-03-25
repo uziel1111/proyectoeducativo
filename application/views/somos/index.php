@@ -20,7 +20,6 @@
           <div class="container p-0">
 
           <div class="row no-gutters img-panel-txt" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-
                 <div class="col-lg-8 my-auto showcase-text">
                   <h4 class="font-weight-bold mb-3">¿Por qué trabajamos en la educación?</h4>
 

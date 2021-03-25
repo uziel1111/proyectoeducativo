@@ -27,7 +27,7 @@
 
 
 
-            <div class="row" id="row-bright-1" data-aos="zoom-in">
+            <div class="row px-5" id="row-bright-1" data-aos="zoom-in">
 
             <div class="row justify-content-center text-center mt-5" id="hacemos">
             <div class="col-12 text-left ml-5" data-aos="flip-left" data-aos-delay="0" data-aos-duration="1000">

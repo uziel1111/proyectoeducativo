@@ -21,7 +21,7 @@
   <section id="subpage_cont1">
     <div class="container pt-0">
 
-      <div class="row">
+      <div class="row px-5 no-gutters">
         <div class="col">
           <!-- <center><img src="<?=base_url('assets/img/otros/').$logo?>" width="230" height="70"></center> -->
           <div class="cc-light px-3">
