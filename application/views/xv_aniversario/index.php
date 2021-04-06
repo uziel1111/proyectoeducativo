@@ -274,7 +274,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2006.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2006</div>
@@ -293,7 +293,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2007.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2007</div>
@@ -346,7 +346,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2008.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2008</div>
@@ -365,7 +365,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2009.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2009</div>
@@ -418,7 +418,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2010.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2010</div>
@@ -437,7 +437,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2011.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2011</div>
@@ -490,7 +490,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2012.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2012</div>
@@ -509,7 +509,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2013.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2013</div>
@@ -562,7 +562,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2014.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2014</div>
@@ -581,7 +581,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2015.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2015</div>
@@ -634,7 +634,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2016.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2016</div>
@@ -653,7 +653,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2017.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2017</div>
@@ -706,7 +706,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2018.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2018</div>
@@ -725,7 +725,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2019.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2019</div>
@@ -778,7 +778,7 @@
                 <div class="bubble bubble-right" data-aos="fade-right">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2020.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2020</div>
@@ -797,7 +797,7 @@
                 <div class="bubble bubble-left" data-aos="fade-left">
                   <div class="card">
                     <div class="card-img-wrap">
-                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/foto-trayectoria2015.png') ?>" class="card-img-top" alt="...">
+                      <img src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2021.jpg') ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
                       <div class="timeline-year my-auto">2021</div>
