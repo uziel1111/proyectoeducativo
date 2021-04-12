@@ -14,6 +14,9 @@
           <center>
             <h3 class="title-sec-xv">¿QUÉ HEMOS LOGRADO?</h3>
           </center>
+          <center>
+            <h6 class="sub-sec-xv">Haciendo equipo con maestros y funcionarios en los estados...</h6>
+          </center>
           <div class="row padding-row">
             <div class="col-12 col-md-6 col-lg-4 d-flex d-flex mb-4 mb-md-2">
               <div>
