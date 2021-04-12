@@ -279,7 +279,7 @@
                     <div class="card-body">
                       <div class="timeline-year my-auto">2006</div>
                       <div class="timeline-info text-left">
-                        Proyecto Educativo (ProyEdu), una organización que busca incidir en la política educativa para contribuir a “una educación con calidad para todos”.
+                        Nace Proyecto Educativo (ProyEdu), una organización que busca incidir en la política educativa para contribuir a “una educación con calidad para todos”.
                       </div>
                     </div>
                   </div>
