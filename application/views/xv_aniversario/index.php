@@ -101,8 +101,8 @@
               <div class="nos-xv-cuerpo">
                 <ol class="fa-ul text-justify">
                   <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-plus-circle  fc-1"></i></span>Creemos que una buena formación puede hacer que las personas vivan una vida más plena y feliz.</li>
-                  <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-plus-circle  fc-1"></i></span>México y los paises de América Latina tienen un enorme potencial que aún está lejos de ser plenamente aprovechado.</li>
-                  <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-plus-circle  fc-1"></i></span>Sabemos que en nuestras escuelas contamos con maestras y maestros con la vocación y talento para lograr lo que nos propongamos</li>
+                  <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-plus-circle  fc-1"></i></span>México y los países de América Latina tienen un enorme potencial que aún está lejos de ser plenamente aprovechado.</li>
+                  <li class="mb-3"><span class="fa-li fa-lg"><i class="fas fa-plus-circle  fc-1"></i></span>Sabemos que en nuestras escuelas contamos con maestras y maestros con la vocación y talento para lograr lo que nos propongamos.</li>
 
                 </ol>
               </div>
