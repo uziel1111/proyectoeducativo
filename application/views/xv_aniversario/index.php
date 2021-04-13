@@ -86,7 +86,7 @@
           <div class="row padding-row">
             <div class="col-lg-6">
               <div>
-                <img src="<?= base_url('assets/img/xv_aniversario/video-xv.jpg'); ?>" class="" alt="Responsive image" width="100%" height="auto">
+                <img src="<?= base_url('assets/img/xv_aniversario/imagen-aniversario.jpg'); ?>" class="" alt="Responsive image" width="100%" height="100%">
               </div>
             </div>
             <div class="col-lg-6">
@@ -139,37 +139,33 @@
                   <!--First slide-->
                   <div class="carousel-item active">
                     <div class="row">
-
                       <div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como01.png'); ?>" alt="como1">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como03.png'); ?>" alt="como1">
                         </div>
                         <div class="text-left">
-                          <p>Gestionando decenas de millones de pesos a favor de <b>sistemas de educación públicos</b>
+                          <p><b>Asegurando</b> siempre la importancia del <b>aprendizaje</b> en los estudiantes.
                           </p>
                         </div>
                       </div>
-
                       <div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como02.png'); ?>" alt="como2">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como03.png'); ?>" alt="como2">
                         </div>
                         <div class="text-left">
-                          <p>Diseñando e implementando <b>decenas de plataformas educativas</b>de apoyo a la gestión educativa</b>.
+                          <p><b>Capacitando a miles de docentes y directivos</b>, fomentando la calidad educativa.
                           </p>
                         </div>
                       </div>
-
                       <div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como03.png'); ?>" alt="como3">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como04.png'); ?>" alt="como3">
                         </div>
                         <div class="text-left">
-                          <p>Capacitando <b>miles de docentes y directivos, </b>fomentando la calidad educativa.
+                          <p><b>Visitando cientos de escuelas</b>, conociendo de primera mano sus necesidades educativas.
                           </p>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   <!--/.First slide-->
@@ -178,34 +174,30 @@
                     <div class="row">
                       <div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como04.png'); ?>" alt="como4">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como05.png'); ?>" alt="como4">
                         </div>
                         <div class="text-left">
-                          <p><b>Visitando cientos de escuelas</b>, conociendo de primera mano sus <b>necesidades educativas</b>.
+                          <p>Apoyando con <b>soluciones educativas</b> durante la contingencia sanitaria por <b>COVID19</b>.
                           </p>
                         </div>
                       </div>
-
                       <div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como05.png'); ?>" alt="como5">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como02.png'); ?>" alt="como5">
                         </div>
                         <div class="text-left">
-                          <p>Apoyando en soluciones<br>educativas durante la <b>contingencia sanitaria por COVID19.</b>
+                          <p>Diseñando e implementando <b>decenas de plataformas educativas</b> de apoyo a la gestión educativa</b>.
                           </p>
                         </div>
-                      </div>
-
-                      <div class="col-md-4 d-flex d-flex mb-4">
+                      </div><div class="col-md-4 d-flex d-flex mb-4">
                         <div>
-                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como03.png'); ?>" alt="como6">
+                          <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-como01.png'); ?>" alt="como6">
                         </div>
                         <div class="text-left">
-                          <p>Asegurando siempre la importancia <b>de aprendizaje</b> en los estudiantes.
+                          <p><b>Gestionando decenas de millones de pesos</b> a favor de <b>sistemas de educación públicos</b>.
                           </p>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   <!--/.Second slide-->
