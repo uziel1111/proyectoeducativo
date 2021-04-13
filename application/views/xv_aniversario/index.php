@@ -34,8 +34,8 @@
                 <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-logrado02.png'); ?>" alt="logro2">
               </div>
               <p class="text-left"><b>1er lugar Nacional en Sonora,</b>
-                evaluación de desempeño
-                docente y directiva.</p>
+                evaluación del desempeño
+                docente y directivo.</p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-flex mb-4 mb-md-2">
               <div>
@@ -50,7 +50,7 @@
               <div>
                 <img class="ico-xv mr-3" src="<?= base_url('assets/img/xv_aniversario/ico-logrado04.png'); ?>" alt="logro4">
               </div>
-              <p class="text-left">Ahorra millones de <b>horas de
+              <p class="text-left">Ahorrar millones de <b>horas de
                   descarga administrativa</b>
                 para docentes y directivos.</p>
             </div>
@@ -634,7 +634,7 @@
                     <div class="card-body">
                       <div class="timeline-year my-auto">2016</div>
                       <div class="timeline-info text-left">
-                        Coordinación la estrategia que lleva al estado de Sonora a ocupar el primer lugar nacional en la evaluación de desempeño docente y directivo. Además del avance nacional más importante en PLANEA.
+                        Coordinación de la estrategia que lleva al estado de Sonora a ocupar el primer lugar nacional en la evaluación del desempeño docente y directivo. Además del avance nacional más importante en PLANEA.
                       </div>
                     </div>
                   </div>
@@ -706,7 +706,7 @@
                     <div class="card-body">
                       <div class="timeline-year my-auto">2018</div>
                       <div class="timeline-info text-left">
-                        Pausa en ProyEdu. Nuestro Director General participa en el Instituto Nacional para la Evaluación Educativa (INEE) y en el Grupo de Desarrollo Estratégico de la prueba PISA de la OCDE. La Universidad de Stanford le otorga el Premio a la Excelencia en la Educación.
+                        Pausa en ProyEdu. Nuestro Director General participa en el Instituto Nacional para la Evaluación de la Educación (INEE) y en el Grupo de Desarrollo Estratégico de la prueba PISA de la OCDE. La Universidad de Stanford le otorga el Premio a la Excelencia en la Educación.
                       </div>
                     </div>
                   </div>
