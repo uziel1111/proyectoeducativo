@@ -334,7 +334,7 @@ main>.container {
     #mainNav .navbar-nav li.nav-item a.nav-link {
         font-size: 1rem;
         color: rgba(0, 0, 0, 0.40);
-        padding: 17px 15px;
+        padding: 17px 10px;
         transition: all 0.5s ease;
         background: rgba(0, 0, 0, 0.0);
     }
@@ -1232,6 +1232,17 @@ main>.container {
     background-size: cover;
 }
 
+.sh-eduplena {
+    background: linear-gradient( rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.90)), /* bottom, image */
+    url("../../assets/img/template/headers/eduplena.jpg");
+    background-color: #cccccc;
+    background-position: 0px 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 75px !important;
+    padding: 73px 0 75px 0 !important;
+}
+
 
 /* */
 
@@ -1267,6 +1278,13 @@ main>.container {
 
 #subpage_cont1 .container {
     background: #ebebeb;
+    margin-top: -50px;
+    border-top: solid 3px #825801;
+    padding: 20px 0 0 0;
+    margin-bottom: 80px;
+}
+
+#subpage_cont0 .container {
     margin-top: -50px;
     border-top: solid 3px #825801;
     padding: 20px 0 0 0;
@@ -2144,4 +2162,440 @@ main>.container {
 .timeline-xv .timeline-info {
     color: #fff;
     font-size: 0.9rem;
+}
+
+
+/* Nav xv aniversario btn */
+
+.navbar .ribbon {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    bottom: -45px;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.navbar .ribbon .text {
+    display: inline-block;
+    padding: 0.5em 1em;
+    line-height: 1.2em;
+    background: rgb(235, 111, 47);
+    background: linear-gradient(90deg, rgba(235, 111, 47, 1) 0%, rgba(255, 147, 93, 1) 100%);
+    position: relative;
+    font-size: 0.7em;
+    border-radius: 0 8px;
+    color: #ffffff;
+    transition: all 5s ease;
+}
+
+.navbar .ribbon:hover .text {
+    background: rgb(235, 111, 47);
+    background: linear-gradient(90deg, rgba(235, 111, 47, 1) 85%, rgba(255, 147, 93, 1) 100%);
+}
+
+.navbar .ribbon:after,
+.navbar .ribbon:before,
+.navbar .ribbon .text:before,
+.navbar .ribbon .text:after,
+.navbar .ribbon .bold:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+}
+
+.navbar .ribbon:before {
+    top: 0.2em;
+    left: 0.2em;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -2;
+    border-radius: 9px;
+}
+
+.navbar .ribbon .text:before {
+    bottom: 100%;
+    left: 0;
+    border-width: .4em .7em 0 0;
+    border-color: transparent #bd5722 transparent transparent;
+}
+
+.navbar .ribbon .text:after {
+    top: 100%;
+    right: 0;
+    border-width: .5em 0.8em 0 0;
+    border-color: #bd5722 transparent transparent transparent;
+}
+
+.navbar .ribbon:after,
+.navbar .ribbon .bold:before {
+    top: 0.5em;
+    right: -0.9em;
+    border-width: 0.8em .5em 0.8em 1em;
+    border-color: #fc7f3f transparent #fc7f3f #fc7f3f;
+    z-index: -1;
+}
+
+.navbar .ribbon .bold:before {
+    border-color: rgba(0, 0, 0, 0.2) transparent rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2);
+    top: 1.2em;
+    right: -1.1em;
+}
+
+.navbar .ribbon .cake {
+    -webkit-animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+    animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+@keyframes vibrate {
+    0%,
+    2%,
+    4%,
+    6%,
+    8%,
+    10%,
+    12%,
+    14%,
+    16%,
+    18% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    1%,
+    3%,
+    5%,
+    7%,
+    9%,
+    11%,
+    13%,
+    15%,
+    17%,
+    19% {
+        -webkit-transform: translate3d(1px, 0, 0);
+        transform: translate3d(1px, 0, 0);
+    }
+    20%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.compartimos {
+    background-image: url(../img/biblioteca/bg-biblioteca.jpg);
+    background-size: cover;
+}
+
+.eduplena {
+    background-image: url(../img/eduplena/banner-eduplena-bg.jpg);
+    background-size: cover;
+}
+
+.eduplena img.banner-right {
+    width: 80%;
+}
+
+.compartimos img,
+.eduplena img {
+    width: 50%;
+    transition: all 0.3s ease;
+    margin-right: initial;
+}
+
+.eduplena h3,
+.compartimos h3 {
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+
+.eduplena p,
+.compartimos p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 95%;
+    text-emphasis: none;
+    transition: all 0.3s ease;
+    padding-left: 1px;
+    color: rgba(0, 0, 0, 0.90);
+}
+
+.eduplena .badge-pill,
+.compartimos .badge-pill {
+    font-style: 100% !important;
+}
+
+.eduplena a:hover p,
+.compartimos a:hover p {
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.eduplena a:hover img,
+.compartimos a:hover img {
+    margin-right: 10px;
+}
+
+.carousel-news-1 .carousel-control-next,
+.carousel-news-1 .carousel-control-prev {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.carousel-news-1 .carousel-control-next {
+    right: -5%;
+}
+
+.carousel-news-1 .carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-news-1 .cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-news-1 .card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-news-1 .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.carousel-news-1 .carousel-inner {
+    padding: 1em;
+}
+
+.carousel-news-1 .carousel-control-prev,
+.carousel-news-1 .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 1000px) {
+    .carousel-news-1 .card img {
+        height: 11em;
+    }
+    .carousel-news-1 .card {
+        width: 33.33%;
+    }
+}
+
+
+/* BLOG QUINCENAL */
+
+.timeline-container::before,
+.list-updates::before,
+.list-updates .update::before {
+    content: "";
+}
+
+.timeline-container::before,
+.list-updates::before,
+.list-updates .update::before {
+    position: absolute;
+}
+
+.timeline-container,
+.list-updates .update,
+.list-updates {
+    position: relative;
+}
+
+.list-updates {
+    list-style: none;
+}
+
+.list-updates::before {
+    height: 100%;
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 1.45rem;
+    top: 2.7rem;
+}
+
+.list-updates .update {
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.15);
+}
+
+.list-updates .update h5 {
+    font-weight: bold;
+}
+
+.list-updates>a:nth-child(even) li.update {
+    background: #ffffff;
+}
+
+.list-updates>a:nth-child(odd) li.update {
+    background: #dcdcdc;
+}
+
+.list-updates>a:nth-child(even) li.update h5 {
+    color: #e95d13;
+}
+
+.list-updates>a:nth-child(odd) li.update h5 {
+    color: #000000;
+}
+
+.list-updates .update::before {
+    border-radius: 50%;
+    background-color: #dedede;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(-1rem - 5px);
+}
+
+.update .time {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.update p {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.list-updates a li.update h5 {
+    color: #000000;
+}
+
+.list-updates a li.update .time {
+    color: #000000;
+}
+
+.list-updates a .update {
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.list-updates a:hover .update {
+    padding-left: 15px;
+}
+
+.list-updates a .update::before {
+    height: 12px;
+    width: 12px;
+    transition: all 0.3s ease;
+}
+
+.list-updates a:hover .update::before {
+    height: 15px;
+    width: 15px;
+}
+
+
+/* Nuevo badge */
+
+.timeline-container .list-updates .ribbon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 93px;
+    height: 93px;
+    text-align: right;
+}
+
+.timeline-container .list-updates .ribbon span {
+    font-size: 0.8rem;
+    color: #fff;
+    right: -22px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 24px;
+    transform: rotate(45deg);
+    width: 97px;
+    display: block;
+    background: #79a70a;
+    background: linear-gradient(#9bc90d 0%, #79a70a 100%);
+    box-shadow: 0 1px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 15px; // change this, if no border
+}
+
+.timeline-container .list-updates .ribbon span::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+
+.timeline-container .list-updates .ribbon span::after {
+    content: '';
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: -1;
+    border-right: 3px solid #79A70A;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+
+
+/* NAV COMUNICA */
+
+.nav-comunica .nav-link {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.nav-comunica .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-comunica .nav-link.active {
+    background-color: #e7e7e7;
+    color: #fc7f3f;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.nav-comunica .nav-link.active:hover {
+    background-color: #ffffff;
+}
+
+.card-eduplena .avatar {
+    border: 0.3rem solid rgba(#fff, 0.3);
+    margin-top: -6rem;
+    margin-bottom: 1rem;
+    max-width: 9rem;
+}
+
+.eduplena-logo {
+    max-width: 35%;
 }
