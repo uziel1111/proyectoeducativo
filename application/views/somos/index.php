@@ -294,7 +294,7 @@ Tiene experiencia en el desarrollo de sistemas web y manejo de bases de datos, h
             </div>
 
 
-            <div class="row" id="row-lowgray-1">
+            <!-- <div class="row" id="row-lowgray-1">
 
               <div class="col-lg-12 text-justify team-1" data-aos="zoom-in">
 
@@ -319,7 +319,7 @@ Tiene experiencia en el desarrollo de sistemas web y manejo de bases de datos, h
 
               </div>
 
-            </div>
+            </div> -->
 
             <div class="row" id="row-lowgray-1">
 
