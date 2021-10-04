@@ -330,7 +330,7 @@
       <div class="row px-5 py-4 justify-content-center">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card card-eduplena">
-            <img class="card-img-top" src="<?= base_url('assets/img/comunicamos/comunica-eduplena-1.jpg'); ?>"" alt=" Bologna">
+            <img class="card-img-top" src="<?= base_url('assets/img/comunicamos/comunica-eduplena-1.jpg'); ?>"" alt=" Eduplena">
             <div class="card-body text-center">
               <img class="avatar rounded-circle" src="<?= base_url('assets/img/comunicamos/eduplena-iso.jpg'); ?>" alt="Eduplena">
               <h4 class="card-title">Motivar para poder enseñar</h4>
@@ -340,7 +340,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card card-eduplena">
-            <img class="card-img-top" src="<?= base_url('assets/img/comunicamos/comunica-eduplena-2.jpg'); ?>"" alt=" Bologna">
+            <img class="card-img-top" src="<?= base_url('assets/img/comunicamos/comunica-eduplena-2.jpg'); ?>"" alt=" Eduplena">
             <div class="card-body text-center">
               <img class="avatar rounded-circle" src="<?= base_url('assets/img/comunicamos/eduplena-iso.jpg'); ?>" alt="Eduplena">
               <h4 class="card-title">Estabilidad emocional para ser un gran docente</h4>
