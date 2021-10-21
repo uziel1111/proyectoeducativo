@@ -9,6 +9,27 @@
   </section>
   <section id="subpage_cont1">
     <div class="container p-0">
+    <center>
+      <div class="card shadow">
+        <div class="card-body cardbody-xv">
+        <div class="col-sm-8 col-lg-6">
+								<div class="card card-tutorial">
+									<div class="row no-gutters">
+										<div class="col-xs-6">
+											<div class="hovereffect">
+												<img class="img-responsive" src="<?= base_url('assets/img/xv_aniversario/lineatiempo/2021.jpg') ?>" alt="">
+												<div class="overlay">
+                        <span style="color:white;"><a data-toggle="modal" data-target="#videoModal" data-title="Proyecto Educativo 15 aniversario" data-tutorial="https://www.youtube.com/embed/b8O69BMRBQk"><i class="far fa-play-circle"></i><br>Reproducir</a></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+        </div>
+      </div>
+      </center>
+      <div class="div-degr"></div>
       <div class="row px-5 py-4 no-gutters">
         <div class="col-lg-12 my-auto text-justify" style="font-size: 14px" data-aos="zoom-in">
           <center>
@@ -1321,7 +1342,28 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade customModal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog width-2">
+			<div class="modal-content panel panel-default formPanel">
+				<div class="modal-header bc-1">
+        <h5 class="modal-title title-modal-style">Video</h5>
+        <button type="button" class="close fc-7" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+				</div>
+				<div class="modal-body pt-0">
+					<div>
+						<iframe id="tutorial-player" width="100%" height="315" src="https://www.youtube.com/embed/b8O69BMRBQk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </main>
+
+
+
 <!-- END Main page content -->
 <!-- COUNTERUP-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
@@ -1329,3 +1371,21 @@
 <!--Library Turnjs-->
 <script type="text/javascript" src="<?= base_url('assets/js/turn_v4/turn.min.js'); ?>"></script>
 <script src="<?= base_url('assets/js/aniversario/fotogaleria.js'); ?>"></script>
+<script>
+		videotutorialModal();
+
+		function videotutorialModal() {
+			var trigger = $("body").find('[data-toggle="modal"]');
+			trigger.click(function() {
+				var theModal = $(this).data("target"),
+					videoSRC = $(this).attr("data-tutorial"),
+					videoSRCauto = videoSRC + "?autoplay=1",
+					videoTitle = $(this).attr("data-title");
+				$(theModal + ' h4').text(videoTitle);
+				$(theModal + ' iframe').attr('src', videoSRCauto);
+				$(theModal + ' button.close').click(function() {
+					$(theModal + ' iframe').attr('src', videoSRC);
+				});
+			});
+		}
+	</script>

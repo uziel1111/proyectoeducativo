@@ -2536,7 +2536,7 @@ main>.container {
     background: linear-gradient(#9bc90d 0%, #79a70a 100%);
     box-shadow: 0 1px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
-    top: 15px; // change this, if no border
+    top: 15px; 
 }
 
 .timeline-container .list-updates .ribbon span::before {
@@ -2598,4 +2598,126 @@ main>.container {
 
 .eduplena-logo {
     max-width: 35%;
+}
+
+/*** Video Tutoriales ***/
+
+.card-tutorial {
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-tutorial .thumb-tutorial {
+    width: 100%;
+    height: auto;
+}
+
+.card-tutorial .card-body {
+    padding-top: 10px;
+}
+
+.card-tutorial .card-title {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 9px;
+    margin-right: 20px;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #242f62;
+    margin: 6px;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 23%;
+    left: 0;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a {
+    cursor: pointer;
+}
+
+.hovereffect a span {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+}
+
+.hovereffect a span:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover a span:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display: block;
+}
+
+.hovereffect a,
+.hovereffect p {
+    font-size: 30px;
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.version_footer {
+    float: right !important;
 }
